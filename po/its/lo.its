@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<its:rules xmlns:its="http://www.w3.org/2005/11/its"
+           version="2.0">
+  <its:translateRule translate="yes" selector="//display-name"/>
+  <!-- The previous rule seems to be not needed. <name> seems to be
+       always translated.
+       The next rule actually doesn't work for unknown reasons.
+       There is a hint in the description.xml itself to not translate
+       the publisher's name.
+  -->
+  <its:translateRule translate="no" selector="/description/publisher/name"/>
+  <its:translateRule translate="no" selector="//node"/>
+  <its:translateRule translate="yes" selector="//prop[@*[namespace-uri()='http://openoffice.org/2001/registry' and local-name()='name']='Title']"/>
+  <its:translateRule translate="yes" selector="//prop[@*[namespace-uri()='http://openoffice.org/2001/registry' and local-name()='name']='UIName']"/>
+  <its:translateRule translate="yes" selector="//prop[@*[namespace-uri()='http://openoffice.org/2001/registry' and local-name()='name']='Label']"/>
+</its:rules>

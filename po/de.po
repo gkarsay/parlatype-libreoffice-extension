@@ -1,0 +1,72 @@
+# German translations for parlatype_lo package.
+# Copyright (C) 2020 THE parlatype_lo'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the parlatype_lo package.
+# Automatically generated, 2020.
+# Gabor Karsay <gabor.karsay@gxm.at>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: parlatype_lo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-01 19:47+0100\n"
+"PO-Revision-Date: 2020-02-21 19:51+0100\n"
+"Last-Translator: Gabor Karsay <gabor.karsay@gxm.at>\n"
+"Language-Team: Deutsch <>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.30.1\n"
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
+msgid "Parlatype LibreOffice Extension"
+msgstr "Parlatype LibreOffice Erweiterung"
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
+msgid "Control Parlatype from LibreOffice"
+msgstr "Parlatype aus LibreOffice heraus kontrollieren"
+
+#: extension/description.xml.in.in.in:22
+msgid "Parlatype for LibreOffice"
+msgstr "Parlatype für LibreOffice"
+
+#.
+#. This is the english description for this extension.
+#: extension/description_translation.xml:5
+msgid "Control Parlatype from LibreOffice."
+msgstr "Parlatype aus LibreOffice heraus kontrollieren"
+
+#: extension/options/OptionsDialogHandler.py:79
+msgid "Go to timestamp"
+msgstr "Zu Zeitstempel gehen"
+
+#: extension/options/OptionsDialogHandler.py:80
+msgid "On mouseclick"
+msgstr "Bei Mausklick"
+
+#: extension/options/OptionsDialogHandler.py:81
+msgid "On key cursor"
+msgstr "Bei Tastennavigation"
+
+#: extension/options/OptionsDialogRegistry.xcu.in:14
+#: extension/python/Parlatype.py:55
+#: extension/toolbar/WriterWindowState.xcu.in:11
+msgid "Parlatype"
+msgstr "Parlatype"
+
+#: extension/python/Parlatype.py:211
+msgid "Please open Parlatype first"
+msgstr "Bitte öffnen Sie zuerst Parlatype."
+
+#: extension/python/Parlatype.py:218
+msgid "Please open a media file first"
+msgstr "Bitte öffnen Sie zuerst eine Mediendatei."
+
+#: extension/toolbar/Toolbar.xcu.in:17
+msgid "Open Parlatype"
+msgstr "Parlatype öffnen"
+
+#: extension/toolbar/Toolbar.xcu.in:32
+msgid "Link Media"
+msgstr "Medien verbinden"

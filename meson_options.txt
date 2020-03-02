@@ -1,0 +1,13 @@
+option(
+	'bundled',
+	type: 'boolean',
+	value: false,
+	description: 'Install as bundle, otherwise create OTX package'
+)
+
+option(
+	'libreoffice-dir',
+	type: 'string',
+	value: '/usr/lib/libreoffice',
+	description: 'Directory to install LibreOffice extension'
+)

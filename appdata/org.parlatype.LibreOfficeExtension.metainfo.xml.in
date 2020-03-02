@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+	<id>org.parlatype.LibreOfficeExtension</id>
+	<extends>org.parlatype.Parlatype.desktop</extends>
+	<extends>libreoffice-writer.desktop</extends>
+	<name>Parlatype LibreOffice Extension</name>
+	<summary>Control Parlatype from LibreOffice</summary>
+	<url type="homepage">https://www.parlatype.org</url>
+	<url type="bugtracker">https://github.com/gkarsay/parlatype-libreoffice-extension/issues</url>
+	<metadata_license>CC-BY-SA-4.0</metadata_license>
+	<project_license>GPL-3.0+</project_license>
+	<update_contact>gabor.karsay@gmx.at</update_contact>
+</component>
+

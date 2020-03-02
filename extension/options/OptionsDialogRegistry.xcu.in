@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data
+oor:name="OptionsDialog"
+oor:package="org.openoffice.Office"
+xmlns:oor="http://openoffice.org/2001/registry">
+    <node oor:name="Nodes">
+        <node oor:name="Writer" oor:op="fuse">
+            <node oor:name="Leaves">
+                <node oor:name="org.parlatype.loextension" oor:op="fuse">
+                    <prop oor:name="Id">
+                        <value>org.parlatype.loextension</value>
+                    </prop>
+                    <prop oor:name="Label">
+                        <value xml:lang="en-US">Parlatype</value>
+                    </prop>
+                    <prop oor:name="OptionsPage">
+                        <value>%origin%/OptionsDialogPage.xdl</value>
+                    </prop>
+                    <prop oor:name="EventHandlerService">
+                        <value>org.parlatype.OptionsDialog</value>
+                    </prop>
+                </node>
+            </node>
+        </node>
+    </node>
+</oor:component-data>
+
+
+

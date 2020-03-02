@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns   = "http://openoffice.org/extensions/description/2006"
+             xmlns:d = "http://openoffice.org/extensions/description/2006"
+             xmlns:l = "http://libreoffice.org/extensions/description/2011"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             xmlns:its="http://www.w3.org/2005/11/its"
+             its:version="1.0"
+             >
+
+  <version value="@VERSION@"/>
+  <identifier value="org.parlatype.loextension"/>
+
+  <publisher>
+    <name xlink:href="https://www.parlatype.org" its:translate="no">Parlatype.org</name>
+  </publisher>
+
+  <icon>
+    <default xlink:href="images/icon_48.png" />
+  </icon>
+
+  <display-name>
+    <name>Parlatype for LibreOffice</name>
+  </display-name>
+
+  <extension-description>
+    <src xlink:href="description/desc_en.txt"/>
+  </extension-description>
+
+  <platform value="linux_x86,linux_x86_64" />
+
+  <dependencies>
+    <!-- Tested with LibreOffice 6.1.5.2 -->
+  </dependencies>
+
+  <registration>
+  </registration>
+
+</description>

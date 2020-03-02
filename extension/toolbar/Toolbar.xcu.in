@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data
+xmlns:oor="http://openoffice.org/2001/registry"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+oor:name="Addons"
+oor:package="org.openoffice.Office">
+  <node oor:name="AddonUI">
+
+    <node oor:name="OfficeToolBar">
+      <node oor:name="org.parlatype.toolbar" oor:op="replace">
+
+        <node oor:name="button1" oor:op="replace">
+          <prop oor:name="URL" oor:type="xs:string">
+            <value>org.parlatype.loextension:open</value>
+          </prop>
+          <prop oor:name="Title" oor:type="xs:string">
+            <value xml:lang="en-US">Open Parlatype</value>
+          </prop>
+          <prop oor:name="Target" oor:type="xs:string">
+            <value>_self</value>
+          </prop>
+          <prop oor:name="Context" oor:type="xs:string">
+            <value>com.sun.star.text.TextDocument</value>
+          </prop>
+        </node>
+
+        <node oor:name="button2" oor:op="replace">
+          <prop oor:name="URL" oor:type="xs:string">
+            <value>org.parlatype.loextension:link</value>
+          </prop>
+          <prop oor:name="Title" oor:type="xs:string">
+            <value xml:lang="en-US">Link Media</value>
+          </prop>
+          <prop oor:name="Target" oor:type="xs:string">
+            <value>_self</value>
+          </prop>
+          <prop oor:name="Context" oor:type="xs:string">
+            <value>com.sun.star.text.TextDocument</value>
+          </prop>
+        </node>
+
+      </node>
+    </node>
+
+    <node oor:name="Images">
+
+      <node oor:name="org.parlatype.loextension.open-icon" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.parlatype.loextension:open</value>
+        </prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL" oor:type="xs:string">
+            <value>%origin%/../images/icon_24.png</value>
+          </prop>
+          <prop oor:name="ImageBigURL" oor:type="xs:string">
+            <value>%origin%/../images/icon_24.png</value>
+          </prop>
+        </node>
+      </node>
+
+      <node oor:name="org.parlatype.loextension.link-icon" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>org.parlatype.loextension:link</value>
+        </prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL" oor:type="xs:string">
+            <value>%origin%/../images/sc_chainframes.png</value>
+          </prop>
+          <prop oor:name="ImageBigURL" oor:type="xs:string">
+            <value>%origin%/../images/lc_chainframes.png</value>
+          </prop>
+        </node>
+      </node>
+
+
+    </node>
+  </node>
+</oor:component-data>
+
+
+
+

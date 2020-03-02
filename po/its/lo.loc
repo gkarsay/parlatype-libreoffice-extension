@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<locatingRules>
+  <locatingRule name="lo" pattern="description.xml">
+    <documentRule localName="description" target="lo.its"/>
+  </locatingRule>
+  <locatingRule name="lo" pattern="description_translation.xml">
+    <documentRule localName="name" target="lo.its"/>
+  </locatingRule>
+  <locatingRule name="lo" pattern="*.xcu">
+    <documentRule localName="component-data" target="lo.its"/>
+  </locatingRule>
+</locatingRules>

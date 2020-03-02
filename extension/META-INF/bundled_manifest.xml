@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest:manifest xmlns:manifest="http://openoffice.org/2001/manifest">
+
+  <!-- Options -->
+  <manifest:file-entry
+    manifest:full-path="options/ConfigurationSchema.xcs"
+    manifest:media-type="application/vnd.sun.star.configuration-schema">
+  </manifest:file-entry>
+
+  <manifest:file-entry
+    manifest:full-path="options/ConfigurationData.xcu"
+    manifest:media-type="application/vnd.sun.star.configuration-data">
+  </manifest:file-entry>
+
+  <manifest:file-entry
+    manifest:full-path="options/OptionsDialogRegistry.xcu"
+    manifest:media-type="application/vnd.sun.star.configuration-data">
+  </manifest:file-entry>
+
+  <manifest:file-entry
+    manifest:full-path="options/OptionsDialogHandler.py"
+    manifest:media-type="application/vnd.sun.star.uno-component;type=Python">
+  </manifest:file-entry>
+
+  <!-- Toolbar -->
+  <manifest:file-entry
+    manifest:full-path="toolbar/Toolbar.xcu"
+    manifest:media-type="application/vnd.sun.star.configuration-data">
+  </manifest:file-entry>
+
+  <manifest:file-entry
+    manifest:full-path="toolbar/WriterWindowState.xcu"
+    manifest:media-type="application/vnd.sun.star.configuration-data">
+  </manifest:file-entry>
+
+  <manifest:file-entry
+    manifest:full-path="toolbar/ProtocolHandler.xcu"
+    manifest:media-type="application/vnd.sun.star.configuration-data">
+  </manifest:file-entry>
+
+  <!-- Main UNO component -->
+  <manifest:file-entry
+    manifest:full-path="python/Parlatype.py"
+    manifest:media-type="application/vnd.sun.star.uno-component;type=Python">
+  </manifest:file-entry>
+
+</manifest:manifest>
