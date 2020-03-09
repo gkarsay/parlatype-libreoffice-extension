@@ -25,13 +25,13 @@ MIN_TIMESTAMP_CHARS = 4
 
 def getDBUSService():
     bus = dbus.SessionBus()
-    if bus.name_has_owner('com.github.gkarsay.parlatype') is False:
+    if bus.name_has_owner('org.parlatype.Parlatype') is False:
         return None
 
     proxy = dbus.SessionBus().get_object(
-            "com.github.gkarsay.parlatype",
-            "/com/github/gkarsay/parlatype")
-    return dbus.Interface(proxy, "com.github.gkarsay.parlatype")
+            "org.parlatype.Parlatype",
+            "/org/parlatype/parlatype")
+    return dbus.Interface(proxy, "org.parlatype.Parlatype")
 
 
 def getTextRange(controller):
