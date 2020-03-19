@@ -11,6 +11,10 @@
 	<url type="translate">https://translations.launchpad.net/parlatype-libreoffice-extension</url>
 	<url type="donation">https://www.parlatype.org/donate.html</url>
 
+	<releases>
+		<release version="2.0" date="2020-03-19"></release>
+	</releases>
+
 	<metadata_license>CC-BY-SA-4.0</metadata_license>
 	<project_license>GPL-3.0+</project_license>
 	<update_contact>gabor.karsay@gmx.at</update_contact>
