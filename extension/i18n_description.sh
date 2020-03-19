@@ -1,13 +1,12 @@
 #!/bin/bash
 # Ridiculous hack to automatically translate OpenOffice's <extension-description>
-# input:  <sourcedir>/extension/description_translation.xml
-#         <sourcedir>/po/<lang>.po
-#         <builddir>/extension/description.xml.in.in
-# output: <builddir>/extension/description.xml.in
-#         <builddir>/extension/description/desc_<lang>.txt
 
-SOURCE_DIR="${MESON_SOURCE_ROOT}"/extension
-BUILD_DIR="${MESON_BUILD_ROOT}"/extension
+
+MESON_SOURCE_ROOT="$1"
+MESON_BUILD_ROOT="$2"
+
+SOURCE_DIR="$MESON_SOURCE_ROOT"/extension
+BUILD_DIR="$MESON_BUILD_ROOT"/extension
 
 # First get the english text
 
@@ -24,13 +23,16 @@ do
 	then
 		# .po files have exactly one translation for source file "translation_source.xml"
 		# Get that translation and check if not empty.
-		string=`grep -A 2 'extension/description_translation.xml' "${MESON_SOURCE_ROOT}"/po/$lang.po | sed -n 's/msgstr "\(.*\)"/\1/p'`
+		string=`grep -A 2 'extension/description_translation.xml' "$MESON_SOURCE_ROOT"/po/$lang.po | sed -n 's/msgstr "\(.*\)"/\1/p'`
 		if [ "$string" != "" ]
 		then
 			echo "$string" > "$BUILD_DIR"/description/desc_$lang.txt
 			sed "/.*\/extension-description/i <src xlink:href=\"description/desc_$lang.txt\" lang=\"$lang\" />" \
-				"$BUILD_DIR"/description.xml.in.in \
-				> "$BUILD_DIR"/description.xml.in
+				"$BUILD_DIR"/description.xml.in \
+				> "$BUILD_DIR"/description.xml
 		fi
 	fi
-done < "${MESON_SOURCE_ROOT}"/po/LINGUAS
+done < "$MESON_SOURCE_ROOT"/po/LINGUAS
+
+# LibreOffice description.xml doesn't understand xml:lang attribute
+sed -i'' 's/xml:lang/lang/' "$BUILD_DIR"/description.xml

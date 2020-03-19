@@ -19,9 +19,6 @@ zip -r "$OXT" \
 	toolbar \
 	--exclude /*meson.build /*.in /*bundled_manifest.xml
 
-# LibreOffice doesn't understand xml:lang attribute when installed as otx
-sed -i'' 's/xml:lang/lang/' $BUILD_ROOT/extension/description.xml
-
 # Add generated files from build root
 cd "$BUILD_ROOT"/extension &&
 zip -r "$OXT" \
