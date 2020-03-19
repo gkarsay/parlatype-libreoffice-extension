@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-01 19:47+0100\n"
+"POT-Creation-Date: 2020-03-19 11:59+0100\n"
 "PO-Revision-Date: 2020-02-21 19:51+0100\n"
 "Last-Translator: Gabor Karsay <gabor.karsay@gxm.at>\n"
 "Language-Team: Deutsch <>\n"
@@ -23,19 +23,16 @@ msgstr ""
 msgid "Parlatype LibreOffice Extension"
 msgstr "Parlatype LibreOffice Erweiterung"
 
+#.
+#. This is the english description for this extension.
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
+#: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
 msgstr "Parlatype aus LibreOffice heraus kontrollieren"
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
 msgstr "Parlatype für LibreOffice"
-
-#.
-#. This is the english description for this extension.
-#: extension/description_translation.xml:5
-msgid "Control Parlatype from LibreOffice."
-msgstr "Parlatype aus LibreOffice heraus kontrollieren"
 
 #: extension/options/OptionsDialogHandler.py:79
 msgid "Go to timestamp"
@@ -50,16 +47,16 @@ msgid "On key cursor"
 msgstr "Bei Tastennavigation"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
-#: extension/python/Parlatype.py:55
+#: extension/python/Parlatype.py:52
 #: extension/toolbar/WriterWindowState.xcu.in:11
 msgid "Parlatype"
 msgstr "Parlatype"
 
-#: extension/python/Parlatype.py:211
+#: extension/python/Parlatype.py:208
 msgid "Please open Parlatype first"
 msgstr "Bitte öffnen Sie zuerst Parlatype."
 
-#: extension/python/Parlatype.py:218
+#: extension/python/Parlatype.py:215
 msgid "Please open a media file first"
 msgstr "Bitte öffnen Sie zuerst eine Mediendatei."
 
@@ -70,3 +67,6 @@ msgstr "Parlatype öffnen"
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
 msgstr "Medien verbinden"
+
+#~ msgid "Control Parlatype from LibreOffice."
+#~ msgstr "Parlatype aus LibreOffice heraus kontrollieren"
