@@ -1,6 +1,13 @@
-Overview of Changes in Parlatype LibreOffice Extension x.x – 2020-xx-xx
+Overview of Changes in Parlatype LibreOffice Extension 2.0 – 2020-03-19
 =======================================================================
 
-* New: xxx
+* First release, requires Parlatype 2.0
+* New: A toolbar button to open Parlatype (and open linked media file)
+* New: A toolbar button to link Parlatype's currently open file with the
+       current LibreOffice Writer document
+* New: Automatically go to timestamp on mouse click or on key navigation
+       (whenever cursor moves to a timestamp in the document)
+* New: Options page
+* New: Provide all macros known from former Parlatype LibreOffice Helpers
 * New or updated languages:
   - de: Gabor Karsay
