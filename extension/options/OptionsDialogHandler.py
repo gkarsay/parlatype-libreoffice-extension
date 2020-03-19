@@ -8,6 +8,7 @@ from com.sun.star.beans import PropertyValue
 import gettext
 _ = gettext.gettext
 
+
 class OptionsDialogHandler(unohelper.Base, XContainerWindowEventHandler):
     def __init__(self, ctx):
         self.ctx = ctx
