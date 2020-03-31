@@ -13,3 +13,10 @@ LibreOffice and Python
 Edit /usr/lib/libreoffice/program/pythonscript.py
 At #Configuration change loglevel to
 LogLevel.use = LogLevel.DEBUG
+
+
+Development
+===========
+
+– Even in bundled mode there is some caching mechanism: Before trying a new
+  version, uninstall the old one and launch LO without the extension once.
