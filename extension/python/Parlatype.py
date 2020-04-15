@@ -211,7 +211,8 @@ class ParlatypeController(object):
 
     def open(self):
         ''' Note: This is called in a different instance of ParlatypeController
-            than "link". '''
+            than "link". Saving the url there as self.url wouldn't be
+            accessible from this instance. '''
         cmdline = ["parlatype"]
         url = self._get_link_url()
         if url is not None:
