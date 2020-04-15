@@ -52,8 +52,4 @@ if bundled
 		'images',
 		install_dir: extension_dir
 	)
-	install_subdir(
-		'license',
-		install_dir: extension_dir
-	)
 endif
