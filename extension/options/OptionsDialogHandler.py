@@ -21,7 +21,6 @@ class OptionsDialogHandler(unohelper.Base, XContainerWindowEventHandler):
 
         gettext.bindtextdomain('parlatype_lo', self._get_locale_path())
         gettext.textdomain('parlatype_lo')
-        return
 
     def _get_locale_path(self):
         pip = self.ctx.getByName(
@@ -65,7 +64,6 @@ class OptionsDialogHandler(unohelper.Base, XContainerWindowEventHandler):
         writer.setPropertyValue('TimestampKeys', check_keys.getState())
         writer.setPropertyValue('TimestampMouse', check_mouse.getState())
         writer.commitChanges()
-        return
 
     def _loadData(self, window, eventName):
         name = window.getModel().Name
@@ -85,7 +83,6 @@ class OptionsDialogHandler(unohelper.Base, XContainerWindowEventHandler):
             'com.sun.star.configuration.ConfigurationAccess', (self.node,))
         check_keys.setState(reader.getPropertyValue('TimestampKeys'))
         check_mouse.setState(reader.getPropertyValue('TimestampMouse'))
-        return
 
 
 # uno implementation
