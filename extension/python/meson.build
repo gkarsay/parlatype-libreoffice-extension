@@ -1,6 +1,6 @@
 # Install Extension
 install_data(
-	[ 'Parlatype.py' ],
+	[ 'ASR.py', 'Parlatype.py' ],
 	install_dir: join_paths(extension_dir, 'python')
 )
 

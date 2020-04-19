@@ -11,6 +11,7 @@ rm -f "$OXT"
 # Add from source root
 cd "$SOURCE_ROOT"/extension &&
 zip -r "$OXT" \
+	asr \
 	images \
 	license \
 	META-INF \
