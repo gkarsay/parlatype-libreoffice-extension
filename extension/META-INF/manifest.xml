@@ -18,7 +18,7 @@
   </manifest:file-entry>
 
   <manifest:file-entry
-    manifest:full-path="options/OptionsDialogHandler.py"
+    manifest:full-path="python/OptionsDialogHandler.py"
     manifest:media-type="application/vnd.sun.star.uno-component;type=Python">
   </manifest:file-entry>
 
