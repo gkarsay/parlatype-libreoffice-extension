@@ -52,6 +52,28 @@ def getDBUSService():
     return dbus.Interface(proxy, "org.parlatype.Parlatype")
 
 
+def ParlatypeIsRunning():
+    if sys.platform == 'linux':
+        iface = getDBUSService()
+        if iface is None:
+            return False
+        else:
+            return True
+
+    if sys.platform == 'win32':
+        # TODO implement
+        return False
+
+
+def getParlatypeUri():
+    if sys.platform == 'linux':
+        iface = getDBUSService()
+        return iface.GetURI()
+
+    if sys.platform == 'win32':
+        # TODO implement
+        return ""
+
 def getTextRange(controller):
     # the writer controller impl supports
     # the css.view.XSelectionSupplier interface

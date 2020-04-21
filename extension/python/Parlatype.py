@@ -35,6 +35,9 @@ from com.sun.star.awt.MessageBoxType import MESSAGEBOX
 import gettext
 import parlatype_utils as pt_utils
 
+if sys.platform == 'win32':
+    from _winreg import *
+
 
 _ = gettext.gettext
 
@@ -200,6 +203,16 @@ class ParlatypeController(object):
         ''' Note: This is called in a different instance of ParlatypeController
             than "link". Saving the url there as self.url wouldn't be
             accessible from this instance. '''
+
+        if sys.platform == 'win32':
+            aReg = ConnectRegistry(None,HKEY_LOCAL_MACHINE)
+            aKey = OpenKey(aReg, r'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Parlatype', 0, KEY_READ)
+            [Pathname,regtype]=(QueryValueEx(aKey,"InstallLocation"))
+            CloseKey(aKey)
+            CloseKey(aReg)
+            showMessage(self.ctx, Pathname)
+            return
+
         cmdline = ["parlatype"]
         url = self._get_link_url()
         if url is not None:
@@ -237,24 +250,19 @@ class ParlatypeController(object):
             print('Already linked to ' + doc_uprop.getPropertyValue())
             return
 
-        iface = pt_utils.getDBUSService()
-        if iface is None:
-            try:
-                showMessage(self.ctx, _("Please open Parlatype first"))
-            except Exception as e:
-                print(str(e))
+        if not pt_utils.ParlatypeIsRunning():
+            showMessage(self.ctx, _("Please open Parlatype first"))
             return
-        try:
-            media = iface.GetURI()
-            if media == "":
-                showMessage(self.ctx, _("Please open a media file first"))
-                return
-            doc_uprop.addProperty('Parlatype', 5, "")
-            # This is not updated in GUI, only on reload
-            doc_uprop.setPropertyValue('Parlatype', media)
-            self.linked = True
-        except Exception as e:
-            print(str(e))
+
+        media = pt_utils.getParlatypeUri()
+        if media == "":
+            showMessage(self.ctx, _("Please open a media file first"))
+            return
+
+        doc_uprop.addProperty('Parlatype', 5, "")
+        # This is not updated in GUI, only on reload
+        doc_uprop.setPropertyValue('Parlatype', media)
+        self.linked = True
 
     def link(self):
         ''' This is a toggle type method, it can mean link or unlink. '''
