@@ -39,10 +39,10 @@
   </manifest:file-entry>
 
   <!-- ASR jobs -->
-  <manifest:file-entry
+  <!--<manifest:file-entry
     manifest:full-path="asr/jobs.xcu"
     manifest:media-type="application/vnd.sun.star.configuration-data">
-  </manifest:file-entry>
+  </manifest:file-entry>-->
 
   <!-- ASR UNO component -->
   <manifest:file-entry
