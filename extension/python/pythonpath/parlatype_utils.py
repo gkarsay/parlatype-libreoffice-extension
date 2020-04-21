@@ -18,8 +18,11 @@ with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import uno
 import os
+import sys
 import gettext
-import dbus
+
+if sys.platform == "linux":
+    import dbus
 
 
 MAX_TIMESTAMP_CHARS = 11

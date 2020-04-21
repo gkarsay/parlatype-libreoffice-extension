@@ -26,7 +26,7 @@
     <src xlink:href="description/desc_en.txt"/>
   </extension-description>
 
-  <platform value="linux_x86,linux_x86_64" />
+  <platform value="all" />
 
   <dependencies>
     <!-- Tested with LibreOffice 6.1.5.2 -->
