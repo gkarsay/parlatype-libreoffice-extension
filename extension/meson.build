@@ -1,5 +1,5 @@
 extension_dir = join_paths(base_lo_dir, 'share', 'extensions', 'parlatype')
-script_dir = join_paths(base_lo_dir, 'share', 'Scripts', 'python', 'parlatype')
+script_dir = join_paths(base_lo_dir, 'share', 'Scripts', 'python')
 
 # description.xml is generated in 3 steps:
 # 1) Configure the version

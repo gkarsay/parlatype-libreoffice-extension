@@ -11,7 +11,8 @@ install_subdir(
 
 # Install Macros
 install_data(
-	[ 'parlatype_macros.py' ],
+	'parlatype_macros.py',
+	rename: 'Parlatype.py',
 	install_dir: script_dir,
 )
 
