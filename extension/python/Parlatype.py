@@ -36,7 +36,7 @@ import gettext
 import parlatype_utils as pt_utils
 
 if sys.platform == 'win32':
-    from _winreg import *
+    from winreg import *
 
 
 _ = gettext.gettext
@@ -205,15 +205,23 @@ class ParlatypeController(object):
             accessible from this instance. '''
 
         if sys.platform == 'win32':
-            aReg = ConnectRegistry(None,HKEY_LOCAL_MACHINE)
-            aKey = OpenKey(aReg, r'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Parlatype', 0, KEY_READ)
-            [Pathname,regtype]=(QueryValueEx(aKey,"InstallLocation"))
+            aReg = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
+            try:
+                aKey = OpenKey(aReg, r'SOFTWARE\Microsoft\Windows\'
+                               r'CurrentVersion\Uninstall\Parlatype',
+                               0, KEY_READ)
+            except WindowsError:
+                CloseKey(aReg)
+                showMessage(ctx, _("Parlatype is not installed."))
+                return
+            [path, regtype] = (QueryValueEx(aKey, "InstallLocation"))
             CloseKey(aKey)
             CloseKey(aReg)
-            showMessage(self.ctx, Pathname)
-            return
+            cmd = os.path.join(path, 'bin', 'parlatype.exe')
+            cmdline = [cmd]
+        else:
+            cmdline = ["parlatype"]
 
-        cmdline = ["parlatype"]
         url = self._get_link_url()
         if url is not None:
             cmdline.append(url)
@@ -310,7 +318,6 @@ class ToolbarHandler(unohelper.Base, XServiceInfo,
         self.GEB = self.ctx.getValueByName(
             "/singletons/com.sun.star.frame.theGlobalEventBroadcaster")
         pt_utils.setGettextDomain(ctx)
-
 
     # XServiceInfo
     def supportsService(self, name):
