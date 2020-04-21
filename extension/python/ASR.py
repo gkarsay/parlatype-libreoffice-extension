@@ -17,11 +17,13 @@ with this program.  If not, see <https://www.gnu.org/licenses/>.
 '''
 
 import unohelper
+import sys
 from com.sun.star.task import XJob
 import threading
-import dbus
-from gi.repository import GLib
-from dbus.mainloop.glib import DBusGMainLoop
+if sys.platform == "linux":
+    import dbus
+    from gi.repository import GLib
+    from dbus.mainloop.glib import DBusGMainLoop
 import parlatype_utils as pt_utils
 
 loop = None
