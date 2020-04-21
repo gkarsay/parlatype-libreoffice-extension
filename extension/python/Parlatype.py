@@ -207,10 +207,10 @@ class ParlatypeController(object):
         if sys.platform == 'win32':
             aReg = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
             try:
-                aKey = OpenKey(aReg, r'SOFTWARE\Microsoft\Windows\'
-                               r'CurrentVersion\Uninstall\Parlatype',
+                aKey = OpenKey(aReg,
+                               r'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Parlatype',
                                0, KEY_READ)
-            except WindowsError:
+            except FileNotFoundError:
                 CloseKey(aReg)
                 showMessage(ctx, _("Parlatype is not installed."))
                 return
