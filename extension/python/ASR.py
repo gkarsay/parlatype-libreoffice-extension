@@ -20,11 +20,11 @@ import unohelper
 import sys
 from com.sun.star.task import XJob
 import threading
+import parlatype_utils as pt_utils
 if sys.platform == "linux":
     import dbus
     from gi.repository import GLib
     from dbus.mainloop.glib import DBusGMainLoop
-import parlatype_utils as pt_utils
 
 loop = None
 hypothesis_range = None
@@ -36,7 +36,6 @@ class ASRJob(unohelper.Base, XJob):
         smgr = self.ctx.getServiceManager()
         self.desktop = smgr.createInstanceWithContext(
             "com.sun.star.frame.Desktop", self.ctx)
-
 
     def dbus_signal_handler(self, message, signal):
         # The TextRange representing the last hypothesis

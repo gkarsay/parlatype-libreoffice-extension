@@ -22,7 +22,6 @@ import sys
 import os
 import uno
 import unohelper
-from com.sun.star.task import XJobExecutor
 from com.sun.star.lang import XServiceInfo
 from com.sun.star.frame import XDispatchProvider
 from com.sun.star.frame import XDispatch
@@ -31,12 +30,17 @@ from com.sun.star.beans import PropertyValue
 from com.sun.star.awt import XKeyHandler
 from com.sun.star.awt import XMouseClickHandler
 from com.sun.star.document import XDocumentEventListener
-from com.sun.star.awt.MessageBoxType import MESSAGEBOX
+from com.sun.star.beans.PropertyAttribute import MAYBEVOID
+from com.sun.star.beans.PropertyAttribute import BOUND
+from com.sun.star.beans.PropertyAttribute import REMOVEABLE
+from com.sun.star.beans import PropertyValue
 import gettext
 import parlatype_utils as pt_utils
+from parlatype_utils import Cmd, showMessage
 
 if sys.platform == 'win32':
-    from winreg import *
+    from winreg import ConnectRegistry, OpenKey, QueryValueEx, CloseKey
+    from winreg import HKEY_LOCAL_MACHINE, KEY_READ
 
 
 _ = gettext.gettext
@@ -45,16 +49,7 @@ ImplementationName = "org.parlatype.ProtocolHandler"
 ServiceName = "com.sun.star.frame.ProtocolHandler"
 Protocol = "org.parlatype.loextension:"
 
-
 current_timestamp = ''
-
-
-def showMessage(ctx, message):
-    toolkit = ctx.ServiceManager.createInstance('com.sun.star.awt.Toolkit')
-    parent = toolkit.getDesktopWindow()
-    dlg = toolkit.createMessageBox(
-        parent, MESSAGEBOX, 1, _("Parlatype"), message)
-    return dlg.execute()
 
 
 class KeyHandler(unohelper.Base, XKeyHandler):
@@ -154,18 +149,16 @@ class ParlatypeController(object):
                 and goto_current_timestamp is False):
             return
         current_timestamp = timestamp
-
-        iface = pt_utils.getDBUSService()
-        try:
-            iface.GotoTimestamp(timestamp)
-        except Exception as e:
-            print(str(e))
+        pt_utils.sendParlatypeCommand(self.ctx,
+                                      Cmd.GOTO_TIMESTAMP.value,
+                                      timestamp)
 
     def deactivateTimestampScanner(self):
         doc = self.desktop.getCurrentComponent()
         controller = doc.getCurrentController()
         controller.removeKeyHandler(self.key_handler)
         controller.removeMouseClickHandler(self.mouse_handler)
+        print("timestamp scanner deactivated")
 
     def activateTimestampScanner(self):
         # Get options
@@ -205,18 +198,20 @@ class ParlatypeController(object):
             accessible from this instance. '''
 
         if sys.platform == 'win32':
-            aReg = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
+            registry = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
             try:
-                aKey = OpenKey(aReg,
-                               r'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Parlatype',
+                key = OpenKey(registry,
+                               r'SOFTWARE\Microsoft\Windows' +
+                               r'\CurrentVersion\Uninstall\Parlatype',
                                0, KEY_READ)
             except FileNotFoundError:
-                CloseKey(aReg)
-                showMessage(ctx, _("Parlatype is not installed."))
+                CloseKey(registry)
+                # TODO add a clickable download link
+                showMessage(self.ctx, _("Parlatype is not installed."))
                 return
-            [path, regtype] = (QueryValueEx(aKey, "InstallLocation"))
-            CloseKey(aKey)
-            CloseKey(aReg)
+            [path, regtype] = (QueryValueEx(key, "InstallLocation"))
+            CloseKey(key)
+            CloseKey(registry)
             cmd = os.path.join(path, 'bin', 'parlatype.exe')
             cmdline = [cmd]
         else:
@@ -245,7 +240,8 @@ class ParlatypeController(object):
             doc_uprop = doc_prop.getUserDefinedProperties()
             doc_uprop.removeProperty('Parlatype')
         except Exception as e:
-            print(str(e))
+            showMessage(self.ctx, str(e))
+            print(sys.exc_info())
         print("unlink")
         self.linked = False
 
@@ -255,20 +251,28 @@ class ParlatypeController(object):
         doc_uprop = doc_prop.getUserDefinedProperties()
         set = doc_uprop.getPropertySetInfo()
         if set.hasPropertyByName('Parlatype'):
-            print('Already linked to ' + doc_uprop.getPropertyValue())
+            showMessage(self.ctx, "Already linked to {}.".format(
+                doc_uprop.getPropertyValue()))
             return
 
-        if not pt_utils.ParlatypeIsRunning():
-            showMessage(self.ctx, _("Please open Parlatype first"))
-            return
+        try:
+            if pt_utils.ParlatypeIsRunning(self.ctx) is False:
+                showMessage(self.ctx, _("Please open Parlatype first"))
+                return
+        except Exception as e:
+                showMessage(self.ctx, str(e))
 
-        media = pt_utils.getParlatypeUri()
-        if media == "":
+        try:
+            media = pt_utils.getParlatypeString("GetURI")
+        except Exception as e:
+                showMessage(self.ctx, str(e))
+        if media is None:
             showMessage(self.ctx, _("Please open a media file first"))
             return
 
-        doc_uprop.addProperty('Parlatype', 5, "")
-        # This is not updated in GUI, only on reload
+        doc_uprop.addProperty('Parlatype',
+                              MAYBEVOID + BOUND + REMOVEABLE,
+                              "")  # default value
         doc_uprop.setPropertyValue('Parlatype', media)
         self.linked = True
 
@@ -295,8 +299,9 @@ class EventListener(unohelper.Base, XDocumentEventListener):
     def documentEventOccured(self, event):
         if event.EventName == "OnLayoutFinished":
             self.parent.removeDocumentListener()
-        if event.EventName == "OnLoad":
+        if event.EventName == "OnViewCreated":
             self.parent.updateLinkButton()
+            self.parent.removeDocumentListener()
 
     def disposing(event):
         pass

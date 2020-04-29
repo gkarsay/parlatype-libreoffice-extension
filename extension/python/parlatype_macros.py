@@ -17,6 +17,7 @@ with this program.  If not, see <https://www.gnu.org/licenses/>.
 '''
 
 import parlatype_utils as pt_utils
+from parlatype_utils import Cmd
 
 
 def InsertTimestamp(*args):
@@ -26,10 +27,10 @@ def InsertTimestamp(*args):
     if (textrange is None):
         return
 
-    service = pt_utils.getDBUSService()
-
     try:
-        textrange.setString(service.GetTimestamp())
+        timestamp = pt_utils.getParlatypeString("GetTimestamp")
+        if timestamp is not None:
+            textrange.setString(timestamp)
     except Exception:
         pass
 
@@ -41,10 +42,10 @@ def InsertTimestampOnNewLine(*args):
     if (textrange is None):
         return
 
-    service = pt_utils.getDBUSService()
-
     try:
-        textrange.setString("\n" + service.GetTimestamp() + " ")
+        timestamp = pt_utils.getParlatypeString("GetTimestamp")
+        if timestamp is not None:
+            textrange.setString("\n" + timestamp + " ")
     except Exception:
         pass
 
@@ -56,57 +57,33 @@ def GotoTimestamp(*args):
     if (timestamp is None):
         return
 
-    service = pt_utils.getDBUSService()
-
-    try:
-        service.GotoTimestamp(timestamp)
-    except Exception:
-        pass
+    pt_utils.sendParlatypeCommand(XSCRIPTCONTEXT.getComponentContext(),
+                                  Cmd.GOTO_TIMESTAMP.value, timestamp)
 
 
 def PlayPause(*args):
-    service = pt_utils.getDBUSService()
-
-    try:
-        service.PlayPause()
-    except Exception:
-        pass
+    pt_utils.sendParlatypeCommand(XSCRIPTCONTEXT.getComponentContext(),
+                                  Cmd.PLAY_PAUSE.value, None)
 
 
 def JumpBack(*args):
-    service = pt_utils.getDBUSService()
-
-    try:
-        service.JumpBack()
-    except Exception:
-        pass
+    pt_utils.sendParlatypeCommand(XSCRIPTCONTEXT.getComponentContext(),
+                                  Cmd.JUMP_BACK.value, None)
 
 
 def JumpForward(*args):
-    service = pt_utils.getDBUSService()
-
-    try:
-        service.JumpForward()
-    except Exception:
-        pass
+    pt_utils.sendParlatypeCommand(XSCRIPTCONTEXT.getComponentContext(),
+                                  Cmd.JUMP_FORWARD.value, None)
 
 
 def IncreaseSpeed(*args):
-    service = pt_utils.getDBUSService()
-
-    try:
-        service.IncreaseSpeed()
-    except Exception:
-        pass
+    pt_utils.sendParlatypeCommand(XSCRIPTCONTEXT.getComponentContext(),
+                                  Cmd.INCREASE_SPEED.value, None)
 
 
 def DecreaseSpeed(*args):
-    service = pt_utils.getDBUSService()
-
-    try:
-        service.DecreaseSpeed()
-    except Exception:
-        pass
+    pt_utils.sendParlatypeCommand(XSCRIPTCONTEXT.getComponentContext(),
+                                  Cmd.DECREASE_SPEED.value, None)
 
 
 # Lists the scripts, that shall be visible inside LibreOffice.
