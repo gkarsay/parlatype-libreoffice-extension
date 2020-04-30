@@ -10,7 +10,8 @@ License for extension/images/icon_*.png
   using and modifying artwork from the
   * GNOME Project, http://www.gnome.org
 
-License for extensions/images/*chainframes.png:
+License for extension/images/*chainframes.png,
+            extension/images/*timefield.png:
 
   This work is licenced under the terms of the GNU General Public License as
   published by the Free Software Foundation, either version 3 of the License,

@@ -291,6 +291,20 @@ class ParlatypeController(object):
             else:
                 return False
 
+    def timestamp(self):
+        doc = self.desktop.getCurrentComponent()
+        controller = doc.getCurrentController()
+        textrange = pt_utils.getTextRange(controller)
+        if (textrange is None):
+            return
+
+        try:
+            timestamp = pt_utils.getParlatypeString("GetTimestamp")
+            if timestamp is not None:
+                textrange.setString(timestamp)
+        except Exception:
+            pass
+
 
 class EventListener(unohelper.Base, XDocumentEventListener):
     def __init__(self, parent):
@@ -317,7 +331,7 @@ class ToolbarHandler(unohelper.Base, XServiceInfo,
                      XDispatchProvider, XDispatch):
 
     ''' This class is called for each new view and in each view for each
-        command ("open" and "link"). '''
+        command ("open", "link", "timestamp"). '''
 
     def __init__(self, ctx):
         self.ctx = ctx
@@ -376,6 +390,8 @@ class ToolbarHandler(unohelper.Base, XServiceInfo,
                     self.status = not self.status
                     self.ev.State = self.status
                     self.listener.statusChanged(self.ev)
+            elif url.Path == "timestamp":
+                self.pt.timestamp()
 
     def addStatusListener(self, control, url):
         ''' The StatusListener enables controlling toolbar items. We are only
