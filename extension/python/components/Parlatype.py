@@ -35,7 +35,7 @@ from com.sun.star.beans.PropertyAttribute import BOUND
 from com.sun.star.beans.PropertyAttribute import REMOVEABLE
 import gettext
 import parlatype_utils as pt_utils
-from parlatype_utils import showMessage
+from parlatype_utils import Cmd, showMessage
 
 if sys.platform == 'win32':
     from winreg import ConnectRegistry, OpenKey, QueryValueEx, CloseKey
@@ -149,11 +149,9 @@ class ParlatypeController(object):
             return
         current_timestamp = timestamp
 
-        iface = pt_utils.getDBUSService()
-        try:
-            iface.GotoTimestamp(timestamp)
-        except Exception as e:
-            print(str(e))
+        pt_utils.sendParlatypeCommand(self.ctx,
+                                      Cmd.GOTO_TIMESTAMP.value,
+                                      timestamp)
 
     def deactivateTimestampScanner(self):
         doc = self.desktop.getCurrentComponent()
@@ -255,20 +253,21 @@ class ParlatypeController(object):
             print('Already linked to ' + doc_uprop.getPropertyValue())
             return
 
-        iface = pt_utils.getDBUSService()
-        if iface is None:
-            try:
-                showMessage(self.ctx, _("Please open Parlatype first"))
-            except Exception as e:
-                print(str(e))
-            return
         try:
-            media = iface.GetURI()
-            if media == "":
-                showMessage(self.ctx, _("Please open a media file first"))
+            if pt_utils.ParlatypeIsRunning(self.ctx) is False:
+                showMessage(self.ctx, _("Please open Parlatype first"))
                 return
         except Exception as e:
-            print(str(e))
+                showMessage(self.ctx, str(e))
+                return
+        try:
+            media = pt_utils.getParlatypeString("GetURI")
+        except Exception as e:
+                showMessage(self.ctx, str(e))
+                return
+        if media is None:
+            showMessage(self.ctx, _("Please open a media file first"))
+            return
 
         doc_uprop.addProperty('Parlatype',
                               MAYBEVOID + BOUND + REMOVEABLE,
