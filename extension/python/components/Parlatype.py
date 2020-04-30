@@ -21,7 +21,6 @@ import sys
 import os
 import uno
 import unohelper
-from com.sun.star.task import XJobExecutor
 from com.sun.star.lang import XServiceInfo
 from com.sun.star.frame import XDispatchProvider
 from com.sun.star.frame import XDispatch
