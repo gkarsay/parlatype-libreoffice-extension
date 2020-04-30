@@ -25,7 +25,7 @@ if not bundled
 	custom_target(
 		'oxt',
 		command: [ oxt, meson.source_root(), meson.build_root() ],
-		output: [ 'parlatype.oxt' ],
+		output: [ 'Parlatype.oxt' ],
 		depends: [ description, options_dialog, toolbar, window_state ],
 		build_by_default: true
 	)

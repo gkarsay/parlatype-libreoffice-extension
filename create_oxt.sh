@@ -4,7 +4,7 @@
 SOURCE_ROOT=$1
 BUILD_ROOT=$2
 TEMPDIR=$(mktemp --directory)
-OXT="$BUILD_ROOT"/parlatype.oxt
+OXT="$BUILD_ROOT"/Parlatype.oxt
 
 rm -f "$OXT"
 
