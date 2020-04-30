@@ -16,9 +16,10 @@ You should have received a copy of the GNU General Public License along
 with this program.  If not, see <https://www.gnu.org/licenses/>.
 '''
 
-from subprocess import Popen
 import sys
 import os
+import subprocess
+import threading
 import uno
 import unohelper
 from com.sun.star.lang import XServiceInfo
@@ -77,6 +78,44 @@ class MouseHandler(unohelper.Base, XMouseClickHandler):
 
     def disposing(self, source):
         pass
+
+def launch_flatpak(ctx, url):
+    cmdline = ["flatpak", "run", "org.parlatype.Parlatype"]
+    if url is not None:
+        cmdline.append(url)
+
+    try:
+        p = subprocess.Popen(cmdline, universal_newlines=True,
+                             stderr=subprocess.PIPE)
+    except FileNotFoundError:
+        # This assumes we tried to launch a regular binary first.
+        # Neither regular Parlatype nor flatpak is installed.
+        showMessage(ctx, _("Parlatype is not installed."))
+        return
+
+    err = p.stderr.readline()
+    if err == "" or err is None:
+        return
+
+    # AppArmor profile for LibreOffice may prevent launching flatpak:
+    # bwrap: Can't open /proc/self/mountinfo: Permission denied
+    # bwrap: Can't read from privileged_op_socket
+    if "bwrap" in err:
+        showMessage(ctx, _("It seems like the AppArmor profile for "
+                           "LibreOffice prevents launching Flatpak."))
+        return
+
+    # If not installed, we get a localized error message.
+    # Lets see, if it is installed via flatpak info.
+    try:
+        p = subprocess.run(["flatpak", "info", "org.parlatype.Parlatype"],
+                           check=True)
+    except subprocess.CalledProcessError:
+        showMessage(ctx, _("Parlatype is not installed."))
+        return
+
+    # Whatever that may be ...
+    print(err)
 
 
 class ParlatypeController(object):
@@ -158,7 +197,15 @@ class ParlatypeController(object):
         url = self._get_link_url()
         if url is not None:
             cmdline.append(url)
-        Popen(cmdline)
+
+        try:
+            subprocess.Popen(cmdline)
+        except FileNotFoundError:
+            # Try Flatpak in a different thread, because we're waiting for its
+            # return code/stderr and that would keep the button pressed.
+            t = threading.Thread(target=launch_flatpak, args=(self.ctx, url,))
+            t.daemon = True
+            t.start()
 
     def setLinkedStatus(self, status):
         self.linked = status
