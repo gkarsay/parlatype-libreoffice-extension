@@ -37,6 +37,10 @@ import gettext
 import parlatype_utils as pt_utils
 from parlatype_utils import showMessage
 
+if sys.platform == 'win32':
+    from winreg import ConnectRegistry, OpenKey, QueryValueEx, CloseKey
+    from winreg import HKEY_LOCAL_MACHINE, KEY_READ
+
 
 _ = gettext.gettext
 
@@ -193,7 +197,27 @@ class ParlatypeController(object):
         ''' Note: This is called in a different instance of ParlatypeController
             than "link". Saving the url there as self.url wouldn't be
             accessible from this instance. '''
-        cmdline = ["parlatype"]
+
+        if sys.platform == 'win32':
+            registry = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
+            try:
+                key = OpenKey(registry,
+                               r'SOFTWARE\Microsoft\Windows' +
+                               r'\CurrentVersion\Uninstall\Parlatype',
+                               0, KEY_READ)
+            except FileNotFoundError:
+                CloseKey(registry)
+                # TODO add a clickable download link
+                showMessage(self.ctx, _("Parlatype is not installed."))
+                return
+            [path, regtype] = (QueryValueEx(key, "InstallLocation"))
+            CloseKey(key)
+            CloseKey(registry)
+            cmd = os.path.join(path, 'bin', 'parlatype.exe')
+            cmdline = [cmd]
+        else:
+            cmdline = ["parlatype"]
+
         url = self._get_link_url()
         if url is not None:
             cmdline.append(url)
