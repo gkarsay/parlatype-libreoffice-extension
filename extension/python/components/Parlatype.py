@@ -152,13 +152,13 @@ class ParlatypeController(object):
 
     def open(self):
         ''' Note: This is called in a different instance of ParlatypeController
-            than "link". '''
-        url = None
+            than "link". Saving the url there as self.url wouldn't be
+            accessible from this instance. '''
+        cmdline = ["parlatype"]
         url = self._get_link_url()
         if url is not None:
-            Popen(["parlatype", url])
-        else:
-            Popen(["parlatype"])
+            cmdline.append(url)
+        Popen(cmdline)
 
     def setLinkedStatus(self, status):
         self.linked = status
