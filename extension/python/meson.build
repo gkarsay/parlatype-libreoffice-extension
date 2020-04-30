@@ -1,21 +1,18 @@
 # Install Extension
-install_data(
-	[ 'Parlatype.py' ],
-	install_dir: join_paths(extension_dir, 'python')
-)
-
 install_subdir(
-	'pythonpath',
+	'components',
 	install_dir: join_paths(extension_dir, 'python')
 )
 
 # Install Macros
 install_data(
-	[ 'parlatype_macros.py' ],
+	'macros/Macros.py',
+	rename: 'Parlatype.py',
 	install_dir: script_dir,
 )
 
+# Copy pythonpath from Extension to Macros
 install_subdir(
-	'pythonpath',
+	'components/pythonpath',
 	install_dir: script_dir,
 )

@@ -3,8 +3,8 @@
 appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in
 extension/description.xml.in.in.in
 extension/description_translation.xml
-extension/options/OptionsDialogHandler.py
 extension/options/OptionsDialogRegistry.xcu.in
-extension/python/Parlatype.py
+extension/python/components/OptionsDialogHandler.py
+extension/python/components/Parlatype.py
 extension/toolbar/Toolbar.xcu.in
 extension/toolbar/WriterWindowState.xcu.in

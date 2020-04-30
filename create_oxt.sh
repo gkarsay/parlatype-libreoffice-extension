@@ -3,7 +3,7 @@
 
 SOURCE_ROOT=$1
 BUILD_ROOT=$2
-
+TEMPDIR=$(mktemp --directory)
 OXT="$BUILD_ROOT"/parlatype.oxt
 
 rm -f "$OXT"
@@ -18,6 +18,15 @@ zip -r "$OXT" \
 	python \
 	toolbar \
 	--exclude /*meson.build /*.in /*bundled_manifest.xml
+
+# Copy pythonpath from components to macros
+mkdir -p "$TEMPDIR"/python/macros
+cp -r "$SOURCE_ROOT"/extension/python/components/pythonpath \
+      "$TEMPDIR"/python/macros
+
+cd "$TEMPDIR" &&
+zip -r "$OXT" python
+rm -r "$TEMPDIR"
 
 # Add generated files from build root
 cd "$BUILD_ROOT"/extension &&

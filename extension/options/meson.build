@@ -12,7 +12,6 @@ if bundled
 	install_data(
 		[ 'ConfigurationData.xcu', \
 		  'ConfigurationSchema.xcs', \
-		  'OptionsDialogHandler.py', \
 		  'OptionsDialogPage.xdl' ],
 		install_dir: join_paths(extension_dir, 'options')
 	)
