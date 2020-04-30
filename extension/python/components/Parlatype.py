@@ -29,9 +29,9 @@ from com.sun.star.beans import PropertyValue
 from com.sun.star.awt import XKeyHandler
 from com.sun.star.awt import XMouseClickHandler
 from com.sun.star.document import XDocumentEventListener
-from com.sun.star.awt.MessageBoxType import MESSAGEBOX
 import gettext
 import parlatype_utils as pt_utils
+from parlatype_utils import showMessage
 
 
 _ = gettext.gettext
@@ -42,14 +42,6 @@ Protocol = "org.parlatype.loextension:"
 
 
 current_timestamp = ''
-
-
-def showMessage(ctx, message):
-    toolkit = ctx.ServiceManager.createInstance('com.sun.star.awt.Toolkit')
-    parent = toolkit.getDesktopWindow()
-    dlg = toolkit.createMessageBox(
-        parent, MESSAGEBOX, 1, _("Parlatype"), message)
-    return dlg.execute()
 
 
 class KeyHandler(unohelper.Base, XKeyHandler):

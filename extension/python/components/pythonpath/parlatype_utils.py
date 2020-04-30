@@ -20,10 +20,21 @@ import uno
 import os
 import gettext
 import dbus
+from com.sun.star.awt.MessageBoxType import MESSAGEBOX
 
 
 MAX_TIMESTAMP_CHARS = 11
 MIN_TIMESTAMP_CHARS = 4
+
+_ = gettext.gettext
+
+
+def showMessage(ctx, message):
+    toolkit = ctx.ServiceManager.createInstance('com.sun.star.awt.Toolkit')
+    parent = toolkit.getDesktopWindow()
+    dlg = toolkit.createMessageBox(
+        parent, MESSAGEBOX, 1, _("Parlatype"), message)
+    return dlg.execute()
 
 
 def setGettextDomain(ctx):
