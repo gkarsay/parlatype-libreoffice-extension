@@ -119,7 +119,7 @@ def launch_flatpak(ctx, url):
         return
 
     # Whatever that may be ...
-    print(err)
+    showMessage(ctx, err)
 
 
 class ParlatypeController(object):
@@ -179,7 +179,6 @@ class ParlatypeController(object):
             controller.addKeyHandler(self.key_handler)
         if (mouse == 1):
             controller.addMouseClickHandler(self.mouse_handler)
-        print("timestamp scanner activated")
 
     def _get_link_url(self):
         doc = self.desktop.getCurrentComponent()
@@ -250,7 +249,8 @@ class ParlatypeController(object):
         doc_uprop = doc_prop.getUserDefinedProperties()
         set = doc_uprop.getPropertySetInfo()
         if set.hasPropertyByName('Parlatype'):
-            print('Already linked to ' + doc_uprop.getPropertyValue())
+            showMessage(self.ctx, "Already linked to {}.".format(
+                doc_uprop.getPropertyValue()))
             return
 
         try:
