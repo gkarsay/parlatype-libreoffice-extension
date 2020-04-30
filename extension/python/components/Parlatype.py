@@ -169,10 +169,11 @@ class ParlatypeController(object):
             doc_prop = doc.getDocumentProperties()
             doc_uprop = doc_prop.getUserDefinedProperties()
             doc_uprop.removeProperty('Parlatype')
+            self.linked = False
+            return True
         except Exception as e:
-            print(str(e))
-        print("unlink")
-        self.linked = False
+            showMessage(self.ctx, "{}: {}".format(e.__class__.__name__, str(e)))
+            return False
 
     def linkMedia(self):
         doc = self.desktop.getCurrentComponent()
@@ -207,9 +208,11 @@ class ParlatypeController(object):
     def link(self):
         ''' This is a toggle type method, it can mean link or unlink. '''
         if self.linked:
-            self.unlinkMedia()
-            self.deactivateTimestampScanner()
-            return True
+            if self.unlinkMedia():
+                self.deactivateTimestampScanner()
+                return True
+            else:
+                return False
         else:
             self.linkMedia()
             if self.linked:
