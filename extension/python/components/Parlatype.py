@@ -228,10 +228,16 @@ class EventListener(unohelper.Base, XDocumentEventListener):
         pass
 
     def documentEventOccured(self, event):
+        ''' This is called only on the very first document opened '''
         if event.EventName == "OnLayoutFinished":
             self.parent.removeDocumentListener()
-        if event.EventName == "OnLoad":
+
+        ''' OnViewCreated happens before OnNew, OnLoad and when user clicks
+            the menu Window > New Window. In that case a new window with the
+            same content is opened but there is no OnLoad/OnNew event. '''
+        if event.EventName == "OnViewCreated":
             self.parent.updateLinkButton()
+            self.parent.removeDocumentListener()
 
     def disposing(event):
         pass
