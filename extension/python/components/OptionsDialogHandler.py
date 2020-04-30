@@ -1,11 +1,12 @@
 #!
 # -*- coding: utf-8 -*-
 
-import os
 import unohelper
 from com.sun.star.awt import XContainerWindowEventHandler
 from com.sun.star.beans import PropertyValue
 import gettext
+import parlatype_utils as pt_utils
+
 _ = gettext.gettext
 
 
@@ -18,17 +19,7 @@ class OptionsDialogHandler(unohelper.Base, XContainerWindowEventHandler):
         self.node = PropertyValue()
         self.node.Name = 'nodepath'
         self.node.Value = '/org.parlatype.config'
-
-        gettext.bindtextdomain('parlatype_lo', self._get_locale_path())
-        gettext.textdomain('parlatype_lo')
-
-    def _get_locale_path(self):
-        pip = self.ctx.getByName(
-            "/singletons/com.sun.star.deployment.PackageInformationProvider")
-        # Get extension path without "file://"
-        ext_path = pip.getPackageLocation("org.parlatype.loextension")[7:]
-        loc_path = os.path.join(ext_path, 'locale')
-        return loc_path
+        pt_utils.setGettextDomain(ctx)
 
     # XContainerWindowEventHandler
     def callHandlerMethod(self, window, eventObject, method):

@@ -97,19 +97,6 @@ class ParlatypeController(object):
         smgr = self.ctx.getServiceManager()
         self.desktop = smgr.createInstanceWithContext(
             "com.sun.star.frame.Desktop", self.ctx)
-        try:
-            gettext.bindtextdomain('parlatype_lo', self._get_locale_path())
-            gettext.textdomain('parlatype_lo')
-        except Exception as e:
-            print(str(e))
-
-    def _get_locale_path(self):
-        pip = self.ctx.getByName(
-            "/singletons/com.sun.star.deployment.PackageInformationProvider")
-        # Get extension path without "file://"
-        ext_path = pip.getPackageLocation("org.parlatype.loextension")[7:]
-        loc_path = os.path.join(ext_path, 'locale')
-        return loc_path
 
     def _checkCursorforTimestamp(self, goto_current_timestamp=False):
         global current_timestamp
@@ -266,6 +253,7 @@ class ToolbarHandler(unohelper.Base, XServiceInfo,
         self.pt = ParlatypeController(ctx)
         self.GEB = self.ctx.getValueByName(
             "/singletons/com.sun.star.frame.theGlobalEventBroadcaster")
+        pt_utils.setGettextDomain(ctx)
 
     # XServiceInfo
     def supportsService(self, name):

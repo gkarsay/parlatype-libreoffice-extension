@@ -16,11 +16,26 @@ You should have received a copy of the GNU General Public License along
 with this program.  If not, see <https://www.gnu.org/licenses/>.
 '''
 
+import uno
+import os
+import gettext
 import dbus
 
 
 MAX_TIMESTAMP_CHARS = 11
 MIN_TIMESTAMP_CHARS = 4
+
+
+def setGettextDomain(ctx):
+    info = ctx.getByName(
+        "/singletons/com.sun.star.deployment.PackageInformationProvider")
+
+    extension_uri = info.getPackageLocation("org.parlatype.loextension")
+    extension_path = uno.fileUrlToSystemPath(extension_uri)
+    locale_path = os.path.join(extension_path, 'locale')
+
+    gettext.bindtextdomain('parlatype_lo', locale_path)
+    gettext.textdomain('parlatype_lo')
 
 
 def getDBUSService():
