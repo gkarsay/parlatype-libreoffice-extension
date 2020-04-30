@@ -29,6 +29,9 @@ from com.sun.star.beans import PropertyValue
 from com.sun.star.awt import XKeyHandler
 from com.sun.star.awt import XMouseClickHandler
 from com.sun.star.document import XDocumentEventListener
+from com.sun.star.beans.PropertyAttribute import MAYBEVOID
+from com.sun.star.beans.PropertyAttribute import BOUND
+from com.sun.star.beans.PropertyAttribute import REMOVEABLE
 import gettext
 import parlatype_utils as pt_utils
 from parlatype_utils import showMessage
@@ -192,12 +195,14 @@ class ParlatypeController(object):
             if media == "":
                 showMessage(self.ctx, _("Please open a media file first"))
                 return
-            doc_uprop.addProperty('Parlatype', 5, "")
-            # This is not updated in GUI, only on reload
-            doc_uprop.setPropertyValue('Parlatype', media)
-            self.linked = True
         except Exception as e:
             print(str(e))
+
+        doc_uprop.addProperty('Parlatype',
+                              MAYBEVOID + BOUND + REMOVEABLE,
+                              "")  # default value
+        doc_uprop.setPropertyValue('Parlatype', media)
+        self.linked = True
 
     def link(self):
         ''' This is a toggle type method, it can mean link or unlink. '''
