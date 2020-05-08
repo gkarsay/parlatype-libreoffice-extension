@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# This script puts all local translation files into a tar archive for
+# upload to launchpad.
+
+LP_EXPORT_FILE=launchpad-upload.tar.gz
+LP_EXPORT_DIR=launchpad-temp
+SCRIPT=./launchpad-export
+
+if [ "$0" != "$SCRIPT" ]
+then
+	echo "Script must be run from Parlatype root folder – quitting now."
+	exit 1
+fi
+
+mkdir $LP_EXPORT_DIR 2>&- || {
+	echo "Remove folder $LP_EXPORT_DIR first – quitting now."
+	exit 1
+}
+
+mkdir $LP_EXPORT_DIR/parlatype_lo
+cp po/*.pot $LP_EXPORT_DIR/parlatype_lo
+cp po/*.po $LP_EXPORT_DIR/parlatype_lo
+tar -C $LP_EXPORT_DIR -czf $LP_EXPORT_FILE parlatype_lo
+rm -r $LP_EXPORT_DIR/
