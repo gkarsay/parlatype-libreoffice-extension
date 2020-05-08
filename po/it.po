@@ -1,34 +1,32 @@
-# German translations for parlatype_lo package.
-# Copyright (C) 2020 THE parlatype_lo'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the parlatype_lo package.
-# Automatically generated, 2020.
-# Gabor Karsay <gabor.karsay@gxm.at>, 2020.
+# Italian translation for parlatype-libreoffice-extension
+# Copyright (c) 2020 Rosetta Contributors and Canonical Ltd 2020
+# This file is distributed under the same license as the parlatype-libreoffice-extension package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: parlatype_lo\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: parlatype-libreoffice-extension\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-05-08 13:27+0200\n"
-"PO-Revision-Date: 2020-03-19 10:57+0000\n"
-"Last-Translator: Gabor Karsay <Unknown>\n"
-"Language-Team: Deutsch <>\n"
+"PO-Revision-Date: 2020-03-26 14:47+0000\n"
+"Last-Translator: albano <albano_battistella@hotmail.com>\n"
+"Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2020-05-08 11:52+0000\n"
 "X-Generator: Launchpad (build fbdff7602bd10fb883bf7e2ddcc7fd5a16f60398)\n"
-"Language: de\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
-msgstr "Parlatype LibreOffice Erweiterung"
+msgstr "Estensione Parlatype per LibreOffice"
 
 #.
 #. This is the english description for this extension.
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr "Parlatype aus LibreOffice heraus kontrollieren"
+msgstr "Controlla Parlatype da LibreOffice"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
 msgid "This new release depends on Parlatype 2.1."
@@ -56,7 +54,7 @@ msgstr ""
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr "Parlatype für LibreOffice"
+msgstr "Parlatype per LibreOffice"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
@@ -65,15 +63,15 @@ msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:69
 msgid "Go to timestamp"
-msgstr "Zu Zeitstempel gehen"
+msgstr "Vai al timestamp"
 
 #: extension/python/components/OptionsDialogHandler.py:70
 msgid "On mouseclick"
-msgstr "Bei Mausklick"
+msgstr "Al clic del mouse"
 
 #: extension/python/components/OptionsDialogHandler.py:71
 msgid "On key cursor"
-msgstr "Bei Tastennavigation"
+msgstr "Sul cursore chiave"
 
 #: extension/python/components/Parlatype.py:97
 #: extension/python/components/Parlatype.py:118
@@ -97,18 +95,18 @@ msgstr ""
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr "Parlatype öffnen"
+msgstr "Apri Parlatype"
 
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
-msgstr "Medien verbinden"
+msgstr "Collegamento al Media"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
 msgstr ""
 
 #~ msgid "Please open Parlatype first"
-#~ msgstr "Bitte öffnen Sie zuerst Parlatype."
+#~ msgstr "Si prega di aprire prima Parlatype"
 
 #~ msgid "Please open a media file first"
-#~ msgstr "Bitte öffnen Sie zuerst eine Mediendatei."
+#~ msgstr "Si prega di aprire prima un file multimediale"
