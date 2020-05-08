@@ -255,7 +255,7 @@ class ParlatypeController(object):
 
         try:
             if pt_utils.ParlatypeIsRunning(self.ctx) is False:
-                showMessage(self.ctx, _("Please open Parlatype first"))
+                showMessage(self.ctx, _("Please open Parlatype first."))
                 return
         except Exception as e:
                 showMessage(self.ctx, str(e))
@@ -266,7 +266,7 @@ class ParlatypeController(object):
                 showMessage(self.ctx, str(e))
                 return
         if media is None:
-            showMessage(self.ctx, _("Please open a media file first"))
+            showMessage(self.ctx, _("Please open a media file first."))
             return
 
         doc_uprop.addProperty('Parlatype',
