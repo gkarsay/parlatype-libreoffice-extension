@@ -12,6 +12,17 @@
 	<url type="donation">https://www.parlatype.org/donate.html</url>
 
 	<releases>
+		<release version="2.1" date="2020-05-xx">
+			<description>
+			<p>This new release depends on Parlatype 2.1.</p>
+			<ul>
+			<li>New toolbar icon to insert a timestamp.</li>
+			<li>Changed location of macros: If installed with a package manager, reassign to LibreOffice Macros > LibreOffice Macros > Parlatype.</li>
+			<li>“Open Parlatype” tries to open a flatpak version if it can’t find Parlatype in the system path.</li>
+			<li>Translation updates for several languages.</li>
+			</ul>
+			</description>
+		</release>
 		<release version="2.0" date="2020-03-19"></release>
 	</releases>
 

@@ -1,3 +1,20 @@
+Overview of Changes in Parlatype LibreOffice Extension 2.1 – 2020-05-xx
+=======================================================================
+
+* New: Toolbar icon to insert a timestamp
+* New: Added Windows (win32) support
+* New: Changed location of macros:
+       .otx   : LibreOffice Macros > My Macros > Parlatype.oxt > Macros
+       bundled: LibreOffice Macros > LibreOffice Macros > Parlatype
+* New: "Open Parlatype" tries to open a flatpak version if it can't find
+       Parlatype in the system path.
+* Fix: Linked media is immediately visible in the Menu at:
+       File > Properties... > Custom Properties
+* New or updated languages:
+  ### UPDATE AFTER LAST TRANSLATION IMPORT ###
+  - de: Gabor Karsay
+
+
 Overview of Changes in Parlatype LibreOffice Extension 2.0 – 2020-03-19
 =======================================================================
 
