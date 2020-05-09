@@ -19,6 +19,8 @@ class OptionsDialogHandler(unohelper.Base, XContainerWindowEventHandler):
         self.node = PropertyValue()
         self.node.Name = 'nodepath'
         self.node.Value = '/org.parlatype.config'
+        self.orig_keys_value = 0
+        self.orig_mouse_value = 0
         pt_utils.setGettextDomain(ctx)
 
     # XContainerWindowEventHandler
@@ -52,8 +54,12 @@ class OptionsDialogHandler(unohelper.Base, XContainerWindowEventHandler):
             (self.node,))
         check_keys = window.getControl("CheckboxKeys")
         check_mouse = window.getControl("CheckboxMouse")
-        writer.setPropertyValue('TimestampKeys', check_keys.getState())
-        writer.setPropertyValue('TimestampMouse', check_mouse.getState())
+        new_keys_value = check_keys.getState()
+        new_mouse_value = check_mouse.getState()
+        if self.orig_keys_value != new_keys_value:
+            writer.setPropertyValue('TimestampKeys', new_keys_value)
+        if self.orig_mouse_value != new_mouse_value:
+            writer.setPropertyValue('TimestampMouse', new_mouse_value)
         writer.commitChanges()
 
     def _loadData(self, window, eventName):
@@ -72,8 +78,10 @@ class OptionsDialogHandler(unohelper.Base, XContainerWindowEventHandler):
 
         reader = self.cfg.createInstanceWithArguments(
             'com.sun.star.configuration.ConfigurationAccess', (self.node,))
-        check_keys.setState(reader.getPropertyValue('TimestampKeys'))
-        check_mouse.setState(reader.getPropertyValue('TimestampMouse'))
+        self.orig_keys_value = reader.getPropertyValue('TimestampKeys')
+        self.orig_mouse_value = reader.getPropertyValue('TimestampMouse')
+        check_keys.setState(self.orig_keys_value)
+        check_mouse.setState(self.orig_mouse_value)
 
 
 # uno implementation
