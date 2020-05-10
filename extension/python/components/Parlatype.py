@@ -26,10 +26,11 @@ from com.sun.star.lang import XServiceInfo
 from com.sun.star.frame import XDispatchProvider
 from com.sun.star.frame import XDispatch
 from com.sun.star.frame import FeatureStateEvent
-from com.sun.star.beans import PropertyValue
 from com.sun.star.awt import XKeyHandler
 from com.sun.star.awt import XMouseClickHandler
 from com.sun.star.document import XDocumentEventListener
+from com.sun.star.beans import PropertyValue
+from com.sun.star.beans import XPropertyChangeListener
 from com.sun.star.beans.PropertyAttribute import MAYBEVOID
 from com.sun.star.beans.PropertyAttribute import BOUND
 from com.sun.star.beans.PropertyAttribute import REMOVEABLE
@@ -50,6 +51,27 @@ Protocol = "org.parlatype.loextension:"
 
 
 current_timestamp = ''
+
+
+class OptionsListener(unohelper.Base, XPropertyChangeListener):
+    def __init__(self, parent, controller):
+        self.parent = parent
+        self.controller = controller
+        # print("Optionslistener init for", self.controller.getTitle())
+
+    def propertyChange(self, Event):
+        # Event.OldValue, Event.NewValue and Event.Further seem to be always
+        # None and can't be used for anything.
+
+        # print("Property \"{}\" changed".format(Event.PropertyName))
+
+        self.parent.updateTimestampOptions(self.controller)
+
+        return False
+
+    def disposing(self, source):
+        # print("Parlatype Extension: OptionsListener removed")
+        pass
 
 
 class KeyHandler(unohelper.Base, XKeyHandler):
@@ -197,6 +219,7 @@ class ParlatypeController(object):
         self.ctx = ctx
         self.key_handler = KeyHandler(self)
         self.mouse_handler = MouseHandler(self)
+        self.options_listener = None
         self.link_url = None
         self.linked = False
         smgr = self.ctx.getServiceManager()
@@ -221,32 +244,63 @@ class ParlatypeController(object):
                                       Cmd.GOTO_TIMESTAMP.value,
                                       timestamp)
 
-    def deactivateTimestampScanner(self):
-        doc = self.desktop.getCurrentComponent()
-        controller = doc.getCurrentController()
-        controller.removeKeyHandler(self.key_handler)
-        controller.removeMouseClickHandler(self.mouse_handler)
-
-    def activateTimestampScanner(self):
-        # Get options
+    def _getOptionsReader(self):
         smgr = self.ctx.getServiceManager()
         cfg = smgr.createInstanceWithContext(
             'com.sun.star.configuration.ConfigurationProvider', self.ctx)
         node = PropertyValue()
         node.Name = 'nodepath'
         node.Value = '/org.parlatype.config'
-        reader = cfg.createInstanceWithArguments(
-            'com.sun.star.configuration.ConfigurationAccess', (node,))
+        return cfg.createInstanceWithArguments(
+             'com.sun.star.configuration.ConfigurationAccess', (node,))
+
+    def updateTimestampOptions(self, controller):
+        # Get options
+        reader = self._getOptionsReader()
         keys = reader.getPropertyValue('TimestampKeys')
         mouse = reader.getPropertyValue('TimestampMouse')
 
-        # Attach listeners
+        # Add or remove Key and Mouse event listeners to document
         doc = self.desktop.getCurrentComponent()
-        controller = doc.getCurrentController()
         if (keys == 1):
             controller.addKeyHandler(self.key_handler)
+        else:
+            controller.removeKeyHandler(self.key_handler)
+
         if (mouse == 1):
             controller.addMouseClickHandler(self.mouse_handler)
+        else:
+            controller.removeMouseClickHandler(self.mouse_handler)
+
+    def deactivateTimestampScanner(self):
+        doc = self.desktop.getCurrentComponent()
+        controller = doc.getCurrentController()
+        controller.removeKeyHandler(self.key_handler)
+        controller.removeMouseClickHandler(self.mouse_handler)
+        reader = self._getOptionsReader()
+        reader.removePropertyChangeListener('TimestampKeys',
+                                            self.options_listener)
+        reader.removePropertyChangeListener('TimestampMouse',
+                                            self.options_listener)
+
+    def activateTimestampScanner(self):
+        doc = self.desktop.getCurrentComponent()
+        controller = doc.getCurrentController()
+
+        # Get options
+        reader = self._getOptionsReader()
+        self.updateTimestampOptions(controller)
+
+        # Attach Options listener
+        try:
+            if self.options_listener is None:
+                self.options_listener = OptionsListener(self, controller)
+            reader.addPropertyChangeListener('TimestampKeys',
+                                             self.options_listener)
+            reader.addPropertyChangeListener('TimestampMouse',
+                                             self.options_listener)
+        except Exception as e:
+                showMessage(self.ctx, str(e))
 
     def setLinkedStatus(self, status):
         self.linked = status
