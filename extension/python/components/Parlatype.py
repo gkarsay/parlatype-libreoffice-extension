@@ -83,6 +83,17 @@ class MouseHandler(unohelper.Base, XMouseClickHandler):
     def disposing(self, source):
         pass
 
+
+def get_link_url(doc):
+    doc_prop = doc.getDocumentProperties()
+    doc_uprop = doc_prop.getUserDefinedProperties()
+    set = doc_uprop.getPropertySetInfo()
+    if set.hasPropertyByName('Parlatype') is False:
+        return None
+    else:
+        return doc_uprop.getPropertyValue('Parlatype')
+
+
 def launch_flatpak(ctx, url):
     cmdline = ["flatpak", "run", "org.parlatype.Parlatype"]
     if url is not None:
@@ -180,16 +191,6 @@ class ParlatypeController(object):
         if (mouse == 1):
             controller.addMouseClickHandler(self.mouse_handler)
 
-    def _get_link_url(self):
-        doc = self.desktop.getCurrentComponent()
-        doc_prop = doc.getDocumentProperties()
-        doc_uprop = doc_prop.getUserDefinedProperties()
-        set = doc_uprop.getPropertySetInfo()
-        if set.hasPropertyByName('Parlatype') is False:
-            return None
-        else:
-            return doc_uprop.getPropertyValue('Parlatype')
-
     def open(self):
         ''' Note: This is called in a different instance of ParlatypeController
             than "link". Saving the url there as self.url wouldn't be
@@ -215,7 +216,11 @@ class ParlatypeController(object):
         else:
             cmdline = ["parlatype"]
 
-        url = self._get_link_url()
+        smgr = self.ctx.getServiceManager()
+        desktop = smgr.createInstanceWithContext(
+                "com.sun.star.frame.Desktop", self.ctx)
+        doc = desktop.getCurrentComponent()
+        url = get_link_url(doc)
         if url is not None:
             cmdline.append(url)
 
@@ -414,8 +419,11 @@ class ToolbarHandler(unohelper.Base, XServiceInfo,
         self.GEB.removeDocumentEventListener(self.doc_listener)
 
     def updateLinkButton(self):
-        url = None
-        url = self.pt._get_link_url()
+        smgr = self.ctx.getServiceManager()
+        desktop = smgr.createInstanceWithContext(
+                "com.sun.star.frame.Desktop", self.ctx)
+        doc = desktop.getCurrentComponent()
+        url = get_link_url(doc)
         if url is not None:
             self.pt.setLinkedStatus(True)
             self.pt.activateTimestampScanner()
