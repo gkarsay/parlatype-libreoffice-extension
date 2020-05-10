@@ -94,6 +94,24 @@ def get_link_url(doc):
         return doc_uprop.getPropertyValue('Parlatype')
 
 
+def insertTimestamp(ctx):
+    smgr = ctx.getServiceManager()
+    desktop = smgr.createInstanceWithContext(
+            "com.sun.star.frame.Desktop", ctx)
+    doc = desktop.getCurrentComponent()
+    controller = doc.getCurrentController()
+    textrange = pt_utils.getTextRange(controller)
+    if (textrange is None):
+        return
+
+    try:
+        timestamp = pt_utils.getParlatypeString("GetTimestamp")
+        if timestamp is not None:
+            textrange.setString(timestamp)
+    except Exception:
+        pass
+
+
 def launch_flatpak(ctx, url):
     cmdline = ["flatpak", "run", "org.parlatype.Parlatype"]
     if url is not None:
@@ -297,20 +315,6 @@ class ParlatypeController(object):
             else:
                 return False
 
-    def timestamp(self):
-        doc = self.desktop.getCurrentComponent()
-        controller = doc.getCurrentController()
-        textrange = pt_utils.getTextRange(controller)
-        if (textrange is None):
-            return
-
-        try:
-            timestamp = pt_utils.getParlatypeString("GetTimestamp")
-            if timestamp is not None:
-                textrange.setString(timestamp)
-        except Exception:
-            pass
-
 
 class EventListener(unohelper.Base, XDocumentEventListener):
     def __init__(self, parent):
@@ -397,7 +401,7 @@ class ToolbarHandler(unohelper.Base, XServiceInfo,
                     self.ev.State = self.status
                     self.listener.statusChanged(self.ev)
             elif url.Path == "timestamp":
-                self.pt.timestamp()
+                insertTimestamp(self.ctx)
 
     def addStatusListener(self, control, url):
         ''' The StatusListener enables controlling toolbar items. We are only
