@@ -112,7 +112,7 @@ def insertTimestamp(ctx):
         pass
 
 
-def launch_flatpak(ctx, url):
+def launchFlatpak(ctx, url):
     cmdline = ["flatpak", "run", "org.parlatype.Parlatype"]
     if url is not None:
         cmdline.append(url)
@@ -149,6 +149,45 @@ def launch_flatpak(ctx, url):
 
     # Whatever that may be ...
     showMessage(ctx, err)
+
+
+def openParlatype(ctx):
+    if sys.platform == 'win32':
+        registry = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
+        try:
+            key = OpenKey(registry,
+                          r'SOFTWARE\Microsoft\Windows' +
+                          r'\CurrentVersion\Uninstall\Parlatype',
+                          0, KEY_READ)
+        except FileNotFoundError:
+            CloseKey(registry)
+            # TODO add a clickable download link
+            showMessage(ctx, _("Parlatype is not installed."))
+            return
+        [path, regtype] = (QueryValueEx(key, "InstallLocation"))
+        CloseKey(key)
+        CloseKey(registry)
+        cmd = os.path.join(path, 'bin', 'parlatype.exe')
+        cmdline = [cmd]
+    else:
+        cmdline = ["parlatype"]
+
+    smgr = ctx.getServiceManager()
+    desktop = smgr.createInstanceWithContext(
+            "com.sun.star.frame.Desktop", ctx)
+    doc = desktop.getCurrentComponent()
+    url = get_link_url(doc)
+    if url is not None:
+        cmdline.append(url)
+
+    try:
+        subprocess.Popen(cmdline)
+    except FileNotFoundError:
+        # Try Flatpak in a different thread, because we're waiting for its
+        # return code/stderr and that would keep the button pressed.
+        t = threading.Thread(target=launchFlatpak, args=(self.ctx, url,))
+        t.daemon = True
+        t.start()
 
 
 class ParlatypeController(object):
@@ -208,48 +247,6 @@ class ParlatypeController(object):
             controller.addKeyHandler(self.key_handler)
         if (mouse == 1):
             controller.addMouseClickHandler(self.mouse_handler)
-
-    def open(self):
-        ''' Note: This is called in a different instance of ParlatypeController
-            than "link". Saving the url there as self.url wouldn't be
-            accessible from this instance. '''
-
-        if sys.platform == 'win32':
-            registry = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
-            try:
-                key = OpenKey(registry,
-                              r'SOFTWARE\Microsoft\Windows' +
-                              r'\CurrentVersion\Uninstall\Parlatype',
-                              0, KEY_READ)
-            except FileNotFoundError:
-                CloseKey(registry)
-                # TODO add a clickable download link
-                showMessage(self.ctx, _("Parlatype is not installed."))
-                return
-            [path, regtype] = (QueryValueEx(key, "InstallLocation"))
-            CloseKey(key)
-            CloseKey(registry)
-            cmd = os.path.join(path, 'bin', 'parlatype.exe')
-            cmdline = [cmd]
-        else:
-            cmdline = ["parlatype"]
-
-        smgr = self.ctx.getServiceManager()
-        desktop = smgr.createInstanceWithContext(
-                "com.sun.star.frame.Desktop", self.ctx)
-        doc = desktop.getCurrentComponent()
-        url = get_link_url(doc)
-        if url is not None:
-            cmdline.append(url)
-
-        try:
-            subprocess.Popen(cmdline)
-        except FileNotFoundError:
-            # Try Flatpak in a different thread, because we're waiting for its
-            # return code/stderr and that would keep the button pressed.
-            t = threading.Thread(target=launch_flatpak, args=(self.ctx, url,))
-            t.daemon = True
-            t.start()
 
     def setLinkedStatus(self, status):
         self.linked = status
@@ -394,7 +391,7 @@ class ToolbarHandler(unohelper.Base, XServiceInfo,
     def dispatch(self, url, args):
         if url.Protocol == Protocol:
             if url.Path == "open":
-                self.pt.open()
+                openParlatype(self.ctx)
             elif url.Path == "link":
                 if self.pt.link() is True:
                     self.status = not self.status
