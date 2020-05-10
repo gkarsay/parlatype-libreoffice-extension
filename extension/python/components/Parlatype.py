@@ -200,9 +200,9 @@ class ParlatypeController(object):
             registry = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
             try:
                 key = OpenKey(registry,
-                               r'SOFTWARE\Microsoft\Windows' +
-                               r'\CurrentVersion\Uninstall\Parlatype',
-                               0, KEY_READ)
+                              r'SOFTWARE\Microsoft\Windows' +
+                              r'\CurrentVersion\Uninstall\Parlatype',
+                              0, KEY_READ)
             except FileNotFoundError:
                 CloseKey(registry)
                 # TODO add a clickable download link
@@ -245,7 +245,8 @@ class ParlatypeController(object):
             self.linked = False
             return True
         except Exception as e:
-            showMessage(self.ctx, "{}: {}".format(e.__class__.__name__, str(e)))
+            showMessage(self.ctx, "{}: {}".format(e.__class__.__name__,
+                                                  str(e)))
             return False
 
     def linkMedia(self):

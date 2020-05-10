@@ -34,6 +34,7 @@ MIN_TIMESTAMP_CHARS = 4
 
 _ = gettext.gettext
 
+
 # Defined in Parlatype: src/pt-win32-copydata.h
 class Cmd(Enum):
     PLAY_PAUSE = 0
