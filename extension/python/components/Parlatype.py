@@ -318,17 +318,27 @@ class EventListener(unohelper.Base, XDocumentEventListener):
         self.parent = parent
         pass
 
-    def documentEventOccured(self, event):
-        ''' This is called only on the very first document opened '''
-        if event.EventName == "OnLayoutFinished":
-            self.parent.removeDocumentListener()
+    # Sequence of events if a document is opened or created:
+    # 1) OnViewCreated
+    # 2) OnPageCountChange
+    # 3) OnNew or OnLoad
+    # 4) OnLayoutFinished
+    #
+    # Sequence of events if a new window is opened (with the same content
+    # as the currently open window) in the menu: Window > New Window
+    # 1) OnViewCreated
+    # 2) OnPageCountChange
+    #
+    # OnViewCreated we still get the LinkStatus of the previously opened
+    # document, not the new one!
 
-        ''' OnViewCreated happens before OnNew, OnLoad and when user clicks
-            the menu Window > New Window. In that case a new window with the
-            same content is opened but there is no OnLoad/OnNew event. '''
-        if event.EventName == "OnViewCreated":
+    def documentEventOccured(self, event):
+        if event.EventName == "OnLayoutFinished":
             self.parent.updateLinkButton()
             self.parent.removeDocumentListener()
+
+        if event.EventName == "OnViewCreated":
+            self.parent.updateLinkButton()
 
     def disposing(event):
         pass
@@ -426,7 +436,13 @@ class ToolbarHandler(unohelper.Base, XServiceInfo,
                 "com.sun.star.frame.Desktop", self.ctx)
         doc = desktop.getCurrentComponent()
         url = get_link_url(doc)
-        if url is not None:
+        if url is None:
+            self.pt.setLinkedStatus(False)
+            self.pt.deactivateTimestampScanner()
+            self.status = False
+            self.ev.State = self.status
+            self.listener.statusChanged(self.ev)
+        else:
             self.pt.setLinkedStatus(True)
             self.pt.activateTimestampScanner()
             self.status = True
