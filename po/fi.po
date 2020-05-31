@@ -16,6 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2020-05-31 18:28+0000\n"
 "X-Generator: Launchpad (build 275d46a24253e557e4403d52832837e4bfa425b6)\n"
+"Language: fi\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
