@@ -1,4 +1,4 @@
-# Italian translation for parlatype-libreoffice-extension
+# Spanish translation for parlatype-libreoffice-extension
 # Copyright (c) 2020 Rosetta Contributors and Canonical Ltd 2020
 # This file is distributed under the same license as the parlatype-libreoffice-extension package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: parlatype-libreoffice-extension\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-05-08 13:27+0200\n"
-"PO-Revision-Date: 2020-03-26 14:47+0000\n"
-"Last-Translator: albano <albano_battistella@hotmail.com>\n"
-"Language-Team: Italian <it@li.org>\n"
+"PO-Revision-Date: 2020-05-09 17:11+0000\n"
+"Last-Translator: Rodrigo Lledó <rodhos92@gmail.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,42 +19,48 @@ msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
-msgstr "Estensione Parlatype per LibreOffice"
+msgstr "Parlatype extensión de LibreOffice"
 
 #. 
 #. This is the english description for this extension.
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr "Controlla Parlatype da LibreOffice"
+msgstr "Controlar Parlatype desde LibreOffice"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "Este lanzamiento depende de Parlatype 2.1."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "New toolbar icon to insert a timestamp."
 msgstr ""
+"Nuevo icono de la barra de herramientas para insertar una marca de tiempo."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"Cambiada la ubicación de los macros: si se instaló con un gestor de "
+"paquetes, reasigne a LibreOffice Macros &gt; LibreOffice Macros &gt; "
+"Parlatype."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
 msgid ""
 "“Open Parlatype” tries to open a flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
+"“Abrir Parlatype” intenta abrir una versión de flatpak si no puede encontrar "
+"Parlatype en la ruta del sistema."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:22
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "Actualizaciones de traducción para varios idiomas."
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr "Parlatype per LibreOffice"
+msgstr "Parlatype para LibreOffice"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
@@ -63,44 +69,45 @@ msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:69
 msgid "Go to timestamp"
-msgstr "Vai al timestamp"
+msgstr "Ir a la marca de tiempo"
 
 #: extension/python/components/OptionsDialogHandler.py:70
 msgid "On mouseclick"
-msgstr "Al clic del mouse"
+msgstr "Al pulsar con el ratón"
 
 #: extension/python/components/OptionsDialogHandler.py:71
 msgid "On key cursor"
-msgstr "Sul cursore chiave"
+msgstr "Con una tecla del cursor"
 
 #: extension/python/components/Parlatype.py:97
 #: extension/python/components/Parlatype.py:118
 #: extension/python/components/Parlatype.py:208
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "Parlatype no está instalado."
 
 #: extension/python/components/Parlatype.py:108
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr ""
+"Parece que el perfil de AppArmor para LibreOffice impide lanzar Flatpak."
 
 #: extension/python/components/Parlatype.py:258
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "Abra Parlatype primero."
 
 #: extension/python/components/Parlatype.py:269
 msgid "Please open a media file first."
-msgstr ""
+msgstr "Abra un archivo de medios primero."
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr "Apri Parlatype"
+msgstr "Abrir Parlatype"
 
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
-msgstr "Collegamento al Media"
+msgstr "Enlazar medio"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "Insertar marca de tiempo"
