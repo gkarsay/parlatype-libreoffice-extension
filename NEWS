@@ -1,4 +1,4 @@
-Overview of Changes in Parlatype LibreOffice Extension 2.1 – 2020-05-xx
+Overview of Changes in Parlatype LibreOffice Extension 2.1 – 2020-06-21
 =======================================================================
 
 * New: Toolbar icon to insert a timestamp
@@ -6,13 +6,17 @@ Overview of Changes in Parlatype LibreOffice Extension 2.1 – 2020-05-xx
 * New: Changed location of macros:
        .otx   : LibreOffice Macros > My Macros > Parlatype.oxt > Macros
        bundled: LibreOffice Macros > LibreOffice Macros > Parlatype
-* New: "Open Parlatype" tries to open a flatpak version if it can't find
+* New: “Open Parlatype” tries to open a flatpak version if it can’t find
        Parlatype in the system path.
 * Fix: Linked media is immediately visible in the Menu at:
        File > Properties... > Custom Properties
 * New or updated languages:
-  ### UPDATE AFTER LAST TRANSLATION IMPORT ###
-  - de: Gabor Karsay
+  - de:    Gabor Karsay
+  - en_AU: Jared Norris
+  - es:    Rodrigo Lledó
+  - fi:    Jiri Grönroos
+  - fr:    Jean-Marc
+  - it:    albano
 
 
 Overview of Changes in Parlatype LibreOffice Extension 2.0 – 2020-03-19
@@ -20,7 +24,7 @@ Overview of Changes in Parlatype LibreOffice Extension 2.0 – 2020-03-19
 
 * First release, requires Parlatype 2.0
 * New: A toolbar button to open Parlatype (and open linked media file)
-* New: A toolbar button to link Parlatype's currently open file with the
+* New: A toolbar button to link Parlatype’s currently open file with the
        current LibreOffice Writer document
 * New: Automatically go to timestamp on mouse click or on key navigation
        (whenever cursor moves to a timestamp in the document)
