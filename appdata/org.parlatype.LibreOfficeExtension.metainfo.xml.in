@@ -12,7 +12,7 @@
 	<url type="donation">https://www.parlatype.org/donate.html</url>
 
 	<releases>
-		<release version="2.1" date="2020-05-xx">
+		<release version="2.1" date="2020-06-21">
 			<description>
 			<p>This new release depends on Parlatype 2.1.</p>
 			<ul>
@@ -30,3 +30,4 @@
 	<project_license>GPL-3.0+</project_license>
 	<update_contact>gabor.karsay@gmx.at</update_contact>
 </component>
+
