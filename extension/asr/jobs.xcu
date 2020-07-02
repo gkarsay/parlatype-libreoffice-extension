@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+oor:name="Jobs"
+oor:package="org.openoffice.Office">
+
+  <node oor:name="Jobs">
+    <node oor:name="ASR" oor:op="replace">
+      <prop oor:name="Service">
+        <value>org.parlatype.ASRListener</value>
+      </prop>
+    </node>
+  </node>
+
+  <node oor:name="Events">
+    <node oor:name="OnStartApp" oor:op="fuse">
+      <node oor:name="JobList">
+        <node oor:name="ASR" oor:op="replace"/>
+      </node>
+    </node>
+    <node oor:name="OnUnload" oor:op="fuse">
+      <node oor:name="JobList">
+        <node oor:name="ASR" oor:op="replace"/>
+      </node>
+    </node>
+    <node oor:name="OnCloseApp" oor:op="fuse">
+      <node oor:name="JobList">
+        <node oor:name="ASR" oor:op="replace"/>
+      </node>
+    </node>
+  </node>
+
+</oor:component-data>
