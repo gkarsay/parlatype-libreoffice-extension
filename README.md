@@ -14,6 +14,6 @@ git remote set-head origin -a
 git branch --set-upstream-to origin/main
 
 # 5) Delete master branch
-git branch -D master
+git branch -d master
 ```
 
