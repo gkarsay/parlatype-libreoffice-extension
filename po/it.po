@@ -1,14 +1,14 @@
 # Italian translation for parlatype-libreoffice-extension
 # Copyright (c) 2020 Rosetta Contributors and Canonical Ltd 2020
 # This file is distributed under the same license as the parlatype-libreoffice-extension package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# ALBANO BATTISTELLA <albano_battistella@hotmail.com>, 2020,2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: parlatype-libreoffice-extension\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2020-05-08 13:27+0200\n"
-"PO-Revision-Date: 2020-03-26 14:47+0000\n"
+"PO-Revision-Date: 2021-09-11 19:47+0100\n"
 "Last-Translator: albano <albano_battistella@hotmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -31,27 +31,32 @@ msgstr "Controlla Parlatype da LibreOffice"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "Questa nuova versione dipende da Parlatype 2.1."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "Nuova icona della barra degli strumenti per inserire un timestamp."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"Posizione modificata delle macro: Se installato con un gestore di pacchetti, riassegna a "
+"LibreOffice Macro &gt; LibreOffice Macro &gt; Parlatype."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
 msgid ""
 "“Open Parlatype” tries to open a flatpak version if it can’t find Parlatype "
 "in the system path."
-msgstr ""
+msgstr""
+"“Open Parlatype” tenta di aprire una versione flatpak se non riesce a trovare Parlatype "
+"nel percorso di sistema."
+
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:22
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "Aggiornamenti di traduzione per diverse lingue."
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
@@ -78,21 +83,23 @@ msgstr "Sul cursore chiave"
 #: extension/python/components/Parlatype.py:118
 #: extension/python/components/Parlatype.py:208
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "Parlatype non è installato."
 
 #: extension/python/components/Parlatype.py:108
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr ""
+"Sembra che il profilo AppArmor per LibreOffice impedisca l'avvio"
+"Flatpack."
 
 #: extension/python/components/Parlatype.py:258
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "Si prega di aprire Parlatype prima."
 
 #: extension/python/components/Parlatype.py:269
 msgid "Please open a media file first."
-msgstr ""
+msgstr "Si prega di aprire prima un file multimediale."
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
@@ -104,4 +111,4 @@ msgstr "Collegamento al Media"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "Inserisci data e ora"
