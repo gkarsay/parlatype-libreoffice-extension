@@ -300,7 +300,7 @@ class ParlatypeController(object):
             reader.addPropertyChangeListener('TimestampMouse',
                                              self.options_listener)
         except Exception as e:
-                showMessage(self.ctx, str(e))
+            showMessage(self.ctx, str(e))
 
     def setLinkedStatus(self, status):
         self.linked = status
@@ -333,13 +333,13 @@ class ParlatypeController(object):
                 showMessage(self.ctx, _("Please open Parlatype first."))
                 return
         except Exception as e:
-                showMessage(self.ctx, str(e))
-                return
+            showMessage(self.ctx, str(e))
+            return
         try:
             media = pt_utils.getParlatypeString("GetURI")
         except Exception as e:
-                showMessage(self.ctx, str(e))
-                return
+            showMessage(self.ctx, str(e))
+            return
         if media is None:
             showMessage(self.ctx, _("Please open a media file first."))
             return
