@@ -263,14 +263,22 @@ def getTextRange(controller):
     # the css.view.XSelectionSupplier interface
     xSelectionSupplier = controller
 
-    xIndexAccess = xSelectionSupplier.getSelection()
-    count = xIndexAccess.getCount()
+    selection = xSelectionSupplier.getSelection()
+
+    # selection can be a XTextRange, XTextTableCursor and possibly others.
+    # We want XTextRange with an XIndexAccess interface to use .getCount() and
+    # .getByIndex().
+    try:
+        count = selection.getCount()
+    except AttributeError:
+        # ignore selection without XIndexAccess interface
+        return None
 
     # don't mess around with multiple selections
     if (count != 1):
         return None
 
-    textrange = xIndexAccess.getByIndex(0)
+    textrange = selection.getByIndex(0)
 
     # don't mess around with selections, just plain cursor
     if (len(textrange.getString()) == 0):
