@@ -49,10 +49,9 @@ msgstr ""
 msgid ""
 "“Open Parlatype” tries to open a flatpak version if it can’t find Parlatype "
 "in the system path."
-msgstr""
+msgstr ""
 "“Open Parlatype” tenta di aprire una versione flatpak se non riesce a trovare Parlatype "
 "nel percorso di sistema."
-
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:22
 msgid "Translation updates for several languages."
