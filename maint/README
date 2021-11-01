@@ -13,3 +13,13 @@ LibreOffice and Python
 Edit /usr/lib/libreoffice/program/pythonscript.py
 At #Configuration change loglevel to
 LogLevel.use = LogLevel.DEBUG
+
+
+Release
+=======
+
+Change version in meson.build
+git tag v$VERSION
+git push --tags
+maint/make-release
+gh release create v$VERSION archive/v$VERSION/* --title "Parlatype LibreOffice Extension $VERSION" --notes-file NEWS
