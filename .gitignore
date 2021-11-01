@@ -6,4 +6,5 @@
 
 *.tar.gz
 *.tar.gz.asc
+/archive/
 /build/
