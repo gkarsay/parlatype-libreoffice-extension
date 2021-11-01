@@ -2,4 +2,4 @@
 .gitignore			export-ignore
 launchpad-export		export-ignore
 launchpad-import		export-ignore
-MAINTAINER_README		export-ignore
+maint/				export-ignore
