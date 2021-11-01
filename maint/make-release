@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Creates and signs a tarball and an .oxt
+
+
+cd "$(dirname "$0")" || exit 1
+cd ..
+
+VERSION=$(grep --max-count 1 'version' meson.build | cut --delimiter=\' -f 2)
+TARBALL=parlatype-libreoffice-extension-"$VERSION".tar.gz
+OXT=Parlatype.oxt
+
+
+if [ -e "$TARBALL" ]
+then
+	echo "$TARBALL exists – quitting now."
+	exit 1
+fi
+
+git archive --format=tar --prefix=parlatype-libreoffice-extension-"$VERSION"/ main | gzip > "$TARBALL"
+
+gpg --armor --detach-sign "$TARBALL"
+
+ls -l "$TARBALL"*
+
+cd "$(dirname "$0")"
+source cd_builddir_or_exit
+
+meson configure -Dbundled=false
+ninja
+gpg --armor --detach-sign "$OXT"
