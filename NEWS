@@ -1,3 +1,12 @@
+Overview of Changes in Parlatype LibreOffice Extension 3.0 – 2021-11-01
+=======================================================================
+
+* New: ASR Listener prints recognized text from Parlatype (Linux only)
+* Fix: Don’t crash if selecting a table (fix #4)
+* New or updated languages:
+  - it: albanobattistella
+
+
 Overview of Changes in Parlatype LibreOffice Extension 2.1 – 2020-06-21
 =======================================================================
 
