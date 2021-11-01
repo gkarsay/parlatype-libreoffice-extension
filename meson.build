@@ -1,5 +1,5 @@
 project('parlatype-libreoffice-extension',
-	version: '2.1',
+	version: '3.0',
 	#meson_version: '>= 0.47.2', # oldest working tested version
 	license: 'GPL3+',
 )
