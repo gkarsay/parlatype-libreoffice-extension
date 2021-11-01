@@ -17,11 +17,27 @@ then
 	exit 1
 fi
 
+if [ -e archive/v"$VERSION" ]
+then
+	echo "Archive for v$VERSION exists – quitting now."
+	exit 1
+fi
+
+cd "$(dirname "$0")"
+source cd_builddir_or_exit
+
+if [ -e $OXT ]
+then
+	echo "$OXT exists – quitting now."
+	exit 1
+fi
+
+cd ..
+mkdir archive/v"$VERSION"
+
 git archive --format=tar --prefix=parlatype-libreoffice-extension-"$VERSION"/ main | gzip > "$TARBALL"
-
 gpg --armor --detach-sign "$TARBALL"
-
-ls -l "$TARBALL"*
+mv "$TARBALL"* archive/v"$VERSION"
 
 cd "$(dirname "$0")"
 source cd_builddir_or_exit
@@ -29,3 +45,8 @@ source cd_builddir_or_exit
 meson configure -Dbundled=false
 ninja
 gpg --armor --detach-sign "$OXT"
+mv "$OXT"* ../archive/v"$VERSION"
+
+cd ..
+echo archive/v"$VERSION":
+ls -l archive/v"$VERSION"
