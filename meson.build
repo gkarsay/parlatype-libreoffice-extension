@@ -13,11 +13,15 @@ base_lo_dir = get_option('libreoffice-dir')
 
 gettext_package = 'parlatype'
 
+
+python_utils_dir = join_paths(meson.current_source_dir(), 'extension', 'python', 'components', 'pythonpath')
+
 if bundled
 	subdir('appdata')
 endif
 subdir('extension')
 subdir('po')
+subdir('tests')
 
 if not bundled
 	oxt = find_program('create_oxt.sh', required: true)

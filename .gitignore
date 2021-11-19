@@ -7,3 +7,4 @@
 *.tar.gz.asc
 /archive/
 /build/
+__pycache__/
