@@ -13,8 +13,8 @@ base_lo_dir = get_option('libreoffice-dir')
 
 gettext_package = 'parlatype'
 
-
-python_utils_dir = join_paths(meson.current_source_dir(), 'extension', 'python', 'components', 'pythonpath')
+python_dir       = join_paths(meson.current_source_dir(), 'extension', 'python', 'components')
+python_utils_dir = join_paths(python_dir, 'pythonpath')
 
 if bundled
 	subdir('appdata')

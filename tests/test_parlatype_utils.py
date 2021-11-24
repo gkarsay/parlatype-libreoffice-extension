@@ -27,7 +27,7 @@ class TestUtils(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls._uno = UnoRemoteConnection({'program': 'soffice',
-                                        'verbose': False})
+                                        'verbose': True})
         cls._uno.setUp()
         cls.document = cls._uno.openEmptyWriterDoc()
 
