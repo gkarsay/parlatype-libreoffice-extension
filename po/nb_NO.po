@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 13:27+0200\n"
-"PO-Revision-Date: 2021-11-27 21:58+0000\n"
+"PO-Revision-Date: 2021-11-29 17:51+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
 "parlatype/parlatype-libreoffice-extension/nb_NO/>\n"
@@ -21,42 +21,46 @@ msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
-msgstr ""
+msgstr "Parlatype-programtillegg for LibreOffice"
 
 #.
 #. This is the english description for this extension.
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr ""
+msgstr "Kontroller Parlatype fra LibreOffice"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "Denne nye utgaven avhenger av Parlatype 2.1"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "Ny verktøylinjeikon for å sette inn tidsstempel."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"Endret posisjon for makroer: Hvis installert med pakkebehandler, endret til "
+"LibreOffice-makroer &gt; LibreOffice-makeroer &gt; Parlatype."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
 msgid ""
 "“Open Parlatype” tries to open a flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
+"«Åpne Parlatype» prøver å åpne en Flatpak-versjon hvis Parlatype ikke er å "
+"finne i systemstien."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:22
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "Oversettelsesoppdateringer for flere språk."
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr ""
+msgstr "Parlatype for LibreOffice"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
@@ -65,44 +69,48 @@ msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:69
 msgid "Go to timestamp"
-msgstr ""
+msgstr "Gå til tidsstempel"
 
 #: extension/python/components/OptionsDialogHandler.py:70
 msgid "On mouseclick"
-msgstr ""
+msgstr "Ved museklikk"
 
 #: extension/python/components/OptionsDialogHandler.py:71
+#, fuzzy
 msgid "On key cursor"
-msgstr ""
+msgstr "Ved tastenavigasjon"
 
 #: extension/python/components/Parlatype.py:97
 #: extension/python/components/Parlatype.py:118
 #: extension/python/components/Parlatype.py:208
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "Parlatype er ikke installert."
 
 #: extension/python/components/Parlatype.py:108
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr ""
+"Det ser ut til at AppArmor-profilen for LibreOffice forhindrer oppstart av "
+"Flatpak."
 
 #: extension/python/components/Parlatype.py:258
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "Åpne Parlatype først."
 
 #: extension/python/components/Parlatype.py:269
 msgid "Please open a media file first."
-msgstr ""
+msgstr "Åpne en mediafil først."
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr ""
+msgstr "Åpne Parlatype"
 
 #: extension/toolbar/Toolbar.xcu.in:32
+#, fuzzy
 msgid "Link Media"
-msgstr ""
+msgstr "Lenk til media"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "Sett inn tidsstempel"
