@@ -28,7 +28,7 @@
 			<ul>
 			<li>New toolbar icon to insert a timestamp.</li>
 			<li>Changed location of macros: If installed with a package manager, reassign to LibreOffice Macros > LibreOffice Macros > Parlatype.</li>
-			<li>“Open Parlatype” tries to open a flatpak version if it can’t find Parlatype in the system path.</li>
+			<li>“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype in the system path.</li>
 			<li>Translation updates for several languages.</li>
 			</ul>
 			</description>
