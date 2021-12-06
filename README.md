@@ -59,5 +59,11 @@ $ ninja
 $ ninja install
 ```
 
+## Translations
+[Parlatype on Hosted Weblate](https://hosted.weblate.org/engage/parlatype/). \
+[![Translation status](https://hosted.weblate.org/widgets/parlatype/-/parlatype-libreoffice-extension/multi-auto.svg)](https://hosted.weblate.org/engage/parlatype/?utm_source=widget)
+
+You can always add other languages.
+
 ## Bugs
 Please report bugs at https://github.com/gkarsay/parlatype-libreoffice-extension/issues.

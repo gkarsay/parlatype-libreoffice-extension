@@ -8,7 +8,7 @@
 
 	<url type="homepage">https://www.parlatype.org</url>
 	<url type="bugtracker">https://github.com/gkarsay/parlatype-libreoffice-extension/issues</url>
-	<url type="translate">https://translations.launchpad.net/parlatype-libreoffice-extension</url>
+	<url type="translate">https://hosted.weblate.org/engage/parlatype/</url>
 	<url type="donation">https://www.parlatype.org/donate.html</url>
 
 	<releases>
