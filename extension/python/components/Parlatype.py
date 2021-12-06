@@ -106,7 +106,28 @@ class MouseHandler(unohelper.Base, XMouseClickHandler):
         pass
 
 
-def get_link_url(doc):
+def removeDocumentLink(doc):
+    '''Remove custom document property "Parlatype".'''
+    doc_prop = doc.getDocumentProperties()
+    doc_uprop = doc_prop.getUserDefinedProperties()
+    doc_uprop.removeProperty('Parlatype')
+
+
+def setDocumentLink(doc, link):
+    '''Create custom document property "Parlatype", if it doesn't exist,
+       and set its value.'''
+    doc_prop = doc.getDocumentProperties()
+    doc_uprop = doc_prop.getUserDefinedProperties()
+    set = doc_uprop.getPropertySetInfo()
+    if set.hasPropertyByName('Parlatype') is False:
+        doc_uprop.addProperty('Parlatype',
+                              MAYBEVOID + BOUND + REMOVEABLE,
+                              "")  # default value
+    doc_uprop.setPropertyValue('Parlatype', link)
+
+
+def getDocumentLink(doc):
+    '''Get value of custom document property "Parlatype".'''
     doc_prop = doc.getDocumentProperties()
     doc_uprop = doc_prop.getUserDefinedProperties()
     set = doc_uprop.getPropertySetInfo()
@@ -198,8 +219,8 @@ def openParlatype(ctx):
     desktop = smgr.createInstanceWithContext(
             "com.sun.star.frame.Desktop", ctx)
     doc = desktop.getCurrentComponent()
-    url = get_link_url(doc)
-    if url is not None:
+    url = getDocumentLink(doc)
+    if url is not None and len(url) > 0:
         cmdline.append(url)
 
     try:
@@ -308,9 +329,7 @@ class ParlatypeController(object):
     def unlinkMedia(self):
         try:
             doc = self.desktop.getCurrentComponent()
-            doc_prop = doc.getDocumentProperties()
-            doc_uprop = doc_prop.getUserDefinedProperties()
-            doc_uprop.removeProperty('Parlatype')
+            removeDokumentLink(doc)
             self.linked = False
             return True
         except Exception as e:
@@ -320,12 +339,9 @@ class ParlatypeController(object):
 
     def linkMedia(self):
         doc = self.desktop.getCurrentComponent()
-        doc_prop = doc.getDocumentProperties()
-        doc_uprop = doc_prop.getUserDefinedProperties()
-        set = doc_uprop.getPropertySetInfo()
-        if set.hasPropertyByName('Parlatype'):
-            showMessage(self.ctx, "Already linked to {}.".format(
-                doc_uprop.getPropertyValue()))
+        previous = getDocumentLink(doc)
+        if previous is not None and len(previous) > 0:
+            showMessage(self.ctx, "Already linked to {}.".format(previous))
             return
 
         try:
@@ -344,10 +360,7 @@ class ParlatypeController(object):
             showMessage(self.ctx, _("Please open a media file first."))
             return
 
-        doc_uprop.addProperty('Parlatype',
-                              MAYBEVOID + BOUND + REMOVEABLE,
-                              "")  # default value
-        doc_uprop.setPropertyValue('Parlatype', media)
+        setDocumentLink(doc, media)
         self.linked = True
 
     def link(self):
@@ -489,8 +502,8 @@ class ToolbarHandler(unohelper.Base, XServiceInfo,
         desktop = smgr.createInstanceWithContext(
                 "com.sun.star.frame.Desktop", self.ctx)
         doc = desktop.getCurrentComponent()
-        url = get_link_url(doc)
-        if url is None:
+        url = getDocumentLink(doc)
+        if url is None or len(url) == 0:
             self.pt.setLinkedStatus(False)
             self.pt.deactivateTimestampScanner()
             self.status = False
