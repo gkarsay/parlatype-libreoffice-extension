@@ -20,7 +20,9 @@ import unittest
 import uno
 from unotest import UnoRemoteConnection
 
-from Parlatype import get_link_url
+from Parlatype import getDocumentLink
+from Parlatype import setDocumentLink
+from Parlatype import removeDocumentLink
 
 
 class TestUtils(unittest.TestCase):
@@ -35,15 +37,38 @@ class TestUtils(unittest.TestCase):
     def tearDownClass(cls):
         cls._uno.tearDown()
 
-    def test_document_link(self):
+    def test_empty_get(self):
         """
-        Get, set and remove custom property "Parlatype"
+        Get empty custom property "Parlatype"
         """
 
         doc = self.__class__._uno.getDoc()
 
         # Initially empty document has no custom property
-        self.assertIsNone(get_link_url(doc))
+        self.assertIsNone(getDocumentLink(doc))
+
+    def test_set_and_get(self):
+        """
+        Set custom property "Parlatype"
+        """
+
+        doc = self.__class__._uno.getDoc()
+
+        setDocumentLink(doc, "http://test")
+        self.assertEqual(getDocumentLink(doc), "http://test")
+
+    def test_remove_and_get(self):
+        """
+        Remove custom property "Parlatype"
+        """
+
+        doc = self.__class__._uno.getDoc()
+
+        setDocumentLink(doc, "http://test")
+        self.assertEqual(getDocumentLink(doc), "http://test")
+
+        removeDocumentLink(doc)
+        self.assertIsNone(getDocumentLink(doc))
 
 
 if __name__ == '__main__':

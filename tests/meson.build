@@ -19,6 +19,8 @@ foreach test_name: unit_tests
 	     python,
 	     args: ['-m', 'unittest', '-v', test_name],
 	     env: test_env,
+	     # test_parlatype_utils fails if parallel
+	     is_parallel: false,
 	     suite: ['unit']
 	)
 endforeach
