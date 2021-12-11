@@ -77,6 +77,10 @@ class ASRJob(unohelper.Base, XJob):
             hypothesis_range = None
 
     def execute(self, args):
+        # Sorry, currently Linux only
+        if sys.platform == 'win32':
+            return;
+
         # There should be only one loop running
         global loop
 
