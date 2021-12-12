@@ -1,3 +1,16 @@
+Overview of Changes in Parlatype LibreOffice Extension 3.1 – 2021-12-XX
+=======================================================================
+
+* New: Switched to Weblate for translations
+* New: Added first unit/integration tests
+* Fix: Don’t crash/freeze on WIN32 (regression introduced in 3.0)
+* New or updated languages:
+  - xx:    TODO UPDATE ON RELEASE DAY
+  - de:    Gabor Karsay
+  - nb_NO: Allan Nordhøy
+  - pl:    Piotr Drąg
+
+
 Overview of Changes in Parlatype LibreOffice Extension 3.0 – 2021-11-01
 =======================================================================
 

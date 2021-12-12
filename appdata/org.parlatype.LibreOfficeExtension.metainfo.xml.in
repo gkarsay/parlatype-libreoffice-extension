@@ -12,6 +12,15 @@
 	<url type="donation">https://www.parlatype.org/donate.html</url>
 
 	<releases>
+		<release version="3.1" date="2021-12-XX">
+			<description>
+			<p>This release is for Parlatype 3.1.</p>
+			<ul>
+			<li>Switched to Weblate for translations.</li>
+			<li>Translation updates for several languages.</li>
+			</ul>
+			</description>
+		</release>
 		<release version="3.0" date="2021-11-01">
 			<description>
 			<p>This release is for Parlatype 3.0.</p>
