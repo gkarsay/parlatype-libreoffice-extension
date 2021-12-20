@@ -8,6 +8,7 @@ testpaths = [
 
 test_env = environment()
 test_env.prepend('PYTHONPATH', testpaths)
+test_env.prepend('PYTHONDONTWRITEBYTECODE', 'x')
 
 unit_tests = [
 	'test_parlatype_utils',
