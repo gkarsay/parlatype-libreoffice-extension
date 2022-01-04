@@ -8,32 +8,35 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 13:27+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-01-05 01:52+0000\n"
+"Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/parlatype/"
+"parlatype-libreoffice-extension/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
-msgstr ""
+msgstr "Ekstensi Parlatype LibreOffice"
 
 #.
 #. This is the english description for this extension.
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr ""
+msgstr "Kontrol Parlatype dari LibreOffice"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "Rilis baru ini bergantung pada Parlatype 2.1."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "Ikon bilah alat baru untuk menyisipkan stempel waktu."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 msgid ""
@@ -49,57 +52,58 @@ msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:22
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "Pembaruan terjemahan beberapa bahasa."
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr ""
+msgstr "Parlatype untuk LibreOffice"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
 msgid "Parlatype"
-msgstr ""
+msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:69
 msgid "Go to timestamp"
-msgstr ""
+msgstr "Pergi ke timestamp"
 
 #: extension/python/components/OptionsDialogHandler.py:70
 msgid "On mouseclick"
-msgstr ""
+msgstr "Pada klik mouse"
 
 #: extension/python/components/OptionsDialogHandler.py:71
 msgid "On key cursor"
-msgstr ""
+msgstr "Pada kursor tombol"
 
 #: extension/python/components/Parlatype.py:97
 #: extension/python/components/Parlatype.py:118
 #: extension/python/components/Parlatype.py:208
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "Parlatipe tidak diinstal."
 
 #: extension/python/components/Parlatype.py:108
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr ""
+"Sepertinya profil AppArmor untuk LibreOffice mencegah peluncuran Flatpak."
 
 #: extension/python/components/Parlatype.py:258
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "Harap buka Parlatype terlebih dahulu."
 
 #: extension/python/components/Parlatype.py:269
 msgid "Please open a media file first."
-msgstr ""
+msgstr "Silahkan buka file media terlebih dahulu."
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr ""
+msgstr "Buka Parlatype"
 
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
-msgstr ""
+msgstr "Tautan Media"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "Sisipkan stempel waktu"
