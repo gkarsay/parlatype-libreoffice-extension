@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: Parlatype LibreOffice Extansion 3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-12 21:15+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-01-09 18:53+0000\n"
+"Last-Translator: E-Akcaer <gurbetcii_@hotmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/parlatype/"
+"parlatype-libreoffice-extension/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
@@ -33,12 +36,12 @@ msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "Switched to Weblate for translations."
-msgstr ""
+msgstr "Çeviriler için Weblate'e geçiş yapıldı."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:41
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "Birçok dil için çeviri güncellemeleri."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:26
 msgid "This release is for Parlatype 3.0."
