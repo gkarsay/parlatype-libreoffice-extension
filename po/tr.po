@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Parlatype LibreOffice Extansion 3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-12 21:15+0100\n"
-"PO-Revision-Date: 2022-01-09 18:53+0000\n"
+"PO-Revision-Date: 2022-01-11 19:52+0000\n"
 "Last-Translator: E-Akcaer <gurbetcii_@hotmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/tr/>\n"
@@ -88,7 +88,7 @@ msgstr ""
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
 msgid "Parlatype"
-msgstr ""
+msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
