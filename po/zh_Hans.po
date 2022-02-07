@@ -8,69 +8,74 @@ msgstr ""
 "Project-Id-Version: Parlatype LibreOffice Extansion 3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-12 21:15+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-02-10 10:55+0000\n"
+"Last-Translator: poi <erbaotao@outlook.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"parlatype/parlatype-libreoffice-extension/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
-msgstr ""
+msgstr "LibreOffice 的 Parlatype 扩展"
 
 #.
 #. This is the english description for this extension.
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr ""
+msgstr "在 LibreOffice 中操控 Parlatype"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
 msgid "This release is for Parlatype 3.1."
-msgstr ""
+msgstr "此版本用于 Parlatype 3.1 。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "Switched to Weblate for translations."
-msgstr ""
+msgstr "转向使用 Weblate 翻译此软件。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:41
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "更新了几种语言的翻译。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:26
 msgid "This release is for Parlatype 3.0."
-msgstr ""
+msgstr "此版本用于 Parlatype 3.0 。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:28
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
-msgstr ""
+msgstr "自动语音识别：打印 Parlatype 识别的文本（仅限 Linux）。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
 msgid "Fixed a crash if selecting a table."
-msgstr ""
+msgstr "修复了选择表格导致的崩溃问题。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
 msgid "Translation updates for Italian."
-msgstr ""
+msgstr "新增意大利语翻译。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "此新版本需要 Parlatype 2.1 。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "插入时间戳的工具栏新图标。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"更改了宏的位置——如果是用软件包管理器安装的，请重新指定到 LibreOffice Macros —&gt; LibreOffice Macros "
+"—&gt; Parlatype。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
 msgid ""
@@ -80,7 +85,7 @@ msgstr ""
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr ""
+msgstr "用于 LibreOffice 的 Parlatype"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
@@ -89,7 +94,7 @@ msgstr ""
 
 #: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
-msgstr ""
+msgstr "转到时间戳处"
 
 #: extension/python/components/OptionsDialogHandler.py:76
 msgid "On mouseclick"
@@ -103,25 +108,25 @@ msgstr ""
 #: extension/python/components/Parlatype.py:190
 #: extension/python/components/Parlatype.py:208
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "没有安装 Parlatype 。"
 
 #: extension/python/components/Parlatype.py:180
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
-msgstr ""
+msgstr "LibreOffice 的 AppArmor 配置文件好像阻止了 Flatpak 启动。"
 
 #: extension/python/components/Parlatype.py:349
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "请先打开 Parlatype 。"
 
 #: extension/python/components/Parlatype.py:360
 msgid "Please open a media file first."
-msgstr ""
+msgstr "请先打开一个媒体文件。"
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr ""
+msgstr "打开 Parlatype"
 
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
@@ -129,4 +134,4 @@ msgstr ""
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "插入时间戳"
