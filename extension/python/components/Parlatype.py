@@ -329,7 +329,7 @@ class ParlatypeController(object):
     def unlinkMedia(self):
         try:
             doc = self.desktop.getCurrentComponent()
-            removeDokumentLink(doc)
+            removeDocumentLink(doc)
             self.linked = False
             return True
         except Exception as e:
