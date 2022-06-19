@@ -164,13 +164,12 @@ def launchFlatpak(ctx, url):
         p = subprocess.Popen(cmdline, universal_newlines=True,
                              stderr=subprocess.PIPE)
     except FileNotFoundError:
-        # This assumes we tried to launch a regular binary first.
-        # Neither regular Parlatype nor flatpak is installed.
+        # Flatpak runtime is not installed, neither regular Parlatype.
         showMessage(ctx, _("Parlatype is not installed."))
         return
 
     err = p.stderr.readline()
-    if err == "" or err is None:
+    if err is None or err == "" or err == "\n":
         return
 
     # AppArmor profile for LibreOffice may prevent launching flatpak:
@@ -181,8 +180,8 @@ def launchFlatpak(ctx, url):
                            "LibreOffice prevents launching Flatpak."))
         return
 
-    # If not installed, we get a localized error message.
-    # Lets see, if it is installed via flatpak info.
+    # If not installed, we get a localized error message which is difficult to
+    # parse. Lets check instead, if it is installed via flatpak info.
     try:
         p = subprocess.run(["flatpak", "info", "org.parlatype.Parlatype"],
                            check=True)
@@ -190,7 +189,7 @@ def launchFlatpak(ctx, url):
         showMessage(ctx, _("Parlatype is not installed."))
         return
 
-    # Whatever that may be ...
+    # Finally show the raw error message
     showMessage(ctx, err)
 
 
@@ -228,7 +227,7 @@ def openParlatype(ctx):
     except FileNotFoundError:
         # Try Flatpak in a different thread, because we're waiting for its
         # return code/stderr and that would keep the button pressed.
-        t = threading.Thread(target=launchFlatpak, args=(self.ctx, url,))
+        t = threading.Thread(target=launchFlatpak, args=(ctx, url,))
         t.daemon = True
         t.start()
 
