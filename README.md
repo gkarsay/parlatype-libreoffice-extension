@@ -33,20 +33,20 @@ Runtime dependencies:
 ### Build as .oxt
 First close LibreOffice. If the extension was installed before, remove it with
 ```
-$ unopkg remove parlatype.oxt
+$ unopkg remove Parlatype.oxt
 ```
 Continue with
 ```
 $ meson build
 $ cd build
 $ ninja
-$ unopkg add parlatype.oxt
+$ unopkg add Parlatype.oxt
 ```
 This will install the extension for the current user only. You can remove/install it for all users as well with
 ```
-$ sudo unopkg remove --shared parlatype.oxt
+$ sudo unopkg remove --shared Parlatype.oxt
 […]
-$ sudo unopkg add --shared parlatype.oxt
+$ sudo unopkg add --shared Parlatype.oxt
 ```
 In this mode `ninja install` has no effect.
 
