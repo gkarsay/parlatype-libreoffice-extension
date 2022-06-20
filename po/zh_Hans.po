@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Parlatype LibreOffice Extansion 3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-12 21:15+0100\n"
+"POT-Creation-Date: 2022-06-20 19:50+0200\n"
 "PO-Revision-Date: 2022-06-18 13:13+0000\n"
 "Last-Translator: poi <erbaotao@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -31,57 +31,71 @@ msgid "Control Parlatype from LibreOffice"
 msgstr "在 LibreOffice 中操控 Parlatype"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
-msgid "This release is for Parlatype 3.1."
-msgstr "此版本用于 Parlatype 3.1 。"
+msgid "This is a bug fix release."
+msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
-msgid "Switched to Weblate for translations."
-msgstr "转向使用 Weblate 翻译此软件。"
+msgid "Fix unlinking documents."
+msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:41
+msgid "Fix opening Flatpak version of Parlatype."
+msgstr ""
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:51
 msgid "Translation updates for several languages."
 msgstr "更新了几种语言的翻译。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:26
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:27
+msgid "This release is for Parlatype 3.1."
+msgstr "此版本用于 Parlatype 3.1 。"
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
+msgid "Switched to Weblate for translations."
+msgstr "转向使用 Weblate 翻译此软件。"
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "This release is for Parlatype 3.0."
 msgstr "此版本用于 Parlatype 3.0 。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:28
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr "自动语音识别：打印 Parlatype 识别的文本（仅限 Linux）。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
 msgid "Fixed a crash if selecting a table."
 msgstr "修复了选择表格导致的崩溃问题。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
 msgid "Translation updates for Italian."
 msgstr "新增意大利语翻译。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 msgid "This new release depends on Parlatype 2.1."
 msgstr "此新版本需要 Parlatype 2.1 。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:48
 msgid "New toolbar icon to insert a timestamp."
 msgstr "插入时间戳的工具栏新图标。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:49
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
-"更改了宏的位置——如果是用软件包管理器安装的，请重新指定到 LibreOffice Macros —&gt; LibreOffice Macros "
-"—&gt; Parlatype。"
+"更改了宏的位置——如果是用软件包管理器安装的，请重新指定到 LibreOffice Macros —"
+"&gt; LibreOffice Macros —&gt; Parlatype。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:50
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
-msgstr "“打开 Parlatype”会在找不到系统目录下的 Parlatype 的情况下，转而去查找 "
+msgstr ""
+"“打开 Parlatype”会在找不到系统目录下的 Parlatype 的情况下，转而去查找 "
 "Flatpak 版本的 Parlatype 。"
 
 #: extension/description.xml.in.in.in:22
@@ -105,23 +119,23 @@ msgstr ""
 msgid "On key cursor"
 msgstr ""
 
-#: extension/python/components/Parlatype.py:169
-#: extension/python/components/Parlatype.py:190
-#: extension/python/components/Parlatype.py:208
+#: extension/python/components/Parlatype.py:168
+#: extension/python/components/Parlatype.py:189
+#: extension/python/components/Parlatype.py:207
 msgid "Parlatype is not installed."
 msgstr "没有安装 Parlatype 。"
 
-#: extension/python/components/Parlatype.py:180
+#: extension/python/components/Parlatype.py:179
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr "LibreOffice 的 AppArmor 配置文件好像阻止了 Flatpak 启动。"
 
-#: extension/python/components/Parlatype.py:349
+#: extension/python/components/Parlatype.py:348
 msgid "Please open Parlatype first."
 msgstr "请先打开 Parlatype 。"
 
-#: extension/python/components/Parlatype.py:360
+#: extension/python/components/Parlatype.py:359
 msgid "Please open a media file first."
 msgstr "请先打开一个媒体文件。"
 

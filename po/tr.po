@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Parlatype LibreOffice Extansion 3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-12 21:15+0100\n"
+"POT-Creation-Date: 2022-06-20 19:50+0200\n"
 "PO-Revision-Date: 2022-01-11 19:52+0000\n"
 "Last-Translator: E-Akcaer <gurbetcii_@hotmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/parlatype/"
@@ -31,51 +31,64 @@ msgid "Control Parlatype from LibreOffice"
 msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
-msgid "This release is for Parlatype 3.1."
+msgid "This is a bug fix release."
 msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
-msgid "Switched to Weblate for translations."
-msgstr "Çeviriler için Weblate'e geçiş yapıldı."
+msgid "Fix unlinking documents."
+msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:41
+msgid "Fix opening Flatpak version of Parlatype."
+msgstr ""
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:51
 msgid "Translation updates for several languages."
 msgstr "Birçok dil için çeviri güncellemeleri."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:26
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:27
+msgid "This release is for Parlatype 3.1."
+msgstr ""
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
+msgid "Switched to Weblate for translations."
+msgstr "Çeviriler için Weblate'e geçiş yapıldı."
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "This release is for Parlatype 3.0."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:28
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
 msgid "Fixed a crash if selecting a table."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
 msgid "Translation updates for Italian."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 msgid "This new release depends on Parlatype 2.1."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:48
 msgid "New toolbar icon to insert a timestamp."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:49
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:50
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
@@ -102,23 +115,23 @@ msgstr ""
 msgid "On key cursor"
 msgstr ""
 
-#: extension/python/components/Parlatype.py:169
-#: extension/python/components/Parlatype.py:190
-#: extension/python/components/Parlatype.py:208
+#: extension/python/components/Parlatype.py:168
+#: extension/python/components/Parlatype.py:189
+#: extension/python/components/Parlatype.py:207
 msgid "Parlatype is not installed."
 msgstr ""
 
-#: extension/python/components/Parlatype.py:180
+#: extension/python/components/Parlatype.py:179
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr ""
 
-#: extension/python/components/Parlatype.py:349
+#: extension/python/components/Parlatype.py:348
 msgid "Please open Parlatype first."
 msgstr ""
 
-#: extension/python/components/Parlatype.py:360
+#: extension/python/components/Parlatype.py:359
 msgid "Please open a media file first."
 msgstr ""
 

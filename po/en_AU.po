@@ -6,23 +6,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: parlatype-libreoffice-extension\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2020-05-08 13:27+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-20 19:50+0200\n"
 "PO-Revision-Date: 2020-05-09 09:59+0000\n"
 "Last-Translator: Jared Norris <jarednorris@ubuntu.com>\n"
 "Language-Team: English (Australia) <en_AU@li.org>\n"
+"Language: en_AU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2020-05-31 18:28+0000\n"
 "X-Generator: Launchpad (build 275d46a24253e557e4403d52832837e4bfa425b6)\n"
-"Language: en_AU\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
 msgstr "Parlatype LibreOffice Extension"
 
-#. 
+#.
 #. This is the english description for this extension.
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
 #: extension/description_translation.xml:5
@@ -30,14 +30,61 @@ msgid "Control Parlatype from LibreOffice"
 msgstr "Control Parlatype from LibreOffice"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
+msgid "This is a bug fix release."
+msgstr ""
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
+msgid "Fix unlinking documents."
+msgstr ""
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
+msgid "Fix opening Flatpak version of Parlatype."
+msgstr ""
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:51
+msgid "Translation updates for several languages."
+msgstr "Translation updates for several languages."
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:27
+#, fuzzy
+msgid "This release is for Parlatype 3.1."
+msgstr "This new release depends on Parlatype 2.1."
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
+msgid "Switched to Weblate for translations."
+msgstr ""
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
+#, fuzzy
+msgid "This release is for Parlatype 3.0."
+msgstr "This new release depends on Parlatype 2.1."
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
+msgid ""
+"Automatic speech recognition: Prints recognized text from Parlatype (Linux "
+"only)."
+msgstr ""
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
+msgid "Fixed a crash if selecting a table."
+msgstr ""
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
+#, fuzzy
+msgid "Translation updates for Italian."
+msgstr "Translation updates for several languages."
+
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 msgid "This new release depends on Parlatype 2.1."
 msgstr "This new release depends on Parlatype 2.1."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:48
 msgid "New toolbar icon to insert a timestamp."
 msgstr "New toolbar icon to insert a timestamp."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:49
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
@@ -45,17 +92,14 @@ msgstr ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
+#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:50
+#, fuzzy
 msgid ""
-"“Open Parlatype” tries to open a flatpak version if it can’t find Parlatype "
+"“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
 "“Open Parlatype” tries to open a flatpak version if it can’t find Parlatype "
 "in the system path."
-
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:22
-msgid "Translation updates for several languages."
-msgstr "Translation updates for several languages."
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
@@ -66,25 +110,25 @@ msgstr "Parlatype for LibreOffice"
 msgid "Parlatype"
 msgstr "Parlatype"
 
-#: extension/python/components/OptionsDialogHandler.py:69
+#: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
 msgstr "Go to timestamp"
 
-#: extension/python/components/OptionsDialogHandler.py:70
+#: extension/python/components/OptionsDialogHandler.py:76
 msgid "On mouseclick"
 msgstr "On mouse click"
 
-#: extension/python/components/OptionsDialogHandler.py:71
+#: extension/python/components/OptionsDialogHandler.py:77
 msgid "On key cursor"
 msgstr "On key cursor"
 
-#: extension/python/components/Parlatype.py:97
-#: extension/python/components/Parlatype.py:118
-#: extension/python/components/Parlatype.py:208
+#: extension/python/components/Parlatype.py:168
+#: extension/python/components/Parlatype.py:189
+#: extension/python/components/Parlatype.py:207
 msgid "Parlatype is not installed."
 msgstr "Parlatype is not installed."
 
-#: extension/python/components/Parlatype.py:108
+#: extension/python/components/Parlatype.py:179
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
@@ -92,11 +136,11 @@ msgstr ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 
-#: extension/python/components/Parlatype.py:258
+#: extension/python/components/Parlatype.py:348
 msgid "Please open Parlatype first."
 msgstr "Please open Parlatype first."
 
-#: extension/python/components/Parlatype.py:269
+#: extension/python/components/Parlatype.py:359
 msgid "Please open a media file first."
 msgstr "Please open a media file first."
 
