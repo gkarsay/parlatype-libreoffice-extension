@@ -12,6 +12,16 @@
 	<url type="donation">https://www.parlatype.org/donate.html</url>
 
 	<releases>
+		<release version="3.1.2" date="2022-06-xx">
+			<description>
+			<p>This is a bug fix release.</p>
+			<ul>
+			<li>Fix unlinking documents.</li>
+			<li>Fix opening Flatpak version of Parlatype.</li>
+			<li>Translation updates for several languages.</li>
+			</ul>
+			</description>
+		</release>
 		<release version="3.1.1" date="2021-12-19">
 			<description>
 			<p>This release is for Parlatype 3.1.</p>
