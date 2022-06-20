@@ -18,8 +18,20 @@ LogLevel.use = LogLevel.DEBUG
 Release
 =======
 
+A few days to weeks earlier:
+Add short release section at appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in
+commit
+Update pot file (will also update po files), commit "String freeze vX.X",
+push to main branch
+
+Release day:
+Add NEWS (using maint/print-translation-status),
+update date in appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in
+commit
 Change version in meson.build
+maint/check-news
+commit
 git tag v$VERSION
 git push --tags
-maint/make-release
+maint/make-release (= create tarball)
 gh release create v$VERSION archive/v$VERSION/* --title "Parlatype LibreOffice Extension $VERSION" --notes-file NEWS
