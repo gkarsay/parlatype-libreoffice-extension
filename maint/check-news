@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Check NEWS and appdata for release
+
+cd "$(dirname "$0")" || exit 1
+cd ..
+
+VERSION=$(grep --max-count 1 'version' meson.build | cut --delimiter=\' -f 2)
+DATE=$(date --iso-8601)
+
+NEWS_TITLE="Overview of Changes in Parlatype LibreOffice Extension "
+NEWS_TITLE+="$VERSION – $DATE"
+
+if [ "$(head -n 1 NEWS)" != "$NEWS_TITLE" ]; then
+	echo "NEWS title is wrong:"
+	echo "   found: $(head -n 1 NEWS)"
+	echo "expected: $NEWS_TITLE"
+else
+	echo "NEWS title ... OK"
+fi
+
+# Youngest release in Appdata
+APPDATA_LINE=$(grep -m 1 -e '<release ' appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in)
+APPDATA_VERSION=$(grep -o -e '\"[0-9|\.]*\"' <<< "$APPDATA_LINE")
+
+if [ "$APPDATA_VERSION" != "\"$VERSION\"" ]; then
+	echo "Appdata version is wrong:"
+	echo "   found: $APPDATA_VERSION"
+	echo "expected: \"$VERSION\""
+else
+	echo "Appdata version ... OK"
+fi
+
+APPDATA_DATE=$(grep -o -e '\"[0-9|-]*\"' <<< "$APPDATA_LINE")
+if [ "$APPDATA_DATE" != "\"$DATE\"" ]; then
+	echo "Appdata date is wrong:"
+	echo "   found: $APPDATA_DATE"
+	echo "expected: \"$DATE\""
+else
+	echo "Appdata date ... OK"
+fi
