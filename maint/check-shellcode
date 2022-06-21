@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd "$(dirname "$0")" || exit 1
+
+source command_exists_or_exit "shellcheck"
+
+files=$(grep -rIzl '^#!/bin/bash' ../)
+
+for f in $files
+do
+	shellcheck -x "$f"
+done
