@@ -23,7 +23,7 @@ then
 	exit 1
 fi
 
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit 1
 source cd_builddir_or_exit
 
 if [ -e $OXT ]
@@ -39,7 +39,7 @@ git archive --format=tar --prefix=parlatype-libreoffice-extension-"$VERSION"/ ma
 gpg --armor --detach-sign "$TARBALL"
 mv "$TARBALL"* archive/v"$VERSION"
 
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit 1
 source cd_builddir_or_exit
 
 meson configure -Dbundled=false
