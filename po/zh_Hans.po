@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Parlatype LibreOffice Extansion 3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-20 19:50+0200\n"
-"PO-Revision-Date: 2022-06-18 13:13+0000\n"
+"PO-Revision-Date: 2022-06-24 13:19+0000\n"
 "Last-Translator: poi <erbaotao@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "parlatype/parlatype-libreoffice-extension/zh_Hans/>\n"
@@ -32,15 +32,15 @@ msgstr "在 LibreOffice 中操控 Parlatype"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
 msgid "This is a bug fix release."
-msgstr ""
+msgstr "此版本修复了错误。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "Fix unlinking documents."
-msgstr ""
+msgstr "修复了没链接上的文档链接。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 msgid "Fix opening Flatpak version of Parlatype."
-msgstr ""
+msgstr "修复了 Flatpak 版 Parlatype 的打开途径问题。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
