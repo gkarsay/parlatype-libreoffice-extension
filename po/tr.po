@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Parlatype LibreOffice Extansion 3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-20 19:50+0200\n"
-"PO-Revision-Date: 2022-01-11 19:52+0000\n"
-"Last-Translator: E-Akcaer <gurbetcii_@hotmail.com>\n"
+"PO-Revision-Date: 2022-08-26 22:22+0000\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/tr/>\n"
 "Language: tr\n"
@@ -17,18 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
-msgstr ""
+msgstr "Parlatype LibreOffice Eklentisi"
 
 #.
 #. This is the english description for this extension.
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr ""
+msgstr "Parlatype'ı LibreOffice'ten Denetle"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
 msgid "This is a bug fix release."
