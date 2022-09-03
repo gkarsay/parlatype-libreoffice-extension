@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Parlatype LibreOffice Extansion 3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-20 19:50+0200\n"
-"PO-Revision-Date: 2022-08-26 22:22+0000\n"
+"PO-Revision-Date: 2022-09-03 22:23+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
@@ -32,15 +32,15 @@ msgstr "Parlatype'ı LibreOffice'ten Denetle"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
 msgid "This is a bug fix release."
-msgstr ""
+msgstr "Bu bir hata düzeltme sürümüdür."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "Fix unlinking documents."
-msgstr ""
+msgstr "Belgelerin bağlantısını kaldırma düzeltildi."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 msgid "Fix opening Flatpak version of Parlatype."
-msgstr ""
+msgstr "Parlatype'ın Flatpak sürümünün açılma sorunu düzeltildi."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
@@ -50,7 +50,7 @@ msgstr "Birçok dil için çeviri güncellemeleri."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:27
 msgid "This release is for Parlatype 3.1."
-msgstr ""
+msgstr "Bu sürüm, Parlatype 3.1 içindir."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
 msgid "Switched to Weblate for translations."
@@ -58,45 +58,52 @@ msgstr "Çeviriler için Weblate'e geçiş yapıldı."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "This release is for Parlatype 3.0."
-msgstr ""
+msgstr "Bu sürüm Parlatype 3.0 içindir."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr ""
+"Otomatik konuşma tanıma: Parlatype'dan tanınan metni yazdırır (yalnızca "
+"Linux)."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
 msgid "Fixed a crash if selecting a table."
-msgstr ""
+msgstr "Bir tablo seçildiğinde oluşan çökme düzeltildi."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
 msgid "Translation updates for Italian."
-msgstr ""
+msgstr "İtalyanca için çeviri güncellemeleri."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "Bu yeni sürüm, Parlatype 2.1'e bağlıdır."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:48
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "Zaman damgası eklemek için yeni araç çubuğu simgesi."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:49
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"Makroların konumu değiştirildi: Bir paket yöneticisi ile yüklendiyse, "
+"LibreOffice Makrolar &gt; LibreOffice Makrolar &gt; Parlatype'a yeniden "
+"atayın."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:50
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
+"\"Parlatype Aç\", sistem yolunda Parlatype'ı bulamazsa Flatpak sürümünü "
+"açmaya çalışır."
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr ""
+msgstr "LibreOffice için Parlatype"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
@@ -105,21 +112,21 @@ msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
-msgstr ""
+msgstr "Zaman damgasına git"
 
 #: extension/python/components/OptionsDialogHandler.py:76
 msgid "On mouseclick"
-msgstr ""
+msgstr "Fare tıklamasında"
 
 #: extension/python/components/OptionsDialogHandler.py:77
 msgid "On key cursor"
-msgstr ""
+msgstr "Tuş imlecinde"
 
 #: extension/python/components/Parlatype.py:168
 #: extension/python/components/Parlatype.py:189
 #: extension/python/components/Parlatype.py:207
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "Parlatype yüklü değil."
 
 #: extension/python/components/Parlatype.py:179
 msgid ""
