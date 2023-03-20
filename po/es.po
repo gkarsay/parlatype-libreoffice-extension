@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: parlatype-libreoffice-extension\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-20 19:50+0200\n"
-"PO-Revision-Date: 2022-10-01 02:18+0000\n"
-"Last-Translator: Eduardo Malaspina <vaio0@swismail.com>\n"
+"PO-Revision-Date: 2023-03-21 14:39+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 "X-Launchpad-Export-Date: 2020-05-31 18:28+0000\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
@@ -37,11 +37,11 @@ msgstr "Esta es una versión que corrige errores."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "Fix unlinking documents."
-msgstr ""
+msgstr "Arreglar la desvinculación de documentos."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 msgid "Fix opening Flatpak version of Parlatype."
-msgstr ""
+msgstr "Corrección al abrir la versión Flatpak de Parlatype."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
@@ -50,33 +50,32 @@ msgid "Translation updates for several languages."
 msgstr "Actualizaciones de traducción para varios idiomas."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:27
-#, fuzzy
 msgid "This release is for Parlatype 3.1."
-msgstr "Este lanzamiento depende de Parlatype 2.1."
+msgstr "Esta versión es para Parlatype 3.1."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
 msgid "Switched to Weblate for translations."
-msgstr ""
+msgstr "Cambié a Weblate para las traducciones."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
-#, fuzzy
 msgid "This release is for Parlatype 3.0."
-msgstr "Este lanzamiento depende de Parlatype 2.1."
+msgstr "Esta versión es para Parlatype 3.0."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr ""
+"Reconocimiento de voz automático: Imprime texto reconocido desde Parlatype ("
+"sólo Linux)."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
 msgid "Fixed a crash if selecting a table."
-msgstr ""
+msgstr "Corregido un fallo al seleccionar una tabla."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
-#, fuzzy
 msgid "Translation updates for Italian."
-msgstr "Actualizaciones de traducción para varios idiomas."
+msgstr "Actualización de la traducción al Italiano."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 msgid "This new release depends on Parlatype 2.1."
@@ -97,12 +96,11 @@ msgstr ""
 "Parlatype."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:50
-#, fuzzy
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
-"“Abrir Parlatype” intenta abrir una versión de flatpak si no puede encontrar "
+"\"Abrir Parlatype\" intenta abrir una versión de Flatpak si no encuentra "
 "Parlatype en la ruta del sistema."
 
 #: extension/description.xml.in.in.in:22
