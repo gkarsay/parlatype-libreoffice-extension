@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-20 19:50+0200\n"
-"PO-Revision-Date: 2023-08-09 21:49+0000\n"
+"PO-Revision-Date: 2023-10-13 21:00+0000\n"
 "Last-Translator: Alexander Gabilondo <alexgabi@openmailbox.org>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/eu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
@@ -78,27 +78,31 @@ msgstr "Itzulpen eguneraketak italierarako."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "Bertsio berri hau Parlatype 2.1-en menpekoa da."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:48
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "Tresna-barraren ikono berria denbora-marka txertatzeko."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:49
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"Makroen kokapena aldatu da: pakete-kudeatzaile batekin instalatuta badago, "
+"berriro esleitu LibreOffice Macros > LibreOffice Makros > Parlatype."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:50
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
+"\"Ireki Parlatype\" Flatpak bertsio bat irekitzen saiatzen da Parlatype "
+"sistemaren bidean aurkitzen ez badu."
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr ""
+msgstr "LibreOfficerako Parlatype"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
@@ -107,44 +111,46 @@ msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
-msgstr ""
+msgstr "Joan denbora-markara"
 
 #: extension/python/components/OptionsDialogHandler.py:76
 msgid "On mouseclick"
-msgstr ""
+msgstr "Saguaren klik eginez"
 
 #: extension/python/components/OptionsDialogHandler.py:77
 msgid "On key cursor"
-msgstr ""
+msgstr "Gezi batekin"
 
 #: extension/python/components/Parlatype.py:168
 #: extension/python/components/Parlatype.py:189
 #: extension/python/components/Parlatype.py:207
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "Parlatype ez dago instalatuta."
 
 #: extension/python/components/Parlatype.py:179
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr ""
+"Badirudi LibreOffice-ren AppArmor profilak Flatpak abiaraztea eragozten "
+"duela."
 
 #: extension/python/components/Parlatype.py:348
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "Mesedez, ireki lehenik Parlatype."
 
 #: extension/python/components/Parlatype.py:359
 msgid "Please open a media file first."
-msgstr ""
+msgstr "Ireki multimedia fitxategi bat lehenik."
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr ""
+msgstr "Ireki Parlatype"
 
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
-msgstr ""
+msgstr "Estekatu multimedia"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "Txertatu denbora-marka bat"
