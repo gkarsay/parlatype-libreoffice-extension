@@ -8,28 +8,32 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-20 19:50+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-11-17 09:22+0000\n"
+"Last-Translator: Olga Akhtirskaia <akhtirskaia@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/parlatype/"
+"parlatype-libreoffice-extension/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.2\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
-msgstr ""
+msgstr "Расширение Parlatype LibreOffice"
 
 #.
 #. This is the english description for this extension.
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr ""
+msgstr "Управление Parlatype из LibreOffice"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
 msgid "This is a bug fix release."
-msgstr ""
+msgstr "Это релиз с исправленными ошибками."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "Fix unlinking documents."
@@ -37,13 +41,13 @@ msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 msgid "Fix opening Flatpak version of Parlatype."
-msgstr ""
+msgstr "Исправление открытия Flatpak версии Parlatype."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:51
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "Обновление перевода для нескольких языков."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:27
 msgid "This release is for Parlatype 3.1."
@@ -62,51 +66,57 @@ msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr ""
+"Автоматическое распознавание речи: Печать распознанного текста из Parlatype ("
+"только для Linux)."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
 msgid "Fixed a crash if selecting a table."
-msgstr ""
+msgstr "Исправлена ошибка при выборе таблицы."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
 msgid "Translation updates for Italian."
-msgstr ""
+msgstr "Обновлен перевод на итальянский язык."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "Новый релиз зависит от Parlatype 2.1."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:48
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "Новый значок на панели инструментов для вставки временной метки."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:49
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"Изменено расположение макросов: При установке с помощью менеджера пакетов "
+"переназначить на LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:50
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
+"\"Open Parlatype\" пытается открыть версию Flatpak, если не может найти "
+"Parlatype в системном пути."
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr ""
+msgstr "Parlatype для LibreOffice"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
 msgid "Parlatype"
-msgstr ""
+msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
-msgstr ""
+msgstr "Перейти к временной метке"
 
 #: extension/python/components/OptionsDialogHandler.py:76
 msgid "On mouseclick"
-msgstr ""
+msgstr "По щелчку мыши"
 
 #: extension/python/components/OptionsDialogHandler.py:77
 msgid "On key cursor"
@@ -116,25 +126,26 @@ msgstr ""
 #: extension/python/components/Parlatype.py:189
 #: extension/python/components/Parlatype.py:207
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "Parlatype не установлен."
 
 #: extension/python/components/Parlatype.py:179
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr ""
+"Похоже, что профиль AppArmor для LibreOffice не позволяет запустить Flatpak."
 
 #: extension/python/components/Parlatype.py:348
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "Сначала откройте Parlatype."
 
 #: extension/python/components/Parlatype.py:359
 msgid "Please open a media file first."
-msgstr ""
+msgstr "Сначала откройте медиафайл."
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr ""
+msgstr "Открыть Parlatype"
 
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
@@ -142,4 +153,4 @@ msgstr ""
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "Установить временную метку"
