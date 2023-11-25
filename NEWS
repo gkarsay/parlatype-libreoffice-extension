@@ -1,14 +1,24 @@
-Overview of Changes in Parlatype LibreOffice Extension 3.1.2 – 2022-06-19
-=========================================================================
+Overview of Changes in Parlatype LibreOffice Extension 4.0 – 2023-11-25
+=======================================================================
 
 * Fix opening flatpak version of Parlatype (#8)
 * Fix NameError: 'removeDokumentLink' is not defined (#9)
 
 * New or updated translations via Weblate:
+  - Basque: Alexander Gabilondo
+  - Basque: Alex Gabilondo
   - Chinese (Simplified): poi
+  - French: rene-coty
   - Indonesian: Reza Almanda
   - Italian: albanobattistella
+  - Japanese: mersnn621
+  - Polish: Piotr Drąg
+  - Russian: Olga Akhtirskaia
+  - Spanish: Eduardo Malaspina
+  - Spanish: gallegonovato
   - Turkish: E-Akcaer
+  - Turkish: Sabri Ünal
+  - Ukrainian: Olga Akhtirskaia
 
 
 Overview of Changes in Parlatype LibreOffice Extension 3.1.1 – 2021-12-19
