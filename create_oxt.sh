@@ -37,5 +37,6 @@ zip -r "$OXT" \
 	toolbar \
 	description.xml
 
-cd "$BUILD_ROOT"/po &&
+cd "$BUILD_ROOT" && cp -r po/ locale/
 zip -r "$OXT" locale
+rm -r locale/

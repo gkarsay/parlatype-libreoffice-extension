@@ -8,6 +8,8 @@ MESON_BUILD_ROOT="$2"
 SOURCE_DIR="$MESON_SOURCE_ROOT"/extension
 BUILD_DIR="$MESON_BUILD_ROOT"/extension
 
+cp "$BUILD_DIR"/description.xml.in "$BUILD_DIR"/description.xml
+
 # First get the english text
 
 mkdir -p "$BUILD_DIR"/description
@@ -27,9 +29,8 @@ do
 		if [ "$string" != "" ]
 		then
 			echo "$string" > "$BUILD_DIR"/description/desc_"$lang".txt
-			sed "/.*\/extension-description/i <src xlink:href=\"description/desc_$lang.txt\" lang=\"$lang\" />" \
-				"$BUILD_DIR"/description.xml.in \
-				> "$BUILD_DIR"/description.xml
+			sed -i "/.*\/extension-description/ i\    <src xlink:href=\"description/desc_$lang.txt\" lang=\"$lang\" />" \
+				"$BUILD_DIR"/description.xml
 		fi
 	fi
 done < "$MESON_SOURCE_ROOT"/po/LINGUAS

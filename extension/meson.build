@@ -41,20 +41,11 @@ subdir('options')
 subdir('toolbar')
 
 if bundled
+	subdir('asr')
+	subdir('images')
 	subdir('python')
-
-	install_subdir(
-		'asr',
-		install_dir: extension_dir,
-	)
-
 	install_subdir(
 		join_paths(meson.current_build_dir(), 'description'),
 		install_dir: extension_dir,
-	)
-
-	install_subdir(
-		'images',
-		install_dir: extension_dir
 	)
 endif
