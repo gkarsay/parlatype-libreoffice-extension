@@ -31,7 +31,7 @@ description = custom_target(
 	'description',
 	input: description_in,
 	output: 'description.xml',
-	command: [ i18n_script, meson.source_root(), meson.build_root() ],
+	command: [ i18n_script, meson.project_source_root(), meson.project_build_root() ],
 	install: bundled,
 	install_dir: extension_dir,
 )

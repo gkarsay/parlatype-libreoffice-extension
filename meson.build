@@ -1,6 +1,6 @@
 project('parlatype-libreoffice-extension',
 	version: '3.1.1',
-	#meson_version: '>= 0.47.2', # oldest working tested version
+	meson_version: '>= 0.56.0',
 	license: 'GPL3+',
 )
 
@@ -28,7 +28,7 @@ if not bundled
 	zip = find_program('zip', required: true)
 	custom_target(
 		'oxt',
-		command: [ oxt, meson.source_root(), meson.build_root() ],
+		command: [ oxt, meson.project_source_root(), meson.project_build_root() ],
 		output: [ 'Parlatype.oxt' ],
 		depends: [ description, options_dialog, toolbar, window_state ],
 		build_by_default: true
