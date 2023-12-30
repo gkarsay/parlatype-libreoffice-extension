@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-20 19:50+0200\n"
-"PO-Revision-Date: 2021-11-18 20:49+0000\n"
+"PO-Revision-Date: 2023-12-31 18:07+0000\n"
 "Last-Translator: Gabor Karsay <gabor.karsay@gmx.at>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/de/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 "X-Launchpad-Export-Date: 2020-05-31 18:28+0000\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
@@ -57,7 +57,7 @@ msgstr "Diese neue Version hängt von Parlatype 2.1 ab."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
 msgid "Switched to Weblate for translations."
-msgstr ""
+msgstr "Für Übersetzungen zu Weblate gewechselt."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 #, fuzzy
