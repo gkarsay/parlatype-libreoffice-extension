@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: parlatype-libreoffice-extension\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-20 19:50+0200\n"
-"PO-Revision-Date: 2023-03-21 14:39+0000\n"
+"PO-Revision-Date: 2024-01-22 18:01+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 "X-Launchpad-Export-Date: 2020-05-31 18:28+0000\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
@@ -55,7 +55,7 @@ msgstr "Esta versión es para Parlatype 3.1."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
 msgid "Switched to Weblate for translations."
-msgstr "Cambié a Weblate para las traducciones."
+msgstr "Me he pasado a Weblate para las traducciones."
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "This release is for Parlatype 3.0."
