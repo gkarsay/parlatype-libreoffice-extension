@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-20 19:50+0200\n"
-"PO-Revision-Date: 2023-06-22 14:29+0000\n"
-"Last-Translator: mersnn621 <mersnn621@gmail.com>\n"
+"PO-Revision-Date: 2024-01-28 05:01+0000\n"
+"Last-Translator: akinobu nishi <at0onsleeping@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/ja/>\n"
 "Language: ja\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
 msgid "Parlatype LibreOffice Extension"
@@ -36,11 +36,11 @@ msgstr "バグ修正リリースです。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
 msgid "Fix unlinking documents."
-msgstr ""
+msgstr "リンクされていない文章の修正。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
 msgid "Fix opening Flatpak version of Parlatype."
-msgstr ""
+msgstr "ParlatypeのFlatpak版の開き方の修正。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
@@ -68,7 +68,7 @@ msgstr ""
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
 msgid "Fixed a crash if selecting a table."
-msgstr ""
+msgstr "もしテーブル選択時のクラッシュを修正済。"
 
 #: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
 msgid "Translation updates for Italian."
