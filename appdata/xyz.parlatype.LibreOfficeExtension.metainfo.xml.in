@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-	<id>org.parlatype.LibreOfficeExtension</id>
-	<extends>org.parlatype.Parlatype.desktop</extends>
+	<id>xyz.parlatype.LibreOfficeExtension</id>
+	<extends>xyz.parlatype.Parlatype.desktop</extends>
 	<extends>libreoffice-writer.desktop</extends>
 	<name>Parlatype LibreOffice Extension</name>
 	<summary>Control Parlatype from LibreOffice</summary>

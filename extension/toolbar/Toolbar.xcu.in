@@ -7,11 +7,11 @@ oor:package="org.openoffice.Office">
   <node oor:name="AddonUI">
 
     <node oor:name="OfficeToolBar">
-      <node oor:name="org.parlatype.toolbar" oor:op="replace">
+      <node oor:name="xyz.parlatype.toolbar" oor:op="replace">
 
         <node oor:name="button1" oor:op="replace">
           <prop oor:name="URL" oor:type="xs:string">
-            <value>org.parlatype.loextension:open</value>
+            <value>xyz.parlatype.loextension:open</value>
           </prop>
           <prop oor:name="Title" oor:type="xs:string">
             <value xml:lang="en-US">Open Parlatype</value>
@@ -26,7 +26,7 @@ oor:package="org.openoffice.Office">
 
         <node oor:name="button2" oor:op="replace">
           <prop oor:name="URL" oor:type="xs:string">
-            <value>org.parlatype.loextension:link</value>
+            <value>xyz.parlatype.loextension:link</value>
           </prop>
           <prop oor:name="Title" oor:type="xs:string">
             <value xml:lang="en-US">Link Media</value>
@@ -41,7 +41,7 @@ oor:package="org.openoffice.Office">
 
         <node oor:name="button3" oor:op="replace">
           <prop oor:name="URL" oor:type="xs:string">
-            <value>org.parlatype.loextension:timestamp</value>
+            <value>xyz.parlatype.loextension:timestamp</value>
           </prop>
           <prop oor:name="Title" oor:type="xs:string">
             <value xml:lang="en-US">Insert Timestamp</value>
@@ -59,9 +59,9 @@ oor:package="org.openoffice.Office">
 
     <node oor:name="Images">
 
-      <node oor:name="org.parlatype.loextension.open-icon" oor:op="replace">
+      <node oor:name="xyz.parlatype.loextension.open-icon" oor:op="replace">
         <prop oor:name="URL" oor:type="xs:string">
-          <value>org.parlatype.loextension:open</value>
+          <value>xyz.parlatype.loextension:open</value>
         </prop>
         <node oor:name="UserDefinedImages">
           <prop oor:name="ImageSmallURL" oor:type="xs:string">
@@ -73,9 +73,9 @@ oor:package="org.openoffice.Office">
         </node>
       </node>
 
-      <node oor:name="org.parlatype.loextension.link-icon" oor:op="replace">
+      <node oor:name="xyz.parlatype.loextension.link-icon" oor:op="replace">
         <prop oor:name="URL" oor:type="xs:string">
-          <value>org.parlatype.loextension:link</value>
+          <value>xyz.parlatype.loextension:link</value>
         </prop>
         <node oor:name="UserDefinedImages">
           <prop oor:name="ImageSmallURL" oor:type="xs:string">
@@ -87,9 +87,9 @@ oor:package="org.openoffice.Office">
         </node>
       </node>
 
-      <node oor:name="org.parlatype.loextension.timestamp-icon" oor:op="replace">
+      <node oor:name="xyz.parlatype.loextension.timestamp-icon" oor:op="replace">
         <prop oor:name="URL" oor:type="xs:string">
-          <value>org.parlatype.loextension:timestamp</value>
+          <value>xyz.parlatype.loextension:timestamp</value>
         </prop>
         <node oor:name="UserDefinedImages">
           <prop oor:name="ImageSmallURL" oor:type="xs:string">

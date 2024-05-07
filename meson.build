@@ -4,7 +4,7 @@ project('parlatype-libreoffice-extension',
 	license: 'GPL3+',
 )
 
-app_id  = 'org.parlatype.LibreOfficeExtension'
+app_id  = 'xyz.parlatype.LibreOfficeExtension'
 version = meson.project_version()
 bundled = get_option('bundled')
 i18n    = import('i18n')

@@ -155,7 +155,7 @@ def setGettextDomain(ctx):
     info = ctx.getByName(
         "/singletons/com.sun.star.deployment.PackageInformationProvider")
 
-    extension_uri = info.getPackageLocation("org.parlatype.loextension")
+    extension_uri = info.getPackageLocation("xyz.parlatype.loextension")
     extension_path = uno.fileUrlToSystemPath(extension_uri)
     locale_path = os.path.join(extension_path, 'locale')
 
@@ -165,13 +165,13 @@ def setGettextDomain(ctx):
 
 def _getDBUSService():
     bus = dbus.SessionBus()
-    if bus.name_has_owner('org.parlatype.Parlatype') is False:
+    if bus.name_has_owner('xyz.parlatype.Parlatype') is False:
         return None
 
     proxy = dbus.SessionBus().get_object(
-            "org.parlatype.Parlatype",
-            "/org/parlatype/parlatype")
-    return dbus.Interface(proxy, "org.parlatype.Parlatype")
+            "xyz.parlatype.Parlatype",
+            "/xyz/parlatype/parlatype")
+    return dbus.Interface(proxy, "xyz.parlatype.Parlatype")
 
 
 def ParlatypeIsRunning(ctx):

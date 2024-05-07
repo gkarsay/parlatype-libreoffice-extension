@@ -2,7 +2,7 @@
 <oor:component-data
 xmlns:oor="http://openoffice.org/2001/registry"
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-oor:package="org.parlatype"
+oor:package="xyz.parlatype"
 oor:name="config">
     <prop oor:name="TimestampKeys" oor:type="xs:short">
         <value>1</value>

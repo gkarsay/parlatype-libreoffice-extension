@@ -105,8 +105,8 @@ class ASRJob(unohelper.Base, XJob):
             DBusGMainLoop(set_as_default=True)
             bus = dbus.SessionBus()
             bus.add_signal_receiver(self.dbus_signal_handler,
-                                    bus_name='org.parlatype.Parlatype',
-                                    dbus_interface='org.parlatype.Parlatype',
+                                    bus_name='xyz.parlatype.Parlatype',
+                                    dbus_interface='xyz.parlatype.Parlatype',
                                     member_keyword='signal')
 
             # Listen in a thread. LibreOffice will not start up until this
@@ -125,7 +125,7 @@ class ASRJob(unohelper.Base, XJob):
                 loop = None
 
 
-ImplementationName = "org.parlatype.ASRListener"
+ImplementationName = "xyz.parlatype.ASRListener"
 
 g_ImplementationHelper = unohelper.ImplementationHelper()
 g_ImplementationHelper.addImplementation(

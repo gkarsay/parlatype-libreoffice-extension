@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <oor:component-schema
 oor:name="config"
-oor:package="org.parlatype" xml:ang="en-US"
+oor:package="xyz.parlatype" xml:ang="en-US"
 xmlns:oor="http://openoffice.org/2001/registry"
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

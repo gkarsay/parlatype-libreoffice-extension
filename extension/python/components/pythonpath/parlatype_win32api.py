@@ -85,7 +85,7 @@ ERROR_MORE_DATA = 234
 BUFSIZE = 512
 READBUFSIZE = 5
 
-pipename = "\\\\.\\pipe\\org.parlatype.ipc"
+pipename = "\\\\.\\pipe\\xyz.parlatype.ipc"
 
 
 ''' Error handling '''

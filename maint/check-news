@@ -20,7 +20,7 @@ else
 fi
 
 # Youngest release in Appdata
-APPDATA_LINE=$(grep -m 1 -e '<release ' appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in)
+APPDATA_LINE=$(grep -m 1 -e '<release ' appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in)
 APPDATA_VERSION=$(grep -o -e '\"[0-9|\.]*\"' <<< "$APPDATA_LINE")
 
 if [ "$APPDATA_VERSION" != "\"$VERSION\"" ]; then

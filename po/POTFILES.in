@@ -1,6 +1,6 @@
 # List of source files which contain translatable strings.
 
-appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in
+appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in
 extension/description.xml.in.in.in
 extension/description_translation.xml
 extension/options/OptionsDialogRegistry.xcu.in

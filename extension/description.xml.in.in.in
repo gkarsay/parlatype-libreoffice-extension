@@ -8,7 +8,7 @@
              >
 
   <version value="@VERSION@"/>
-  <identifier value="org.parlatype.loextension"/>
+  <identifier value="xyz.parlatype.loextension"/>
 
   <publisher>
     <name xlink:href="https://www.parlatype.xyz" its:translate="no">Parlatype.xyz</name>

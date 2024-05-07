@@ -6,7 +6,7 @@ oor:name="WriterWindowState"
 oor:package="org.openoffice.Office.UI">
     <node oor:name="UIElements">
         <node oor:name="States">
-            <node oor:name="private:resource/toolbar/addon_org.parlatype.toolbar" oor:op="replace">
+            <node oor:name="private:resource/toolbar/addon_xyz.parlatype.toolbar" oor:op="replace">
                 <prop oor:name="UIName" oor:type="xs:string">
                     <value xml:lang="en-US">Parlatype</value>
                 </prop>

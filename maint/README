@@ -19,14 +19,14 @@ Release
 =======
 
 A few days to weeks earlier:
-Add short release section at appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in
+Add short release section at appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in
 commit
 Update pot file (will also update po files), commit "String freeze vX.X",
 push to main branch
 
 Release day:
 Add NEWS (using maint/print-translation-status),
-update date in appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in
+update date in appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in
 commit
 Change version in meson.build
 maint/check-news

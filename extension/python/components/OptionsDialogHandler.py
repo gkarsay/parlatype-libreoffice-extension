@@ -18,7 +18,7 @@ class OptionsDialogHandler(unohelper.Base, XContainerWindowEventHandler):
             'com.sun.star.configuration.ConfigurationProvider', ctx)
         self.node = PropertyValue()
         self.node.Name = 'nodepath'
-        self.node.Value = '/org.parlatype.config'
+        self.node.Value = '/xyz.parlatype.config'
         self.orig_keys_value = 0
         self.orig_mouse_value = 0
         pt_utils.setGettextDomain(ctx)
@@ -85,7 +85,7 @@ class OptionsDialogHandler(unohelper.Base, XContainerWindowEventHandler):
 
 
 # uno implementation
-ImplementationName = "org.parlatype.OptionsDialog"
+ImplementationName = "xyz.parlatype.OptionsDialog"
 
 g_ImplementationHelper = unohelper.ImplementationHelper()
 g_ImplementationHelper.addImplementation(

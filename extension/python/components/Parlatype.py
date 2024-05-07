@@ -45,9 +45,9 @@ if sys.platform == 'win32':
 
 _ = gettext.gettext
 
-ImplementationName = "org.parlatype.ProtocolHandler"
+ImplementationName = "xyz.parlatype.ProtocolHandler"
 ServiceName = "com.sun.star.frame.ProtocolHandler"
-Protocol = "org.parlatype.loextension:"
+Protocol = "xyz.parlatype.loextension:"
 
 
 current_timestamp = ''
@@ -156,7 +156,7 @@ def insertTimestamp(ctx):
 
 
 def launchFlatpak(ctx, url):
-    cmdline = ["flatpak", "run", "org.parlatype.Parlatype"]
+    cmdline = ["flatpak", "run", "xyz.parlatype.Parlatype"]
     if url is not None:
         cmdline.append(url)
 
@@ -183,7 +183,7 @@ def launchFlatpak(ctx, url):
     # If not installed, we get a localized error message which is difficult to
     # parse. Lets check instead, if it is installed via flatpak info.
     try:
-        p = subprocess.run(["flatpak", "info", "org.parlatype.Parlatype"],
+        p = subprocess.run(["flatpak", "info", "xyz.parlatype.Parlatype"],
                            check=True)
     except subprocess.CalledProcessError:
         showMessage(ctx, _("Parlatype is not installed."))
@@ -270,7 +270,7 @@ class ParlatypeController(object):
             'com.sun.star.configuration.ConfigurationProvider', self.ctx)
         node = PropertyValue()
         node.Name = 'nodepath'
-        node.Value = '/org.parlatype.config'
+        node.Value = '/xyz.parlatype.config'
         return cfg.createInstanceWithArguments(
              'com.sun.star.configuration.ConfigurationAccess', (node,))
 

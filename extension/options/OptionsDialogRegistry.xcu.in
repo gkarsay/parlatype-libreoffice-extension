@@ -6,9 +6,9 @@ xmlns:oor="http://openoffice.org/2001/registry">
     <node oor:name="Nodes">
         <node oor:name="Writer" oor:op="fuse">
             <node oor:name="Leaves">
-                <node oor:name="org.parlatype.loextension" oor:op="fuse">
+                <node oor:name="xyz.parlatype.loextension" oor:op="fuse">
                     <prop oor:name="Id">
-                        <value>org.parlatype.loextension</value>
+                        <value>xyz.parlatype.loextension</value>
                     </prop>
                     <prop oor:name="Label">
                         <value xml:lang="en-US">Parlatype</value>
@@ -17,7 +17,7 @@ xmlns:oor="http://openoffice.org/2001/registry">
                         <value>%origin%/OptionsDialogPage.xdl</value>
                     </prop>
                     <prop oor:name="EventHandlerService">
-                        <value>org.parlatype.OptionsDialog</value>
+                        <value>xyz.parlatype.OptionsDialog</value>
                     </prop>
                 </node>
             </node>
