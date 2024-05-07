@@ -1,6 +1,6 @@
 # Parlatype LibreOffice Extension
 
-For this LibreOffice extension you need LibreOffice itself and Parlatype <https://www.parlatype.org>.
+For this LibreOffice extension you need LibreOffice itself and Parlatype <https://www.parlatype.xyz>.
 Parlatype and this extension are released together and should only be used with matching versions.
 
 ## Installation methods
