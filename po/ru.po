@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-20 19:50+0200\n"
+"POT-Creation-Date: 2024-05-08 20:16+0200\n"
 "PO-Revision-Date: 2023-11-17 09:22+0000\n"
 "Last-Translator: Olga Akhtirskaia <akhtirskaia@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/parlatype/"
@@ -20,72 +20,93 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.2\n"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
 msgid "Parlatype LibreOffice Extension"
 msgstr "Расширение Parlatype LibreOffice"
 
 #.
 #. This is the english description for this extension.
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:5
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
 msgstr "Управление Parlatype из LibreOffice"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
-msgid "This is a bug fix release."
-msgstr "Это релиз с исправленными ошибками."
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
+msgid "Gabor Karsay"
+msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
+msgid "Website moved to to www.parlatype.xyz"
+msgstr ""
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:26
+msgid ""
+"Extension’s ID changed accordingly, it requires at least the same version of "
+"Parlatype"
+msgstr ""
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:27
+#, fuzzy
+#| msgid "Translation updates for several languages."
+msgid "Translation updates for several languages"
+msgstr "Обновление перевода для нескольких языков."
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:33
+msgid ""
+"This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0"
+msgstr ""
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:35
 msgid "Fix unlinking documents."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "Fix opening Flatpak version of Parlatype."
 msgstr "Исправление открытия Flatpak версии Parlatype."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:51
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:37
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:46
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:67
 msgid "Translation updates for several languages."
 msgstr "Обновление перевода для нескольких языков."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:27
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:43
 msgid "This release is for Parlatype 3.1."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:45
 msgid "Switched to Weblate for translations."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:52
 msgid "This release is for Parlatype 3.0."
 msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:54
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr ""
-"Автоматическое распознавание речи: Печать распознанного текста из Parlatype ("
-"только для Linux)."
+"Автоматическое распознавание речи: Печать распознанного текста из Parlatype "
+"(только для Linux)."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:55
 msgid "Fixed a crash if selecting a table."
 msgstr "Исправлена ошибка при выборе таблицы."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:56
 msgid "Translation updates for Italian."
 msgstr "Обновлен перевод на итальянский язык."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:46
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:62
 msgid "This new release depends on Parlatype 2.1."
 msgstr "Новый релиз зависит от Parlatype 2.1."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:48
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:64
 msgid "New toolbar icon to insert a timestamp."
 msgstr "Новый значок на панели инструментов для вставки временной метки."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:49
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:65
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
@@ -93,7 +114,7 @@ msgstr ""
 "Изменено расположение макросов: При установке с помощью менеджера пакетов "
 "переназначить на LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:50
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:66
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
@@ -154,3 +175,6 @@ msgstr ""
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
 msgstr "Установить временную метку"
+
+#~ msgid "This is a bug fix release."
+#~ msgstr "Это релиз с исправленными ошибками."

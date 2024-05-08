@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-20 19:50+0200\n"
+"POT-Creation-Date: 2024-05-08 20:16+0200\n"
 "PO-Revision-Date: 2023-10-13 21:00+0000\n"
 "Last-Translator: Alexander Gabilondo <alexgabi@openmailbox.org>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/parlatype/"
@@ -19,72 +19,93 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.1-dev\n"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
 msgid "Parlatype LibreOffice Extension"
 msgstr "Parlatype LibreOffice gehigarria"
 
 #.
 #. This is the english description for this extension.
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:5
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
 msgstr "Kontrolatu Parlatype LibreOffice-tik"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
-msgid "This is a bug fix release."
-msgstr "Hau akatsak konpontzeko bertsioa da."
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
+msgid "Gabor Karsay"
+msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
+msgid "Website moved to to www.parlatype.xyz"
+msgstr ""
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:26
+msgid ""
+"Extension’s ID changed accordingly, it requires at least the same version of "
+"Parlatype"
+msgstr ""
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:27
+#, fuzzy
+#| msgid "Translation updates for several languages."
+msgid "Translation updates for several languages"
+msgstr "Hainbat hizkuntzatarako itzulpen eguneraketak."
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:33
+msgid ""
+"This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0"
+msgstr ""
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:35
 msgid "Fix unlinking documents."
 msgstr "Konpondu dokumentuaren lotura galtzea."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "Fix opening Flatpak version of Parlatype."
 msgstr "Konpondu Parlatype-ren Flatpak bertsioa irekitzea."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:51
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:37
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:46
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:67
 msgid "Translation updates for several languages."
 msgstr "Hainbat hizkuntzatarako itzulpen eguneraketak."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:27
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:43
 msgid "This release is for Parlatype 3.1."
 msgstr "Bertsio hau Parlatype 3.1erako da."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:45
 msgid "Switched to Weblate for translations."
 msgstr "Itzulpenetarako Weblate-ra aldatu da."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:52
 msgid "This release is for Parlatype 3.0."
 msgstr "Bertsio hau Parlatype 3.0erako da."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:54
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr ""
-"Ahots-ezagutze automatikoa: Parlatype-tik ezagututako testua inprimatzen du ("
-"Linux soilik)."
+"Ahots-ezagutze automatikoa: Parlatype-tik ezagututako testua inprimatzen du "
+"(Linux soilik)."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:55
 msgid "Fixed a crash if selecting a table."
 msgstr "Taula hautatzeko hutsegite bat konpondu da."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:56
 msgid "Translation updates for Italian."
 msgstr "Itzulpen eguneraketak italierarako."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:46
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:62
 msgid "This new release depends on Parlatype 2.1."
 msgstr "Bertsio berri hau Parlatype 2.1-en menpekoa da."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:48
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:64
 msgid "New toolbar icon to insert a timestamp."
 msgstr "Tresna-barraren ikono berria denbora-marka txertatzeko."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:49
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:65
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
@@ -92,7 +113,7 @@ msgstr ""
 "Makroen kokapena aldatu da: pakete-kudeatzaile batekin instalatuta badago, "
 "berriro esleitu LibreOffice Macros > LibreOffice Makros > Parlatype."
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:50
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:66
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
@@ -154,3 +175,6 @@ msgstr "Estekatu multimedia"
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
 msgstr "Txertatu denbora-marka bat"
+
+#~ msgid "This is a bug fix release."
+#~ msgstr "Hau akatsak konpontzeko bertsioa da."

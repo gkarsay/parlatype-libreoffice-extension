@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Parlatype LibreOffice Extansion 3.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-20 19:50+0200\n"
+"POT-Creation-Date: 2024-05-08 20:16+0200\n"
 "PO-Revision-Date: 2022-06-24 13:19+0000\n"
 "Last-Translator: poi <erbaotao@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -19,70 +19,91 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.13.1-dev\n"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:6
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
 msgid "Parlatype LibreOffice Extension"
 msgstr "LibreOffice 的 Parlatype 扩展"
 
 #.
 #. This is the english description for this extension.
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:7
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:5
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
 msgstr "在 LibreOffice 中操控 Parlatype"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:17
-msgid "This is a bug fix release."
-msgstr "此版本修复了错误。"
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
+msgid "Gabor Karsay"
+msgstr ""
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:19
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
+msgid "Website moved to to www.parlatype.xyz"
+msgstr ""
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:26
+msgid ""
+"Extension’s ID changed accordingly, it requires at least the same version of "
+"Parlatype"
+msgstr ""
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:27
+#, fuzzy
+#| msgid "Translation updates for several languages."
+msgid "Translation updates for several languages"
+msgstr "更新了几种语言的翻译。"
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:33
+msgid ""
+"This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0"
+msgstr ""
+
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:35
 msgid "Fix unlinking documents."
 msgstr "修复了没链接上的文档链接。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:20
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "Fix opening Flatpak version of Parlatype."
 msgstr "修复了 Flatpak 版 Parlatype 的打开途径问题。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:21
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:30
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:51
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:37
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:46
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:67
 msgid "Translation updates for several languages."
 msgstr "更新了几种语言的翻译。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:27
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:43
 msgid "This release is for Parlatype 3.1."
 msgstr "此版本用于 Parlatype 3.1 。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:29
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:45
 msgid "Switched to Weblate for translations."
 msgstr "转向使用 Weblate 翻译此软件。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:36
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:52
 msgid "This release is for Parlatype 3.0."
 msgstr "此版本用于 Parlatype 3.0 。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:38
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:54
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr "自动语音识别：打印 Parlatype 识别的文本（仅限 Linux）。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:39
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:55
 msgid "Fixed a crash if selecting a table."
 msgstr "修复了选择表格导致的崩溃问题。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:40
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:56
 msgid "Translation updates for Italian."
 msgstr "新增意大利语翻译。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:46
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:62
 msgid "This new release depends on Parlatype 2.1."
 msgstr "此新版本需要 Parlatype 2.1 。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:48
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:64
 msgid "New toolbar icon to insert a timestamp."
 msgstr "插入时间戳的工具栏新图标。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:49
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:65
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
@@ -90,7 +111,7 @@ msgstr ""
 "更改了宏的位置——如果是用软件包管理器安装的，请重新指定到 LibreOffice Macros —"
 "&gt; LibreOffice Macros —&gt; Parlatype。"
 
-#: appdata/org.parlatype.LibreOfficeExtension.metainfo.xml.in:50
+#: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:66
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
@@ -150,3 +171,6 @@ msgstr ""
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
 msgstr "插入时间戳"
+
+#~ msgid "This is a bug fix release."
+#~ msgstr "此版本修复了错误。"
