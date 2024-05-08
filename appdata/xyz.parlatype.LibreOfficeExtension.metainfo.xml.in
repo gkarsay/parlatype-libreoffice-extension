@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
 	<id>xyz.parlatype.LibreOfficeExtension</id>
-	<extends>xyz.parlatype.Parlatype.desktop</extends>
-	<extends>libreoffice-writer.desktop</extends>
 	<name>Parlatype LibreOffice Extension</name>
 	<summary>Control Parlatype from LibreOffice</summary>
+	<extends>libreoffice-writer.desktop</extends>
+	<requires>xyz.parlatype.Parlatype</requires>
+	<provides>
+		<id>org.parlatype.LibreOfficeExtension</id>
+	</provides>
 
 	<url type="homepage">https://www.parlatype.xyz</url>
 	<url type="bugtracker">https://github.com/gkarsay/parlatype-libreoffice-extension/issues</url>
