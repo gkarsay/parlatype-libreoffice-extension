@@ -19,6 +19,15 @@
 	</developer>
 
 	<releases>
+		<release version="4.2" date="2024-05-09">
+			<description>
+			<ul>
+			<li>Website moved to to www.parlatype.xyz</li>
+			<li>Extension’s ID changed accordingly, it requires at least the same version of Parlatype</li>
+			<li>Translation updates for several languages</li>
+			</ul>
+			</description>
+		</release>
 		<release version="4.0" date="2023-11-25">
 			<description>
 			<p>This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0</p>
