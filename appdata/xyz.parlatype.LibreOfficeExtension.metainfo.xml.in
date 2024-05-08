@@ -11,6 +11,10 @@
 	<url type="translate">https://hosted.weblate.org/engage/parlatype/</url>
 	<url type="donation">https://www.parlatype.xyz/donate.html</url>
 
+	<developer id="xyz.parlatype">
+		<name>Gabor Karsay</name>
+	</developer>
+
 	<releases>
 		<release version="4.0" date="2023-11-25">
 			<description>
