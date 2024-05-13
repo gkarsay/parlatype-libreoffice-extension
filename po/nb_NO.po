@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 20:16+0200\n"
+"POT-Creation-Date: 2024-05-13 20:59+0200\n"
 "PO-Revision-Date: 2021-11-29 17:51+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
@@ -35,7 +35,7 @@ msgid "Gabor Karsay"
 msgstr ""
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
-msgid "Website moved to to www.parlatype.xyz"
+msgid "Website moved to www.parlatype.xyz"
 msgstr ""
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:26
