@@ -22,7 +22,7 @@
 		<release version="4.2" date="2024-05-09">
 			<description>
 			<ul>
-			<li>Website moved to to www.parlatype.xyz</li>
+			<li>Website moved to www.parlatype.xyz</li>
 			<li>Extension’s ID changed accordingly, it requires at least the same version of Parlatype</li>
 			<li>Translation updates for several languages</li>
 			</ul>
