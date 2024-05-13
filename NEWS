@@ -1,3 +1,19 @@
+Overview of Changes in Parlatype LibreOffice Extension 4.2 – 2024-06-02
+=======================================================================
+
+* Moved website to www.parlatype.xyz
+* Changed extension ID accordingly
+* Requires Parlatype 4.2
+
+* New or updated translations via Weblate:
+  - German: Gabor Karsay
+  - Italian: albanobattistella
+  - Japanese: akinobu nishi
+  - Polish: Piotr Drąg
+  - Spanish: gallegonovato
+  - Turkish: Sabri Ünal
+
+
 Overview of Changes in Parlatype LibreOffice Extension 4.0 – 2023-11-25
 =======================================================================
 
