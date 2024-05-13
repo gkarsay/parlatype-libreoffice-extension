@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 20:59+0200\n"
-"PO-Revision-Date: 2024-05-13 18:55+0000\n"
+"PO-Revision-Date: 2024-05-13 19:01+0000\n"
 "Last-Translator: Gabor Karsay <gabor.karsay@gmx.at>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/de/>\n"
@@ -37,8 +37,6 @@ msgid "Gabor Karsay"
 msgstr "Gabor Karsay"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
-#, fuzzy
-#| msgid "Website moved to to www.parlatype.xyz"
 msgid "Website moved to www.parlatype.xyz"
 msgstr "Homepage zu www.parlatype.xyz geändert"
 
