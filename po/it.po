@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: parlatype-libreoffice-extension\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 20:59+0200\n"
-"PO-Revision-Date: 2022-06-29 17:17+0000\n"
+"PO-Revision-Date: 2024-05-17 12:01+0000\n"
 "Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 "X-Launchpad-Export-Date: 2020-05-31 18:28+0000\n"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
@@ -33,28 +33,30 @@ msgstr "Controlla Parlatype da LibreOffice"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
 msgid "Gabor Karsay"
-msgstr ""
+msgstr "Gabor Karsay"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
 msgid "Website moved to www.parlatype.xyz"
-msgstr ""
+msgstr "Sito web spostato su www.parlatype.xyz"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:26
 msgid ""
 "Extension’s ID changed accordingly, it requires at least the same version of "
 "Parlatype"
 msgstr ""
+"L'ID dell'estensione è modificato di conseguenza, richiede almeno la stessa "
+"versione di Parlatype"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:27
-#, fuzzy
-#| msgid "Translation updates for several languages."
 msgid "Translation updates for several languages"
-msgstr "Aggiornamenti di traduzione per diverse lingue."
+msgstr "Aggiornamenti della traduzione per diverse lingue"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:33
 msgid ""
 "This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0"
 msgstr ""
+"Questa è una versione di correzione di bug, richiede Parlatype 3.x o "
+"Parlatype 4.0"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:35
 msgid "Fix unlinking documents."
