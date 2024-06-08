@@ -4,7 +4,9 @@
 	<name>Parlatype LibreOffice Extension</name>
 	<summary>Control Parlatype from LibreOffice</summary>
 	<extends>libreoffice-writer.desktop</extends>
-	<requires>xyz.parlatype.Parlatype</requires>
+	<requires>
+		<id>xyz.parlatype.Parlatype</id>
+	</requires>
 	<provides>
 		<id>org.parlatype.LibreOfficeExtension</id>
 	</provides>
