@@ -8,157 +8,173 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 20:59+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-06-18 06:09+0000\n"
+"Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
+"Language-Team: Hindi <https://hosted.weblate.org/projects/parlatype/"
+"parlatype-libreoffice-extension/hi/>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
 msgid "Parlatype LibreOffice Extension"
-msgstr ""
+msgstr "Parlatype LibreOffice एक्सटेंशन"
 
 #.
 #. This is the english description for this extension.
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:5
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr ""
+msgstr "LibreOffice से Parlatype को नियंत्रित करें"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
 msgid "Gabor Karsay"
-msgstr ""
+msgstr "गैबोर कारसे"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
 msgid "Website moved to www.parlatype.xyz"
-msgstr ""
+msgstr "वेबसाइट को www.parlatype.xyz पर स्थानांतरित कर दिया गया"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:26
 msgid ""
 "Extension’s ID changed accordingly, it requires at least the same version of "
 "Parlatype"
 msgstr ""
+"एक्सटेंशन की आईडी तदनुसार बदल गई है, इसके लिए कम से कम Parlatype के समान संस्"
+"करण की आवश्यकता है"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:27
 msgid "Translation updates for several languages"
-msgstr ""
+msgstr "कई भाषाओं के लिए अनुवाद अपडेट"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:33
 msgid ""
 "This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0"
 msgstr ""
+"यह एक बग फिक्स रिलीज है, इसके लिए Parlatype 3.x या Parlatype 4.0 की आवश्यकता "
+"है"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:35
 msgid "Fix unlinking documents."
-msgstr ""
+msgstr "दस्तावेजों को अनलिंक करने की समस्या ठीक की गई।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "Fix opening Flatpak version of Parlatype."
-msgstr ""
+msgstr "Parlatype का फ्लैटपैक संस्करण खोलना ठीक किया गया।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:37
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:67
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "कई भाषाओं के लिए अनुवाद अद्यतन।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:43
 msgid "This release is for Parlatype 3.1."
-msgstr ""
+msgstr "यह रिलीज Parlatype 3.1 के लिए है।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:45
 msgid "Switched to Weblate for translations."
-msgstr ""
+msgstr "अनुवाद के लिए *वेबलेट* पर स्विच किया गया।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:52
 msgid "This release is for Parlatype 3.0."
-msgstr ""
+msgstr "यह रिलीज Parlatype 3.0 के लिए है।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:54
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr ""
+"स्वचालित वाक् पहचान: Parlatype (केवल लिनक्स) से पहचाने गए पाठ को प्रिंट करता "
+"है।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:55
 msgid "Fixed a crash if selecting a table."
-msgstr ""
+msgstr "तालिका का चयन करते समय क्रैश होने की समस्या को ठीक किया गया।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:56
 msgid "Translation updates for Italian."
-msgstr ""
+msgstr "इतालवी के लिए अनुवाद अद्यतन।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:62
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "यह नई रिलीज Parlatype 2.1 पर निर्भर करती है।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:64
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "टाइमस्टैम्प सम्मिलित करने के लिए नया टूलबार आइकन।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:65
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"मैक्रो का स्थान परिवर्तित: यदि पैकेज प्रबंधक के साथ स्थापित किया गया है, तो "
+"LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype को पुनः नियुक्त "
+"करें।"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:66
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
+"यदि सिस्टम पथ में Parlatype नहीं मिलता है, तो “Parlatype खोलें” फ़्लैटपैक "
+"संस्करण को खोलने का प्रयास करता है।"
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr ""
+msgstr "LibreOffice के लिए Parlatype"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
 msgid "Parlatype"
-msgstr ""
+msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
-msgstr ""
+msgstr "टाइमस्टैम्प पर जाएं"
 
 #: extension/python/components/OptionsDialogHandler.py:76
 msgid "On mouseclick"
-msgstr ""
+msgstr "माउस क्लिक पर"
 
 #: extension/python/components/OptionsDialogHandler.py:77
 msgid "On key cursor"
-msgstr ""
+msgstr "कुंजी कर्सर पर"
 
 #: extension/python/components/Parlatype.py:168
 #: extension/python/components/Parlatype.py:189
 #: extension/python/components/Parlatype.py:207
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "Parlatype स्थापित नहीं है।"
 
 #: extension/python/components/Parlatype.py:179
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr ""
+"ऐसा लगता है कि LibreOffice के लिए AppArmor प्रोफाइल फ्लैटपैक को शुरू होने से "
+"रोक रहा है।"
 
 #: extension/python/components/Parlatype.py:348
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "कृपया पहले Parlatype खोलें।"
 
 #: extension/python/components/Parlatype.py:359
 msgid "Please open a media file first."
-msgstr ""
+msgstr "कृपया पहले एक मीडिया फाइल खोलें।"
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr ""
+msgstr "Parlatype खोलें"
 
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
-msgstr ""
+msgstr "मीडिया लिंक करें"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "टाइमस्टैम्प डालें"
