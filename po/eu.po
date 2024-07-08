@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 20:59+0200\n"
-"PO-Revision-Date: 2023-10-13 21:00+0000\n"
+"PO-Revision-Date: 2024-07-09 21:09+0000\n"
 "Last-Translator: Alexander Gabilondo <alexgabi@openmailbox.org>\n"
 "Language-Team: Basque <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/eu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
 msgid "Parlatype LibreOffice Extension"
@@ -32,17 +32,19 @@ msgstr "Kontrolatu Parlatype LibreOffice-tik"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
 msgid "Gabor Karsay"
-msgstr ""
+msgstr "Gabor Karsay"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
 msgid "Website moved to www.parlatype.xyz"
-msgstr ""
+msgstr "Webgunea www.parlatype.xyz helbidera eraman da"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:26
 msgid ""
 "Extension’s ID changed accordingly, it requires at least the same version of "
 "Parlatype"
 msgstr ""
+"Luzapenaren IDa horren ondorioz aldatu da, gutxienez Parlatype-ren bertsio "
+"bera behar du"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:27
 #, fuzzy
@@ -54,6 +56,7 @@ msgstr "Hainbat hizkuntzatarako itzulpen eguneraketak."
 msgid ""
 "This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0"
 msgstr ""
+"Hau akatsak konpontzeko bertsioa da, Parlatype 3.x edo Parlatype 4.0 behar du"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:35
 msgid "Fix unlinking documents."
