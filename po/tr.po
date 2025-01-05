@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Parlatype LibreOffice Extansion 3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 20:59+0200\n"
-"PO-Revision-Date: 2024-07-30 12:09+0000\n"
-"Last-Translator: Kaan Çetin <cetinkaan895@hotmail.com>\n"
+"PO-Revision-Date: 2025-01-05 13:55+0000\n"
+"Last-Translator: Ümit Solmz <usnetv@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/tr/>\n"
 "Language: tr\n"
@@ -17,18 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
 msgid "Parlatype LibreOffice Extension"
-msgstr "Parlatype LibreOffice Eklentisi"
+msgstr "Parlatype LibreOffice Eklenti"
 
 #.
 #. This is the english description for this extension.
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:5
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr "Parlatype'ı LibreOffice'ten Denetle"
+msgstr "LibreOffice'ten Parlatype'ı Kontrol Edin"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
 msgid "Gabor Karsay"
@@ -43,8 +43,8 @@ msgid ""
 "Extension’s ID changed accordingly, it requires at least the same version of "
 "Parlatype"
 msgstr ""
-"Eklentinin ID'si buna bağlı olarak değişti, Parlatype'ın en az aynı sürümünü "
-"gerektirir"
+"Uzantının kimliği buna göre değişti, en azından Parlatype'ın aynı sürümünü "
+"gerektiriyor"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:27
 msgid "Translation updates for several languages"
@@ -54,25 +54,25 @@ msgstr "Birçok dil için çeviri güncellemeleri"
 msgid ""
 "This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0"
 msgstr ""
-"Bu bir hata düzeltme sürümüdür, Parlatype 3.x yada Parlatype 4.0 gerektirir"
+"Bu bir hata düzeltme sürümüdür, Parlatype 3.x veya Parlatype 4.0 gerektirir"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:35
 msgid "Fix unlinking documents."
-msgstr "Belgelerin bağlantısını kaldırma düzeltildi."
+msgstr "Belgelerin bağlantısını kaldırmayı düzeltilmiştir."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "Fix opening Flatpak version of Parlatype."
-msgstr "Parlatype'ın Flatpak sürümünün açılma sorunu düzeltildi."
+msgstr "Parlatype'ın Flatpak sürümünün açılması düzeltildi."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:37
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:67
 msgid "Translation updates for several languages."
-msgstr "Birçok dil için çeviri güncellemeleri."
+msgstr "Çeşitli diller için çeviri güncellemeleri."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:43
 msgid "This release is for Parlatype 3.1."
-msgstr "Bu sürüm, Parlatype 3.1 içindir."
+msgstr "Bu sürüm Parlatype 3.1 içindir."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:45
 msgid "Switched to Weblate for translations."
@@ -176,7 +176,7 @@ msgstr "Ortamı Bağla"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr "Zaman Damgası Ekle"
+msgstr "Zamandamgası Ekle"
 
 #~ msgid "This is a bug fix release."
 #~ msgstr "Bu bir hata düzeltme sürümüdür."
