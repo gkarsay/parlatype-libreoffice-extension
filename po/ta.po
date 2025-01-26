@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 20:59+0200\n"
-"PO-Revision-Date: 2025-01-26 04:21+0000\n"
+"PO-Revision-Date: 2025-01-27 05:02+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/ta/>\n"
@@ -21,14 +21,14 @@ msgstr ""
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
 msgid "Parlatype LibreOffice Extension"
-msgstr ""
+msgstr "பார்லாடைப் லிப்ரேஃபிச் நீட்டிப்பு"
 
 #.
 #. This is the english description for this extension.
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:5
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr ""
+msgstr "லிப்ரேஃபிசிலிருந்து பார்லாடைப் கட்டுப்படுத்தவும்"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
 msgid "Gabor Karsay"
@@ -36,30 +36,33 @@ msgstr "கபோர் கார்சே"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
 msgid "Website moved to www.parlatype.xyz"
-msgstr ""
+msgstr "வலைத்தளம் www.parlatype.xyz க்கு மாற்றப்பட்டது"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:26
 msgid ""
 "Extension’s ID changed accordingly, it requires at least the same version of "
 "Parlatype"
 msgstr ""
+"நீட்டிப்பின் ஐடி அதற்கேற்ப மாற்றப்பட்டது, இதற்கு பார்லேட்டிபின் அதே பதிப்பு தேவைப்படுகிறது"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:27
 msgid "Translation updates for several languages"
-msgstr ""
+msgstr "பல மொழிகளுக்கான மொழிபெயர்ப்பு புதுப்பிப்புகள்"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:33
 msgid ""
 "This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0"
 msgstr ""
+"இது ஒரு பிழை பிழைத்திருத்த வெளியீடு, இதற்கு பார்லாடைப் 3.x அல்லது பார்லாடைப் 4.0 "
+"தேவைப்படுகிறது"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:35
 msgid "Fix unlinking documents."
-msgstr ""
+msgstr "அன்லிங் ஆவணங்களை சரிசெய்யவும்."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "Fix opening Flatpak version of Parlatype."
-msgstr ""
+msgstr "பார்லாடைப்பின் பிளாட்பாக் பதிப்பைத் திறப்பதை சரிசெய்யவும்."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:37
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:46
@@ -69,53 +72,59 @@ msgstr "பல மொழிகளுக்கான மொழிபெயர்�
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:43
 msgid "This release is for Parlatype 3.1."
-msgstr ""
+msgstr "இந்த வெளியீடு பார்லாடைப் 3.1 க்கானது."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:45
 msgid "Switched to Weblate for translations."
-msgstr ""
+msgstr "மொழிபெயர்ப்புகளுக்காக வெப்லேட்டுக்கு மாறியது."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:52
 msgid "This release is for Parlatype 3.0."
-msgstr ""
+msgstr "இந்த வெளியீடு பார்லாடைப் 3.0 க்கு."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:54
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr ""
+"தானியங்கி பேச்சு அங்கீகாரம்: பார்லாடைப் (லினக்ச் மட்டும்) இலிருந்து அங்கீகரிக்கப்பட்ட உரையை "
+"அச்சிடுகிறது."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:55
 msgid "Fixed a crash if selecting a table."
-msgstr ""
+msgstr "ஒரு அட்டவணையைத் தேர்ந்தெடுத்தால் விபத்து சரி செய்யப்பட்டது."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:56
 msgid "Translation updates for Italian."
-msgstr ""
+msgstr "இத்தாலியருக்கான மொழிபெயர்ப்பு புதுப்பிப்புகள்."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:62
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "இந்த புதிய வெளியீடு பார்லாடைப் 2.1 ஐப் பொறுத்தது."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:64
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "நேர முத்திரையைச் செருக புதிய கருவிப்பட்டி படவுரு."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:65
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"மேக்ரோக்களின் இடம்: ஒரு தொகுப்பு மேலாளருடன் நிறுவப்பட்டால், லிபிரோஃபிச் மேக்ரோக்களுக்கு "
+"மீண்டும் இணைக்கவும் & சிடி; லிப்ரூபிச் மேக்ரோச் & சிடி; Parlatype."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:66
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
+"கணினி பாதையில் பார்லாடைப்பைக் கண்டுபிடிக்க முடியாவிட்டால் “ஓபன் பார்லாடைப்” ஒரு பிளாட்பாக்"
+" பதிப்பைத் திறக்க முயற்சிக்கிறது."
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr ""
+msgstr "லிப்ரேஃபிசிற்கான பார்லாடைப்"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
@@ -124,44 +133,46 @@ msgstr "பரிதி"
 
 #: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
-msgstr ""
+msgstr "நேர முத்திரைக்குச் செல்லுங்கள்"
 
 #: extension/python/components/OptionsDialogHandler.py:76
 msgid "On mouseclick"
-msgstr ""
+msgstr "மவுச் கிளிக்கில்"
 
 #: extension/python/components/OptionsDialogHandler.py:77
 msgid "On key cursor"
-msgstr ""
+msgstr "முக்கிய கர்சரில்"
 
 #: extension/python/components/Parlatype.py:168
 #: extension/python/components/Parlatype.py:189
 #: extension/python/components/Parlatype.py:207
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "பார்லாடைப் நிறுவப்படவில்லை."
 
 #: extension/python/components/Parlatype.py:179
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr ""
+"லிப்ரேஃபிசிற்கான Apparmor சுயவிவரம் பிளாட்பேக்கைத் தொடங்குவதைத் தடுக்கிறது போல் "
+"தெரிகிறது."
 
 #: extension/python/components/Parlatype.py:348
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "முதலில் பார்லாடைப் திறக்கவும்."
 
 #: extension/python/components/Parlatype.py:359
 msgid "Please open a media file first."
-msgstr ""
+msgstr "முதலில் ஒரு மீடியா கோப்பைத் திறக்கவும்."
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr ""
+msgstr "திறந்த பார்லேட்டைப்"
 
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
-msgstr ""
+msgstr "இணைப்பு மீடியா"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "நேர முத்திரையைச் செருகவும்"
