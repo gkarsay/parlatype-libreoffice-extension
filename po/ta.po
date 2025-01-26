@@ -65,7 +65,7 @@ msgstr ""
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:67
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "பல மொழிகளுக்கான மொழிபெயர்ப்பு புதுப்பிப்புகள்."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:43
 msgid "This release is for Parlatype 3.1."
