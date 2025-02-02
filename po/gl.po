@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 20:59+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-02-03 17:02+0000\n"
+"Last-Translator: Xosé Calvo <xosecalvo@gmail.com>\n"
+"Language-Team: Galician <https://hosted.weblate.org/projects/parlatype/"
+"parlatype-libreoffice-extension/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
 msgid "Parlatype LibreOffice Extension"
@@ -29,7 +32,7 @@ msgstr ""
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
 msgid "Gabor Karsay"
-msgstr ""
+msgstr "Gabor Karsay"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
 msgid "Website moved to www.parlatype.xyz"
@@ -62,7 +65,7 @@ msgstr ""
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:67
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "Actualizacións da tradución a varios idiomas."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:43
 msgid "This release is for Parlatype 3.1."
@@ -70,7 +73,7 @@ msgstr ""
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:45
 msgid "Switched to Weblate for translations."
-msgstr ""
+msgstr "Pasouse a Weblate para as traducións."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:52
 msgid "This release is for Parlatype 3.0."
@@ -117,7 +120,7 @@ msgstr ""
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
 msgid "Parlatype"
-msgstr ""
+msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
