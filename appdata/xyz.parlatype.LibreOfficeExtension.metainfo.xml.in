@@ -21,6 +21,13 @@
 	</developer>
 
 	<releases>
+		<release version="4.3" date="2025-07-01">
+			<description>
+			<ul>
+			<li>Translation updates for several languages</li>
+			</ul>
+			</description>
+		</release>
 		<release version="4.2" date="2024-06-02">
 			<description>
 			<ul>
