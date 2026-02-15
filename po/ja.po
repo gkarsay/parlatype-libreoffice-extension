@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 20:59+0200\n"
-"PO-Revision-Date: 2024-01-28 05:01+0000\n"
+"PO-Revision-Date: 2026-02-16 03:09+0000\n"
 "Last-Translator: akinobu nishi <at0onsleeping@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
 msgid "Parlatype LibreOffice Extension"
@@ -65,57 +65,61 @@ msgstr "ParlatypeのFlatpak版の開き方の修正。"
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:67
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "いくつかの言語のための翻訳を更新。"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:43
 msgid "This release is for Parlatype 3.1."
-msgstr ""
+msgstr "このリリースはParlatype 3.1のためです。"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:45
 msgid "Switched to Weblate for translations."
-msgstr ""
+msgstr "翻訳のためにWeblateへ切り替えた。"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:52
 msgid "This release is for Parlatype 3.0."
-msgstr ""
+msgstr "このリリースはParlatype 3.0のためです。"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:54
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
-msgstr ""
+msgstr "自動音声認識：印刷はParlatypeからテキストを認識された(Linuxのみ)。"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:55
 msgid "Fixed a crash if selecting a table."
-msgstr "もしテーブル選択時のクラッシュを修正済。"
+msgstr "テーブル選択時におけるクラッシュを修正済。"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:56
 msgid "Translation updates for Italian."
-msgstr ""
+msgstr "翻訳はイタリア語のために更新。"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:62
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "この新しいリリースはParlatype 2.1 に依存します。"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:64
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "タイムスタンプが挿入された新しいツールバーのアイコン。"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:65
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"変更されたマクロの場所：もしパッケージマネージャのインストールが完了したら、"
+"LibreOffice マクロへアサインする > LibreOffice Macros > Parlatype 。"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:66
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
+"「Open Parlatype」はFlatpak版を開くことを試します。もしそれがシステムのパス内"
+"でParlatypeを見つけることができなかったとき。"
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr ""
+msgstr "LibreOfficeのためのParlatype"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
@@ -124,47 +128,49 @@ msgstr ""
 
 #: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
-msgstr ""
+msgstr "タイムスタンプへ移動"
 
 #: extension/python/components/OptionsDialogHandler.py:76
 msgid "On mouseclick"
-msgstr ""
+msgstr "マウスクリック状態で"
 
 #: extension/python/components/OptionsDialogHandler.py:77
 msgid "On key cursor"
-msgstr ""
+msgstr "矢印キーで"
 
 #: extension/python/components/Parlatype.py:168
 #: extension/python/components/Parlatype.py:189
 #: extension/python/components/Parlatype.py:207
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "Parlatypeはインストールされていません。"
 
 #: extension/python/components/Parlatype.py:179
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
 msgstr ""
+"それはLibreOfficeがFlatpakを起動することを防ぐためのセキュリティシステムのよ"
+"うです。"
 
 #: extension/python/components/Parlatype.py:348
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "最初にParlatypeを開いてください。"
 
 #: extension/python/components/Parlatype.py:359
 msgid "Please open a media file first."
-msgstr ""
+msgstr "最初にメディアファイルを開いてください。"
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr ""
+msgstr "Parlatypeを開く"
 
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
-msgstr ""
+msgstr "メディアのリンク"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "タイムスタンプを挿入"
 
 #~ msgid "This is a bug fix release."
 #~ msgstr "バグ修正リリースです。"
