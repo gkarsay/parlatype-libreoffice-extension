@@ -8,159 +8,171 @@ msgstr ""
 "Project-Id-Version: parlatype_lo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 20:59+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-22 11:09+0000\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/parlatype/"
+"parlatype-libreoffice-extension/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
 msgid "Parlatype LibreOffice Extension"
-msgstr ""
+msgstr "Parlatype LibreOffice dodatak"
 
 #.
 #. This is the english description for this extension.
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:5
 #: extension/description_translation.xml:5
 msgid "Control Parlatype from LibreOffice"
-msgstr ""
+msgstr "Upravljaj Parlatypeom iz LibreOffice-a"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
 msgid "Gabor Karsay"
-msgstr ""
+msgstr "Gabor Karsay"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
 msgid "Website moved to www.parlatype.xyz"
-msgstr ""
+msgstr "Web-stranica je premještena na www.parlatype.xyz"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:26
 msgid ""
 "Extension’s ID changed accordingly, it requires at least the same version of "
 "Parlatype"
 msgstr ""
+"ID dodatka se promijenio u skladu s tim, zahtijeva barem istu verziju "
+"Parlatypea"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:27
 msgid "Translation updates for several languages"
-msgstr ""
+msgstr "Aktualizirani prijevodi za nekoliko jezika"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:33
 msgid ""
 "This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0"
 msgstr ""
+"Ovo je izdanje za ispravak grešaka, zahtijeva Parlatype 3.x ili Parlatype 4.0"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:35
 msgid "Fix unlinking documents."
-msgstr ""
+msgstr "Ispravak za odspajanje dokumenata."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "Fix opening Flatpak version of Parlatype."
-msgstr ""
+msgstr "Ispravak za otvaranje Flatpak verzije Parlatypea."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:37
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:46
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:67
 msgid "Translation updates for several languages."
-msgstr ""
+msgstr "Aktualizirani prijevodi za nekoliko jezika."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:43
 msgid "This release is for Parlatype 3.1."
-msgstr ""
+msgstr "Ovo je izdanje za Parlatype 3.1."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:45
 msgid "Switched to Weblate for translations."
-msgstr ""
+msgstr "Prijelaz na prevodilačku platformu „Weblate“."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:52
 msgid "This release is for Parlatype 3.0."
-msgstr ""
+msgstr "Ovo je izdanje za Parlatype 3.0."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:54
 msgid ""
 "Automatic speech recognition: Prints recognized text from Parlatype (Linux "
 "only)."
 msgstr ""
+"Automatsko prepoznavanje govora: Ispisuje prepoznate tekstove iz Parlatypea "
+"(samo za Linux)."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:55
 msgid "Fixed a crash if selecting a table."
-msgstr ""
+msgstr "Ispravljena kobna greška pri biranju tablicu."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:56
 msgid "Translation updates for Italian."
-msgstr ""
+msgstr "Aktualiziran prijevod za talijanski."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:62
 msgid "This new release depends on Parlatype 2.1."
-msgstr ""
+msgstr "Ovo novo izdanje ovisi o Parlatype 2.1."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:64
 msgid "New toolbar icon to insert a timestamp."
-msgstr ""
+msgstr "Nova ikona alatne trake za umetanje vremenske oznake."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:65
 msgid ""
 "Changed location of macros: If installed with a package manager, reassign to "
 "LibreOffice Macros &gt; LibreOffice Macros &gt; Parlatype."
 msgstr ""
+"Promjena lokacije makronaredbi: Ako su instalirani s upravljačem paketa, "
+"ponovo dodijeli u LibreOffice makronaredbe &gt; LibreOffice makronaredbe "
+"&gt; Parlatype."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:66
 msgid ""
 "“Open Parlatype” tries to open a Flatpak version if it can’t find Parlatype "
 "in the system path."
 msgstr ""
+"„Open Parlatype“ pokušava otvoriti Flatpak verziju ako ne može pronaći "
+"Parlatype u stazi sustava."
 
 #: extension/description.xml.in.in.in:22
 msgid "Parlatype for LibreOffice"
-msgstr ""
+msgstr "Parlatype za LibreOffice"
 
 #: extension/options/OptionsDialogRegistry.xcu.in:14
 #: extension/toolbar/WriterWindowState.xcu.in:11
 msgid "Parlatype"
-msgstr ""
+msgstr "Parlatype"
 
 #: extension/python/components/OptionsDialogHandler.py:75
 msgid "Go to timestamp"
-msgstr ""
+msgstr "Idi na vremensku oznaku"
 
 #: extension/python/components/OptionsDialogHandler.py:76
 msgid "On mouseclick"
-msgstr ""
+msgstr "Pritiskom tipke miša"
 
 #: extension/python/components/OptionsDialogHandler.py:77
 msgid "On key cursor"
-msgstr ""
+msgstr "Pritiskom tipke za pomicanje kursora"
 
 #: extension/python/components/Parlatype.py:168
 #: extension/python/components/Parlatype.py:189
 #: extension/python/components/Parlatype.py:207
 msgid "Parlatype is not installed."
-msgstr ""
+msgstr "Parlatype nije instaliran."
 
 #: extension/python/components/Parlatype.py:179
 msgid ""
 "It seems like the AppArmor profile for LibreOffice prevents launching "
 "Flatpak."
-msgstr ""
+msgstr "Čini se da AppArmor profil za LibreOffice sprečava pokretanje Flatpaka."
 
 #: extension/python/components/Parlatype.py:348
 msgid "Please open Parlatype first."
-msgstr ""
+msgstr "Najprije otvori Parlatype."
 
 #: extension/python/components/Parlatype.py:359
 msgid "Please open a media file first."
-msgstr ""
+msgstr "Najprije otvori medijsku datoteku."
 
 #: extension/toolbar/Toolbar.xcu.in:17
 msgid "Open Parlatype"
-msgstr ""
+msgstr "Otvori Parlatype"
 
 #: extension/toolbar/Toolbar.xcu.in:32
 msgid "Link Media"
-msgstr ""
+msgstr "Poveži medij"
 
 #: extension/toolbar/Toolbar.xcu.in:47
 msgid "Insert Timestamp"
-msgstr ""
+msgstr "Umetni vremensku oznaku"
