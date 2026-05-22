@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: parlatype-libreoffice-extension\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 20:59+0200\n"
-"PO-Revision-Date: 2022-10-17 00:53+0000\n"
-"Last-Translator: rene-coty <irenee.thirion@e.email>\n"
+"PO-Revision-Date: 2026-05-23 22:11+0000\n"
+"Last-Translator: phylaine MacKendal <phylaine@mailo.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/parlatype/"
 "parlatype-libreoffice-extension/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 "X-Launchpad-Export-Date: 2020-05-31 18:28+0000\n"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:4
@@ -33,32 +33,34 @@ msgstr "Contrôler Parlatype depuis LibreOffice"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:18
 msgid "Gabor Karsay"
-msgstr ""
+msgstr "Gabor Karsay"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:25
 msgid "Website moved to www.parlatype.xyz"
-msgstr ""
+msgstr "Le site a été déplacé vers www.parlatype.xyz"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:26
 msgid ""
 "Extension’s ID changed accordingly, it requires at least the same version of "
 "Parlatype"
 msgstr ""
+"L'ID de l'extension a changé en conséquence, la même version de Parlatype "
+"est au moins requise"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:27
-#, fuzzy
-#| msgid "Translation updates for several languages."
 msgid "Translation updates for several languages"
-msgstr "Mises à jour des traductions pour plusieurs langues."
+msgstr "Mises à jour des traductions pour plusieurs langues"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:33
 msgid ""
 "This is a bug fix release, it requires either Parlatype 3.x or Parlatype 4.0"
 msgstr ""
+"Ceci est une version de correction d'erreurs, cela requiert soit Parlatype "
+"3.x soit Parlatype 4.0"
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:35
 msgid "Fix unlinking documents."
-msgstr ""
+msgstr "Corriger les documents non-liés."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:36
 msgid "Fix opening Flatpak version of Parlatype."
@@ -76,7 +78,7 @@ msgstr "Cette nouvelle version est pour Parlatype 3.1."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:45
 msgid "Switched to Weblate for translations."
-msgstr "Passage à Weblate pour les traductions."
+msgstr "Changement vers Weblate pour les traductions."
 
 #: appdata/xyz.parlatype.LibreOfficeExtension.metainfo.xml.in:52
 msgid "This release is for Parlatype 3.0."
